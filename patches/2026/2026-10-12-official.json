@@ -1,0 +1,615 @@
+{
+  "meta": {
+    "author": "wenlei-official-2026-10",
+    "source_url": "https://mz.tj.gov.cn/BMFW1537/wyc/xzqhxxcx/202304/t20230425_6215701.html",
+    "evidence_confidence": "high",
+    "apply_after": "2023-baseline",
+    "source_pipeline": "community",
+    "created_at": "2026-10-20T00:00:00.000Z",
+    "notes": "2026年10月整理；官方数据截止未注明，不能认定2026现势；原件SHA-256=1fa28c4d0898748fb55317fa5aefddb52784670235d827d3cca24a84ab2b6dc7；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级252条。"
+  },
+  "operations": [
+    {
+      "op": "update",
+      "code": "120110010000",
+      "name": "东丽湖街道"
+    },
+    {
+      "op": "update",
+      "code": "120110011000",
+      "name": "华新街道"
+    },
+    {
+      "op": "update",
+      "code": "120114120000",
+      "name": "白古屯镇"
+    },
+    {
+      "op": "update",
+      "code": "120114123000",
+      "name": "豆张庄镇"
+    },
+    {
+      "op": "update",
+      "code": "120114124000",
+      "name": "高村镇"
+    },
+    {
+      "op": "add",
+      "code": "120115004000",
+      "name": "周良街道",
+      "level": 4,
+      "parent_code": "120115000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "120115007000",
+      "name": "朝霞街道"
+    },
+    {
+      "op": "update",
+      "code": "120115008000",
+      "name": "潮阳街道"
+    },
+    {
+      "op": "update",
+      "code": "120116012000",
+      "name": "泰达街道"
+    },
+    {
+      "op": "add",
+      "code": "120116021000",
+      "name": "汉沽街道",
+      "level": 4,
+      "parent_code": "120116000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "120116022000",
+      "name": "寨上街道",
+      "level": 4,
+      "parent_code": "120116000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "120116033000",
+      "name": "古林街道"
+    },
+    {
+      "op": "add",
+      "code": "120116034000",
+      "name": "海滨街道",
+      "level": 4,
+      "parent_code": "120116000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "120116036000",
+      "name": "塘沽街道",
+      "level": 4,
+      "parent_code": "120116000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "120116037000",
+      "name": "茶淀街道",
+      "level": 4,
+      "parent_code": "120116000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "120116038000",
+      "name": "大港街道",
+      "level": 4,
+      "parent_code": "120116000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "120116039000",
+      "name": "新港街道",
+      "level": 4,
+      "parent_code": "120116000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "120116040000",
+      "name": "新村街道",
+      "level": 4,
+      "parent_code": "120116000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "120116102000",
+      "name": "杨家泊镇",
+      "level": 4,
+      "parent_code": "120116000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "120116105000",
+      "name": "太平镇",
+      "level": 4,
+      "parent_code": "120116000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "120116106000",
+      "name": "小王庄镇",
+      "level": 4,
+      "parent_code": "120116000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "120116107000",
+      "name": "中塘镇",
+      "level": 4,
+      "parent_code": "120116000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "120117101000",
+      "name": "宁河镇",
+      "level": 4,
+      "parent_code": "120117000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "120117102000",
+      "name": "苗庄镇"
+    },
+    {
+      "op": "update",
+      "code": "120117103000",
+      "name": "丰台镇"
+    },
+    {
+      "op": "update",
+      "code": "120117104000",
+      "name": "岳龙镇"
+    },
+    {
+      "op": "update",
+      "code": "120117105000",
+      "name": "板桥镇"
+    },
+    {
+      "op": "update",
+      "code": "120117106000",
+      "name": "潘庄镇"
+    },
+    {
+      "op": "update",
+      "code": "120117107000",
+      "name": "造甲城镇"
+    },
+    {
+      "op": "add",
+      "code": "120117108000",
+      "name": "七里海镇",
+      "level": 4,
+      "parent_code": "120117000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "120117109000",
+      "name": "大北涧沽镇"
+    },
+    {
+      "op": "update",
+      "code": "120117110000",
+      "name": "东棘坨镇"
+    },
+    {
+      "op": "update",
+      "code": "120117111000",
+      "name": "俵口镇"
+    },
+    {
+      "op": "update",
+      "code": "120117112000",
+      "name": "廉庄镇"
+    },
+    {
+      "op": "update",
+      "code": "120110400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120110401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120110402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120110403000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120110405000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120110406000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120110407000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120110408000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120111400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120111401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120111450000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120112403000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120112404000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120112405000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120112501000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120113400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120113401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120113402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120113403000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120113404000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120113500000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120113501000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120114400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120114401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120114403000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120114404000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120114405000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120114406000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120114407000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120115006000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120115456000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120115457000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116001000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116013000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116014000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116031000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116032000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116051000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116053000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116054000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116135000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116156000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116157000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116158000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116403000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120116406000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120117114000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120117115000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120117400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120117401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120117402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120117403000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120117451000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120117452000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120117453000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120118400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120118402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120118403000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "120119401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    }
+  ]
+}

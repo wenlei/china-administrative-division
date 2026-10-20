@@ -133,14 +133,12 @@ function resolvePatchYear(patchPath: string, createdAt?: string): number {
 
 /**
  * 从 meta.apply_after 解析基线年份，如 "2023-baseline" / "2023" → 2023。
- * 无法解析时回退到 targetYear（即原地修改、不克隆）。
+ * 无法解析时拒绝执行，避免把缺失的基线当作目标年。
  */
-function parseBaselineYear(
-  applyAfter: string | undefined,
-  fallback: number
-): number {
+function parseBaselineYear(applyAfter: string | undefined): number {
   const m = applyAfter?.match(/(\d{4})/);
-  return m ? parseInt(m[1], 10) : fallback;
+  if (!m) throw new Error(`Invalid baseline declaration: ${applyAfter}`);
+  return parseInt(m[1], 10);
 }
 
 /**
@@ -157,8 +155,7 @@ export async function applyPatch(options: ApplyPatchOptions): Promise<void> {
   console.log('');
 
   if (!fs.existsSync(patchPath)) {
-    console.error(`Error: Patch file not found: ${patchPath}`);
-    return;
+    throw new Error(`Patch file not found: ${patchPath}`);
   }
 
   const patchContent = fs.readFileSync(patchPath, 'utf-8');
@@ -166,14 +163,12 @@ export async function applyPatch(options: ApplyPatchOptions): Promise<void> {
   // 用 data-protocol 的 zod schema 严格校验（op 形状 / 12 位码 / level 范围 / 枚举等）
   const validation = validatePatch(JSON.parse(patchContent));
   if (!validation.success) {
-    console.error('Error: Invalid patch — 未通过 schema 校验');
-    console.error(validation.error);
-    return;
+    throw new Error(`Invalid patch — 未通过 schema 校验: ${validation.error}`);
   }
   const patch = validation.data;
 
   const targetYear = resolvePatchYear(patchPath, patch.meta.created_at);
-  const baselineYear = parseBaselineYear(patch.meta.apply_after, targetYear);
+  const baselineYear = parseBaselineYear(patch.meta.apply_after);
 
   console.log(`Author: ${patch.meta.author}`);
   console.log(`Source: ${patch.meta.source_url || 'unknown'}`);
@@ -193,9 +188,9 @@ export async function applyPatch(options: ApplyPatchOptions): Promise<void> {
   const dbPath = path.join(resolvedCacheDir, 'cache.db');
 
   if (!fs.existsSync(dbPath)) {
-    console.error(`Error: Cache database not found: ${dbPath}`);
-    console.error('Please run "cndiv hydrate --year=2023" first');
-    return;
+    throw new Error(
+      `Cache database not found: ${dbPath}; run cndiv hydrate first`
+    );
   }
 
   const db = new Database(dbPath);
@@ -215,25 +210,21 @@ export async function applyPatch(options: ApplyPatchOptions): Promise<void> {
 
   // 操作 + 克隆 + 审计写入同一事务：杜绝"数据已改、审计失败"的不一致中间态
   const applyTransaction = db.transaction(() => {
+    const baseCount = (countByYear.get(baselineYear) as { c: number }).c;
+    if (baseCount === 0)
+      throw new Error(`基线年 ${baselineYear} 无数据，拒绝应用补丁`);
     // 1) 必要时把基线年克隆到目标年，使所有 op 有一致的落点
     if (targetYear !== baselineYear) {
       const targetCount = (countByYear.get(targetYear) as { c: number }).c;
       if (targetCount === 0) {
-        const baseCount = (countByYear.get(baselineYear) as { c: number }).c;
-        if (baseCount === 0) {
-          console.warn(
-            `  ⚠️ 基线年 ${baselineYear} 无数据，无法克隆；ops 将作用于空的 ${targetYear} 分区`
-          );
-        } else {
-          db.prepare(
-            `INSERT INTO divisions (code, name, level, parent_code, year, status, source_type, confidence_score, urban_rural_code)
+        db.prepare(
+          `INSERT INTO divisions (code, name, level, parent_code, year, status, source_type, confidence_score, urban_rural_code)
              SELECT code, name, level, parent_code, ?, status, source_type, confidence_score, urban_rural_code
              FROM divisions WHERE year = ?`
-          ).run(targetYear, baselineYear);
-          console.log(
-            `  克隆基线 ${baselineYear} → ${targetYear} (${baseCount} 行)`
-          );
-        }
+        ).run(targetYear, baselineYear);
+        console.log(
+          `  克隆基线 ${baselineYear} → ${targetYear} (${baseCount} 行)`
+        );
       }
     }
 
@@ -259,12 +250,14 @@ export async function applyPatch(options: ApplyPatchOptions): Promise<void> {
     );
   });
 
-  applyTransaction();
+  try {
+    applyTransaction();
+  } finally {
+    db.close();
+  }
 
   console.log('');
   console.log('='.repeat(60));
   console.log(`Patch applied successfully → year ${targetYear}`);
   console.log('='.repeat(60));
-
-  db.close();
 }

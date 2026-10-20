@@ -1,0 +1,4170 @@
+{
+  "meta": {
+    "author": "wenlei-official-2026-10",
+    "source_url": "https://mzt.jl.gov.cn/mztyw_74291/qhdm/fgwj/202607/t20260728_9671500.html",
+    "evidence_confidence": "high",
+    "apply_after": "2023-baseline",
+    "source_pipeline": "community",
+    "created_at": "2026-10-20T00:00:00.000Z",
+    "notes": "2026年10月整理；官方数据截止2026-07-28；原件SHA-256=fcf96c64ec639490ccb4c716a65f92861639fad48278fd54236066b68145612d；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级972条。"
+  },
+  "operations": [
+    {
+      "op": "update",
+      "code": "220102010000",
+      "name": "永兴街道"
+    },
+    {
+      "op": "update",
+      "code": "220102011000",
+      "name": "净月街道"
+    },
+    {
+      "op": "update",
+      "code": "220102012000",
+      "name": "临河街道"
+    },
+    {
+      "op": "update",
+      "code": "220102013000",
+      "name": "鸿城街道"
+    },
+    {
+      "op": "add",
+      "code": "220102014000",
+      "name": "明珠街道",
+      "level": 4,
+      "parent_code": "220102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220102015000",
+      "name": "富裕街道",
+      "level": 4,
+      "parent_code": "220102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220102016000",
+      "name": "会展街道",
+      "level": 4,
+      "parent_code": "220102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220102017000",
+      "name": "彩织街道",
+      "level": 4,
+      "parent_code": "220102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220102018000",
+      "name": "博硕街道",
+      "level": 4,
+      "parent_code": "220102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220102019000",
+      "name": "德正街道",
+      "level": 4,
+      "parent_code": "220102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220102020000",
+      "name": "福祉街道",
+      "level": 4,
+      "parent_code": "220102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220102021000",
+      "name": "德容街道",
+      "level": 4,
+      "parent_code": "220102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220102022000",
+      "name": "盛世街道",
+      "level": 4,
+      "parent_code": "220102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220102023000",
+      "name": "德馨街道",
+      "level": 4,
+      "parent_code": "220102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220102024000",
+      "name": "永顺街道",
+      "level": 4,
+      "parent_code": "220102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220102100000",
+      "name": "新立城镇",
+      "level": 4,
+      "parent_code": "220102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220102101000",
+      "name": "新湖镇",
+      "level": 4,
+      "parent_code": "220102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220102102000",
+      "name": "玉潭镇",
+      "level": 4,
+      "parent_code": "220102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220103011000",
+      "name": "北湖街道"
+    },
+    {
+      "op": "add",
+      "code": "220103012000",
+      "name": "长德街道",
+      "level": 4,
+      "parent_code": "220103000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220103101000",
+      "name": "兰家镇"
+    },
+    {
+      "op": "update",
+      "code": "220103102000",
+      "name": "兴隆山镇"
+    },
+    {
+      "op": "add",
+      "code": "220103103000",
+      "name": "米沙子镇",
+      "level": 4,
+      "parent_code": "220103000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220103104000",
+      "name": "万宝镇",
+      "level": 4,
+      "parent_code": "220103000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220103105000",
+      "name": "合隆镇",
+      "level": 4,
+      "parent_code": "220103000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220103200000",
+      "name": "奋进乡",
+      "level": 4,
+      "parent_code": "220103000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220104010000",
+      "name": "硅谷街道",
+      "level": 4,
+      "parent_code": "220104000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220104011000",
+      "name": "双德街道",
+      "level": 4,
+      "parent_code": "220104000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220104012000",
+      "name": "飞跃街道",
+      "level": 4,
+      "parent_code": "220104000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220104013000",
+      "name": "前程街道",
+      "level": 4,
+      "parent_code": "220104000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220104014000",
+      "name": "超越街道",
+      "level": 4,
+      "parent_code": "220104000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220104101000",
+      "name": "乐山镇"
+    },
+    {
+      "op": "add",
+      "code": "220104102000",
+      "name": "永春镇",
+      "level": 4,
+      "parent_code": "220104000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220105007000",
+      "name": "东方广场街道"
+    },
+    {
+      "op": "add",
+      "code": "220105008000",
+      "name": "长青街道",
+      "level": 4,
+      "parent_code": "220105000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220105009000",
+      "name": "世纪街道",
+      "level": 4,
+      "parent_code": "220105000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220105101000",
+      "name": "劝农山镇",
+      "level": 4,
+      "parent_code": "220105000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220105102000",
+      "name": "泉眼镇",
+      "level": 4,
+      "parent_code": "220105000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220105103000",
+      "name": "英俊镇",
+      "level": 4,
+      "parent_code": "220105000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220105201000",
+      "name": "四家乡",
+      "level": 4,
+      "parent_code": "220105000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220106002000",
+      "name": "普阳街道",
+      "level": 4,
+      "parent_code": "220106000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220106003000",
+      "name": "锦程街道"
+    },
+    {
+      "op": "add",
+      "code": "220106004000",
+      "name": "春城街道",
+      "level": 4,
+      "parent_code": "220106000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220106005000",
+      "name": "铁西街道"
+    },
+    {
+      "op": "update",
+      "code": "220106006000",
+      "name": "青年路街道"
+    },
+    {
+      "op": "update",
+      "code": "220106007000",
+      "name": "东风街道"
+    },
+    {
+      "op": "add",
+      "code": "220106008000",
+      "name": "林园街道",
+      "level": 4,
+      "parent_code": "220106000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220106009000",
+      "name": "同心街道",
+      "level": 4,
+      "parent_code": "220106000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220106010000",
+      "name": "富民街道"
+    },
+    {
+      "op": "update",
+      "code": "220106011000",
+      "name": "迎宾街道"
+    },
+    {
+      "op": "update",
+      "code": "220106012000",
+      "name": "自立街道"
+    },
+    {
+      "op": "update",
+      "code": "220106013000",
+      "name": "广兴街道"
+    },
+    {
+      "op": "add",
+      "code": "220106014000",
+      "name": "锦绣街道",
+      "level": 4,
+      "parent_code": "220106000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220112101000",
+      "name": "鹿乡镇",
+      "level": 4,
+      "parent_code": "220112000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220112102000",
+      "name": "太平镇"
+    },
+    {
+      "op": "update",
+      "code": "220113005000",
+      "name": "卡伦湖街道"
+    },
+    {
+      "op": "update",
+      "code": "220113006000",
+      "name": "东湖街道"
+    },
+    {
+      "op": "update",
+      "code": "220113007000",
+      "name": "土们岭街道"
+    },
+    {
+      "op": "update",
+      "code": "220113008000",
+      "name": "波泥河街道"
+    },
+    {
+      "op": "update",
+      "code": "220113009000",
+      "name": "苇子沟街道"
+    },
+    {
+      "op": "update",
+      "code": "220113010000",
+      "name": "兴隆街道"
+    },
+    {
+      "op": "update",
+      "code": "220113011000",
+      "name": "纪家街道"
+    },
+    {
+      "op": "update",
+      "code": "220113014000",
+      "name": "城子街街道"
+    },
+    {
+      "op": "update",
+      "code": "220113015000",
+      "name": "沐石河街道"
+    },
+    {
+      "op": "update",
+      "code": "220122105000",
+      "name": "开安镇"
+    },
+    {
+      "op": "update",
+      "code": "220122106000",
+      "name": "烧锅镇"
+    },
+    {
+      "op": "update",
+      "code": "220122107000",
+      "name": "高家店镇"
+    },
+    {
+      "op": "update",
+      "code": "220122109000",
+      "name": "华家镇"
+    },
+    {
+      "op": "add",
+      "code": "220122111000",
+      "name": "三盛玉镇",
+      "level": 4,
+      "parent_code": "220122000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220122112000",
+      "name": "巴吉垒镇",
+      "level": 4,
+      "parent_code": "220122000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220122113000",
+      "name": "三岗镇",
+      "level": 4,
+      "parent_code": "220122000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220122201000",
+      "name": "前岗乡"
+    },
+    {
+      "op": "add",
+      "code": "220122202000",
+      "name": "龙王乡",
+      "level": 4,
+      "parent_code": "220122000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220122204000",
+      "name": "万顺乡"
+    },
+    {
+      "op": "update",
+      "code": "220122205000",
+      "name": "杨树林乡"
+    },
+    {
+      "op": "update",
+      "code": "220122207000",
+      "name": "永安乡"
+    },
+    {
+      "op": "update",
+      "code": "220122208000",
+      "name": "青山口乡"
+    },
+    {
+      "op": "update",
+      "code": "220122209000",
+      "name": "黄鱼圈乡"
+    },
+    {
+      "op": "update",
+      "code": "220122210000",
+      "name": "新农乡"
+    },
+    {
+      "op": "add",
+      "code": "220122211000",
+      "name": "万金塔乡",
+      "level": 4,
+      "parent_code": "220122000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220122212000",
+      "name": "小城子乡",
+      "level": 4,
+      "parent_code": "220122000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220182115000",
+      "name": "新庄镇",
+      "level": 4,
+      "parent_code": "220182000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220182203000",
+      "name": "太安乡"
+    },
+    {
+      "op": "update",
+      "code": "220182204000",
+      "name": "先锋乡"
+    },
+    {
+      "op": "update",
+      "code": "220182208000",
+      "name": "青山乡"
+    },
+    {
+      "op": "add",
+      "code": "220182209000",
+      "name": "延和朝鲜族乡",
+      "level": 4,
+      "parent_code": "220182000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220182210000",
+      "name": "恩育乡",
+      "level": 4,
+      "parent_code": "220182000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220182211000",
+      "name": "城发乡",
+      "level": 4,
+      "parent_code": "220182000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220182213000",
+      "name": "环城乡",
+      "level": 4,
+      "parent_code": "220182000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220183004000",
+      "name": "惠发街道"
+    },
+    {
+      "op": "add",
+      "code": "220183005000",
+      "name": "夏家店街道",
+      "level": 4,
+      "parent_code": "220183000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220183100000",
+      "name": "大青咀镇"
+    },
+    {
+      "op": "add",
+      "code": "220183110000",
+      "name": "布海镇",
+      "level": 4,
+      "parent_code": "220183000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220183111000",
+      "name": "天台镇",
+      "level": 4,
+      "parent_code": "220183000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220183112000",
+      "name": "菜园子镇",
+      "level": 4,
+      "parent_code": "220183000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220183202000",
+      "name": "边岗乡"
+    },
+    {
+      "op": "update",
+      "code": "220183203000",
+      "name": "五台乡"
+    },
+    {
+      "op": "add",
+      "code": "220183204000",
+      "name": "朝阳乡",
+      "level": 4,
+      "parent_code": "220183000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220184007000",
+      "name": "南崴子街道"
+    },
+    {
+      "op": "update",
+      "code": "220184008000",
+      "name": "刘房子街道"
+    },
+    {
+      "op": "update",
+      "code": "220184009000",
+      "name": "苇子沟街道"
+    },
+    {
+      "op": "update",
+      "code": "220184010000",
+      "name": "环岭街道"
+    },
+    {
+      "op": "update",
+      "code": "220184100000",
+      "name": "二十家子满族镇"
+    },
+    {
+      "op": "update",
+      "code": "220184200000",
+      "name": "龙山满族乡"
+    },
+    {
+      "op": "add",
+      "code": "220202013000",
+      "name": "双吉街道",
+      "level": 4,
+      "parent_code": "220202000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220202016000",
+      "name": "九站街道",
+      "level": 4,
+      "parent_code": "220202000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220203001000",
+      "name": "榆树街道"
+    },
+    {
+      "op": "update",
+      "code": "220203002000",
+      "name": "遵义街道"
+    },
+    {
+      "op": "update",
+      "code": "220203004000",
+      "name": "龙潭街道"
+    },
+    {
+      "op": "update",
+      "code": "220203005000",
+      "name": "新安街道"
+    },
+    {
+      "op": "update",
+      "code": "220203006000",
+      "name": "湘潭街道"
+    },
+    {
+      "op": "update",
+      "code": "220203007000",
+      "name": "龙华街道"
+    },
+    {
+      "op": "update",
+      "code": "220203008000",
+      "name": "新吉林街道"
+    },
+    {
+      "op": "update",
+      "code": "220203009000",
+      "name": "山前街道"
+    },
+    {
+      "op": "update",
+      "code": "220203010000",
+      "name": "泡子沿街道"
+    },
+    {
+      "op": "add",
+      "code": "220203011000",
+      "name": "靠山街道",
+      "level": 4,
+      "parent_code": "220203000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220203100000",
+      "name": "乌拉街满族镇"
+    },
+    {
+      "op": "update",
+      "code": "220203103000",
+      "name": "大口钦满族镇"
+    },
+    {
+      "op": "add",
+      "code": "220203201000",
+      "name": "江北乡",
+      "level": 4,
+      "parent_code": "220203000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220204014000",
+      "name": "新北街道",
+      "level": 4,
+      "parent_code": "220204000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220211006000",
+      "name": "红旗街道",
+      "level": 4,
+      "parent_code": "220211000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220211007000",
+      "name": "高新街道",
+      "level": 4,
+      "parent_code": "220211000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220211201000",
+      "name": "小白山乡"
+    },
+    {
+      "op": "add",
+      "code": "220211202000",
+      "name": "前二道乡",
+      "level": 4,
+      "parent_code": "220211000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220221101000",
+      "name": "口前镇"
+    },
+    {
+      "op": "update",
+      "code": "220221102000",
+      "name": "岔路河镇"
+    },
+    {
+      "op": "update",
+      "code": "220221103000",
+      "name": "双河镇"
+    },
+    {
+      "op": "update",
+      "code": "220221104000",
+      "name": "西阳镇"
+    },
+    {
+      "op": "add",
+      "code": "220221105000",
+      "name": "北大湖镇",
+      "level": 4,
+      "parent_code": "220221000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220221106000",
+      "name": "一拉溪镇",
+      "level": 4,
+      "parent_code": "220221000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220221107000",
+      "name": "万昌镇",
+      "level": 4,
+      "parent_code": "220221000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220221203000",
+      "name": "金家满族乡",
+      "level": 4,
+      "parent_code": "220221000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220221205000",
+      "name": "黄榆乡",
+      "level": 4,
+      "parent_code": "220221000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220281005000",
+      "name": "奶子山街道"
+    },
+    {
+      "op": "update",
+      "code": "220281006000",
+      "name": "新农街道"
+    },
+    {
+      "op": "update",
+      "code": "220281007000",
+      "name": "拉法街道"
+    },
+    {
+      "op": "add",
+      "code": "220281009000",
+      "name": "河北街道",
+      "level": 4,
+      "parent_code": "220281000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220281106000",
+      "name": "天北镇"
+    },
+    {
+      "op": "update",
+      "code": "220281107000",
+      "name": "松江镇"
+    },
+    {
+      "op": "add",
+      "code": "220281108000",
+      "name": "庆岭镇",
+      "level": 4,
+      "parent_code": "220281000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220281202000",
+      "name": "前进乡",
+      "level": 4,
+      "parent_code": "220281000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220282102000",
+      "name": "二道甸子镇"
+    },
+    {
+      "op": "update",
+      "code": "220282103000",
+      "name": "红石砬子镇"
+    },
+    {
+      "op": "update",
+      "code": "220282104000",
+      "name": "八道河子镇"
+    },
+    {
+      "op": "add",
+      "code": "220282106000",
+      "name": "常山镇",
+      "level": 4,
+      "parent_code": "220282000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220282107000",
+      "name": "金沙镇",
+      "level": 4,
+      "parent_code": "220282000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220282202000",
+      "name": "横道河子乡",
+      "level": 4,
+      "parent_code": "220282000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220282205000",
+      "name": "公吉乡",
+      "level": 4,
+      "parent_code": "220282000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220283100000",
+      "name": "白旗镇"
+    },
+    {
+      "op": "update",
+      "code": "220283101000",
+      "name": "朝阳镇"
+    },
+    {
+      "op": "update",
+      "code": "220283102000",
+      "name": "开原镇"
+    },
+    {
+      "op": "update",
+      "code": "220283103000",
+      "name": "上营镇"
+    },
+    {
+      "op": "update",
+      "code": "220283104000",
+      "name": "水曲柳镇"
+    },
+    {
+      "op": "update",
+      "code": "220283105000",
+      "name": "平安镇"
+    },
+    {
+      "op": "update",
+      "code": "220283106000",
+      "name": "法特镇"
+    },
+    {
+      "op": "update",
+      "code": "220283107000",
+      "name": "溪河镇"
+    },
+    {
+      "op": "update",
+      "code": "220283108000",
+      "name": "小城镇"
+    },
+    {
+      "op": "update",
+      "code": "220283109000",
+      "name": "金马镇"
+    },
+    {
+      "op": "update",
+      "code": "220283200000",
+      "name": "七里乡"
+    },
+    {
+      "op": "update",
+      "code": "220283202000",
+      "name": "莲花乡"
+    },
+    {
+      "op": "update",
+      "code": "220283203000",
+      "name": "亮甲山乡"
+    },
+    {
+      "op": "add",
+      "code": "220283206000",
+      "name": "新安乡",
+      "level": 4,
+      "parent_code": "220283000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220284001000",
+      "name": "东宁街道"
+    },
+    {
+      "op": "update",
+      "code": "220284002000",
+      "name": "河南街道"
+    },
+    {
+      "op": "update",
+      "code": "220284003000",
+      "name": "福安街道"
+    },
+    {
+      "op": "add",
+      "code": "220284004000",
+      "name": "阜康街道",
+      "level": 4,
+      "parent_code": "220284000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220284101000",
+      "name": "明城镇"
+    },
+    {
+      "op": "update",
+      "code": "220284102000",
+      "name": "红旗岭镇"
+    },
+    {
+      "op": "update",
+      "code": "220284103000",
+      "name": "牛心镇"
+    },
+    {
+      "op": "update",
+      "code": "220284104000",
+      "name": "石嘴镇"
+    },
+    {
+      "op": "update",
+      "code": "220284105000",
+      "name": "朝阳山镇"
+    },
+    {
+      "op": "update",
+      "code": "220284106000",
+      "name": "富太镇"
+    },
+    {
+      "op": "update",
+      "code": "220284107000",
+      "name": "呼兰镇"
+    },
+    {
+      "op": "update",
+      "code": "220284110000",
+      "name": "吉昌镇"
+    },
+    {
+      "op": "update",
+      "code": "220284111000",
+      "name": "取柴河镇"
+    },
+    {
+      "op": "update",
+      "code": "220284112000",
+      "name": "驿马镇"
+    },
+    {
+      "op": "add",
+      "code": "220302100000",
+      "name": "十家堡镇",
+      "level": 4,
+      "parent_code": "220302000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220302101000",
+      "name": "郭家店镇",
+      "level": 4,
+      "parent_code": "220302000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220302102000",
+      "name": "孟家岭镇",
+      "level": 4,
+      "parent_code": "220302000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220303001000",
+      "name": "平东街道"
+    },
+    {
+      "op": "update",
+      "code": "220303002000",
+      "name": "北市场街道"
+    },
+    {
+      "op": "update",
+      "code": "220303003000",
+      "name": "黄土坑街道"
+    },
+    {
+      "op": "update",
+      "code": "220303004000",
+      "name": "七马路街道"
+    },
+    {
+      "op": "update",
+      "code": "220303005000",
+      "name": "四马路街道"
+    },
+    {
+      "op": "update",
+      "code": "220303006000",
+      "name": "解放街道"
+    },
+    {
+      "op": "update",
+      "code": "220303007000",
+      "name": "北门街道"
+    },
+    {
+      "op": "update",
+      "code": "220303008000",
+      "name": "平南街道"
+    },
+    {
+      "op": "update",
+      "code": "220303100000",
+      "name": "山门镇"
+    },
+    {
+      "op": "add",
+      "code": "220303103000",
+      "name": "石岭镇",
+      "level": 4,
+      "parent_code": "220303000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220303110000",
+      "name": "叶赫满族镇",
+      "level": 4,
+      "parent_code": "220303000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220303200000",
+      "name": "城东乡"
+    },
+    {
+      "op": "update",
+      "code": "220322105000",
+      "name": "小城子镇"
+    },
+    {
+      "op": "update",
+      "code": "220322106000",
+      "name": "喇嘛甸镇"
+    },
+    {
+      "op": "update",
+      "code": "220322107000",
+      "name": "蔡家镇"
+    },
+    {
+      "op": "update",
+      "code": "220322108000",
+      "name": "刘家馆子镇"
+    },
+    {
+      "op": "update",
+      "code": "220322113000",
+      "name": "万发镇"
+    },
+    {
+      "op": "update",
+      "code": "220322114000",
+      "name": "东河镇"
+    },
+    {
+      "op": "add",
+      "code": "220322115000",
+      "name": "沈洋镇",
+      "level": 4,
+      "parent_code": "220322000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220322116000",
+      "name": "林海镇",
+      "level": 4,
+      "parent_code": "220322000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220322117000",
+      "name": "小宽镇",
+      "level": 4,
+      "parent_code": "220322000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220322118000",
+      "name": "孤家子镇",
+      "level": 4,
+      "parent_code": "220322000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220322202000",
+      "name": "白山乡"
+    },
+    {
+      "op": "update",
+      "code": "220322204000",
+      "name": "泉眼岭乡"
+    },
+    {
+      "op": "update",
+      "code": "220322205000",
+      "name": "胜利乡"
+    },
+    {
+      "op": "add",
+      "code": "220322206000",
+      "name": "四棵树乡",
+      "level": 4,
+      "parent_code": "220322000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220322207000",
+      "name": "双河乡",
+      "level": 4,
+      "parent_code": "220322000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220322208000",
+      "name": "金山乡",
+      "level": 4,
+      "parent_code": "220322000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220323203000",
+      "name": "三道乡",
+      "level": 4,
+      "parent_code": "220323000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220382002000",
+      "name": "辽东街道"
+    },
+    {
+      "op": "update",
+      "code": "220382003000",
+      "name": "辽西街道"
+    },
+    {
+      "op": "update",
+      "code": "220382004000",
+      "name": "辽南街道"
+    },
+    {
+      "op": "update",
+      "code": "220382005000",
+      "name": "辽北街道"
+    },
+    {
+      "op": "update",
+      "code": "220382105000",
+      "name": "王奔镇"
+    },
+    {
+      "op": "update",
+      "code": "220382106000",
+      "name": "玻璃山镇"
+    },
+    {
+      "op": "update",
+      "code": "220382107000",
+      "name": "兴隆镇"
+    },
+    {
+      "op": "add",
+      "code": "220382108000",
+      "name": "东明镇",
+      "level": 4,
+      "parent_code": "220382000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220382200000",
+      "name": "那木斯蒙古族乡"
+    },
+    {
+      "op": "update",
+      "code": "220402001000",
+      "name": "南康街道"
+    },
+    {
+      "op": "update",
+      "code": "220402002000",
+      "name": "北寿街道"
+    },
+    {
+      "op": "update",
+      "code": "220402003000",
+      "name": "东吉街道"
+    },
+    {
+      "op": "update",
+      "code": "220402006000",
+      "name": "新兴街道"
+    },
+    {
+      "op": "update",
+      "code": "220402007000",
+      "name": "福镇街道"
+    },
+    {
+      "op": "update",
+      "code": "220402008000",
+      "name": "向阳街道"
+    },
+    {
+      "op": "update",
+      "code": "220403001000",
+      "name": "仙城街道"
+    },
+    {
+      "op": "update",
+      "code": "220403002000",
+      "name": "太安街道"
+    },
+    {
+      "op": "update",
+      "code": "220403004000",
+      "name": "安家街道"
+    },
+    {
+      "op": "update",
+      "code": "220403005000",
+      "name": "先锋街道"
+    },
+    {
+      "op": "update",
+      "code": "220403006000",
+      "name": "富国街道"
+    },
+    {
+      "op": "update",
+      "code": "220421201000",
+      "name": "三合满族朝鲜族乡"
+    },
+    {
+      "op": "add",
+      "code": "220421207000",
+      "name": "二龙山乡",
+      "level": 4,
+      "parent_code": "220421000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220422001000",
+      "name": "东顺街道",
+      "level": 4,
+      "parent_code": "220422000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220422111000",
+      "name": "云顶镇",
+      "level": 4,
+      "parent_code": "220422000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220422204000",
+      "name": "金州乡",
+      "level": 4,
+      "parent_code": "220422000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220502008000",
+      "name": "滨江街道"
+    },
+    {
+      "op": "update",
+      "code": "220502009000",
+      "name": "陆港街道"
+    },
+    {
+      "op": "update",
+      "code": "220521103000",
+      "name": "二密镇"
+    },
+    {
+      "op": "update",
+      "code": "220521104000",
+      "name": "果松镇"
+    },
+    {
+      "op": "update",
+      "code": "220521105000",
+      "name": "石湖镇"
+    },
+    {
+      "op": "update",
+      "code": "220521106000",
+      "name": "大安镇"
+    },
+    {
+      "op": "update",
+      "code": "220521107000",
+      "name": "光华镇"
+    },
+    {
+      "op": "update",
+      "code": "220521108000",
+      "name": "兴林镇"
+    },
+    {
+      "op": "update",
+      "code": "220521109000",
+      "name": "英额布镇"
+    },
+    {
+      "op": "add",
+      "code": "220521110000",
+      "name": "三棵榆树镇",
+      "level": 4,
+      "parent_code": "220521000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220521111000",
+      "name": "西江镇",
+      "level": 4,
+      "parent_code": "220521000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220521202000",
+      "name": "富江乡"
+    },
+    {
+      "op": "update",
+      "code": "220521203000",
+      "name": "四棚乡"
+    },
+    {
+      "op": "add",
+      "code": "220521205000",
+      "name": "东来乡",
+      "level": 4,
+      "parent_code": "220521000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220521207000",
+      "name": "大泉源满族朝鲜族乡",
+      "level": 4,
+      "parent_code": "220521000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220521208000",
+      "name": "金斗朝鲜族满族乡",
+      "level": 4,
+      "parent_code": "220521000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220523108000",
+      "name": "金川镇"
+    },
+    {
+      "op": "add",
+      "code": "220523110000",
+      "name": "团林镇",
+      "level": 4,
+      "parent_code": "220523000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220523111000",
+      "name": "庆阳镇",
+      "level": 4,
+      "parent_code": "220523000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220524105000",
+      "name": "圣水河子镇"
+    },
+    {
+      "op": "update",
+      "code": "220524201000",
+      "name": "柳南乡"
+    },
+    {
+      "op": "update",
+      "code": "220524202000",
+      "name": "时家店乡"
+    },
+    {
+      "op": "add",
+      "code": "220524203000",
+      "name": "姜家店朝鲜族乡",
+      "level": 4,
+      "parent_code": "220524000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220581002000",
+      "name": "和平街道"
+    },
+    {
+      "op": "add",
+      "code": "220581003000",
+      "name": "光明街道",
+      "level": 4,
+      "parent_code": "220581000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220581004000",
+      "name": "解放街道",
+      "level": 4,
+      "parent_code": "220581000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220581005000",
+      "name": "福民街道",
+      "level": 4,
+      "parent_code": "220581000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220581105000",
+      "name": "曙光镇"
+    },
+    {
+      "op": "update",
+      "code": "220581106000",
+      "name": "中和镇"
+    },
+    {
+      "op": "update",
+      "code": "220581107000",
+      "name": "黑山头镇"
+    },
+    {
+      "op": "update",
+      "code": "220581108000",
+      "name": "水道镇"
+    },
+    {
+      "op": "update",
+      "code": "220581109000",
+      "name": "进化镇"
+    },
+    {
+      "op": "update",
+      "code": "220581110000",
+      "name": "一座营镇"
+    },
+    {
+      "op": "update",
+      "code": "220581111000",
+      "name": "康大营镇"
+    },
+    {
+      "op": "update",
+      "code": "220581112000",
+      "name": "牛心顶镇"
+    },
+    {
+      "op": "update",
+      "code": "220581114000",
+      "name": "杏岭镇"
+    },
+    {
+      "op": "update",
+      "code": "220581115000",
+      "name": "兴华镇"
+    },
+    {
+      "op": "add",
+      "code": "220581116000",
+      "name": "双兴镇",
+      "level": 4,
+      "parent_code": "220581000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220581203000",
+      "name": "李炉乡",
+      "level": 4,
+      "parent_code": "220581000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220581207000",
+      "name": "小杨满族朝鲜族乡",
+      "level": 4,
+      "parent_code": "220581000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220581209000",
+      "name": "吉乐乡",
+      "level": 4,
+      "parent_code": "220581000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220602005000",
+      "name": "河口街道"
+    },
+    {
+      "op": "update",
+      "code": "220602006000",
+      "name": "板石街道"
+    },
+    {
+      "op": "update",
+      "code": "220602007000",
+      "name": "江北街道"
+    },
+    {
+      "op": "update",
+      "code": "220602008000",
+      "name": "城南街道"
+    },
+    {
+      "op": "add",
+      "code": "220602104000",
+      "name": "七道江镇",
+      "level": 4,
+      "parent_code": "220602000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220621202000",
+      "name": "兴隆乡"
+    },
+    {
+      "op": "add",
+      "code": "220621203000",
+      "name": "抽水乡",
+      "level": 4,
+      "parent_code": "220621000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220621205000",
+      "name": "沿江乡",
+      "level": 4,
+      "parent_code": "220621000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220622203000",
+      "name": "濛江乡",
+      "level": 4,
+      "parent_code": "220622000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220681101000",
+      "name": "桦树镇"
+    },
+    {
+      "op": "update",
+      "code": "220681102000",
+      "name": "六道沟镇"
+    },
+    {
+      "op": "update",
+      "code": "220681103000",
+      "name": "苇沙河镇"
+    },
+    {
+      "op": "update",
+      "code": "220681104000",
+      "name": "花山镇"
+    },
+    {
+      "op": "update",
+      "code": "220681105000",
+      "name": "闹枝镇"
+    },
+    {
+      "op": "add",
+      "code": "220681106000",
+      "name": "四道沟镇",
+      "level": 4,
+      "parent_code": "220681000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220702016000",
+      "name": "镜湖街道"
+    },
+    {
+      "op": "update",
+      "code": "220702017000",
+      "name": "滨江街道"
+    },
+    {
+      "op": "update",
+      "code": "220702102000",
+      "name": "善友镇"
+    },
+    {
+      "op": "update",
+      "code": "220702103000",
+      "name": "毛都站镇"
+    },
+    {
+      "op": "add",
+      "code": "220702104000",
+      "name": "哈达山镇",
+      "level": 4,
+      "parent_code": "220702000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220702204000",
+      "name": "兴原乡",
+      "level": 4,
+      "parent_code": "220702000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220721102000",
+      "name": "长山镇"
+    },
+    {
+      "op": "update",
+      "code": "220721103000",
+      "name": "海勃日戈镇"
+    },
+    {
+      "op": "update",
+      "code": "220721104000",
+      "name": "乌兰图嘎镇"
+    },
+    {
+      "op": "update",
+      "code": "220721105000",
+      "name": "查干花镇"
+    },
+    {
+      "op": "update",
+      "code": "220721106000",
+      "name": "王府站镇"
+    },
+    {
+      "op": "update",
+      "code": "220721107000",
+      "name": "八郎镇"
+    },
+    {
+      "op": "update",
+      "code": "220721108000",
+      "name": "哈拉毛都镇"
+    },
+    {
+      "op": "add",
+      "code": "220721109000",
+      "name": "查干湖镇",
+      "level": 4,
+      "parent_code": "220721000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220721205000",
+      "name": "达里巴乡"
+    },
+    {
+      "op": "update",
+      "code": "220721206000",
+      "name": "吉拉吐乡"
+    },
+    {
+      "op": "update",
+      "code": "220721207000",
+      "name": "白依拉嘎乡"
+    },
+    {
+      "op": "update",
+      "code": "220721208000",
+      "name": "洪泉乡"
+    },
+    {
+      "op": "update",
+      "code": "220721209000",
+      "name": "额如乡"
+    },
+    {
+      "op": "update",
+      "code": "220721210000",
+      "name": "套浩太乡"
+    },
+    {
+      "op": "update",
+      "code": "220721211000",
+      "name": "长龙乡"
+    },
+    {
+      "op": "update",
+      "code": "220721212000",
+      "name": "乌兰塔拉乡"
+    },
+    {
+      "op": "update",
+      "code": "220721213000",
+      "name": "东三家子乡"
+    },
+    {
+      "op": "add",
+      "code": "220721214000",
+      "name": "浩特芒哈乡",
+      "level": 4,
+      "parent_code": "220721000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220721215000",
+      "name": "乌兰敖都乡",
+      "level": 4,
+      "parent_code": "220721000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220722202000",
+      "name": "集体乡"
+    },
+    {
+      "op": "update",
+      "code": "220722203000",
+      "name": "光明乡"
+    },
+    {
+      "op": "update",
+      "code": "220722204000",
+      "name": "三县堡乡"
+    },
+    {
+      "op": "update",
+      "code": "220722205000",
+      "name": "海青乡"
+    },
+    {
+      "op": "update",
+      "code": "220722206000",
+      "name": "前进乡"
+    },
+    {
+      "op": "update",
+      "code": "220722207000",
+      "name": "东岭乡"
+    },
+    {
+      "op": "update",
+      "code": "220722209000",
+      "name": "腰坨子乡"
+    },
+    {
+      "op": "add",
+      "code": "220722210000",
+      "name": "八十八乡",
+      "level": 4,
+      "parent_code": "220722000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220722213000",
+      "name": "三团乡",
+      "level": 4,
+      "parent_code": "220722000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220722214000",
+      "name": "三十号乡",
+      "level": 4,
+      "parent_code": "220722000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220723203000",
+      "name": "道字乡"
+    },
+    {
+      "op": "add",
+      "code": "220723206000",
+      "name": "严字乡",
+      "level": 4,
+      "parent_code": "220723000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220723207000",
+      "name": "赞字乡",
+      "level": 4,
+      "parent_code": "220723000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220781202000",
+      "name": "新站乡",
+      "level": 4,
+      "parent_code": "220781000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220781203000",
+      "name": "更新乡"
+    },
+    {
+      "op": "update",
+      "code": "220781204000",
+      "name": "肖家乡"
+    },
+    {
+      "op": "update",
+      "code": "220802006000",
+      "name": "城南街道"
+    },
+    {
+      "op": "add",
+      "code": "220802008000",
+      "name": "幸福街道",
+      "level": 4,
+      "parent_code": "220802000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220802010000",
+      "name": "保平街道",
+      "level": 4,
+      "parent_code": "220802000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220802011000",
+      "name": "西郊街道",
+      "level": 4,
+      "parent_code": "220802000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220802012000",
+      "name": "官银号街道"
+    },
+    {
+      "op": "update",
+      "code": "220802100000",
+      "name": "岭下镇"
+    },
+    {
+      "op": "update",
+      "code": "220802101000",
+      "name": "平安镇"
+    },
+    {
+      "op": "update",
+      "code": "220802102000",
+      "name": "青山镇"
+    },
+    {
+      "op": "update",
+      "code": "220802103000",
+      "name": "林海镇"
+    },
+    {
+      "op": "update",
+      "code": "220802104000",
+      "name": "洮河镇"
+    },
+    {
+      "op": "update",
+      "code": "220802105000",
+      "name": "平台镇"
+    },
+    {
+      "op": "add",
+      "code": "220802106000",
+      "name": "到保镇",
+      "level": 4,
+      "parent_code": "220802000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220802201000",
+      "name": "东风乡"
+    },
+    {
+      "op": "update",
+      "code": "220802202000",
+      "name": "三合乡"
+    },
+    {
+      "op": "update",
+      "code": "220802204000",
+      "name": "金祥乡"
+    },
+    {
+      "op": "add",
+      "code": "220802205000",
+      "name": "东胜乡",
+      "level": 4,
+      "parent_code": "220802000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220802206000",
+      "name": "德顺蒙古族乡",
+      "level": 4,
+      "parent_code": "220802000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220821105000",
+      "name": "沿江镇"
+    },
+    {
+      "op": "update",
+      "code": "220821106000",
+      "name": "五棵树镇"
+    },
+    {
+      "op": "add",
+      "code": "220821107000",
+      "name": "黑鱼泡镇",
+      "level": 4,
+      "parent_code": "220821000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220821201000",
+      "name": "哈吐气蒙古族乡"
+    },
+    {
+      "op": "update",
+      "code": "220821203000",
+      "name": "莫莫格蒙古族乡"
+    },
+    {
+      "op": "add",
+      "code": "220821205000",
+      "name": "建平乡",
+      "level": 4,
+      "parent_code": "220821000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220821206000",
+      "name": "嘎什根乡",
+      "level": 4,
+      "parent_code": "220821000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220822004000",
+      "name": "永青街道",
+      "level": 4,
+      "parent_code": "220822000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220822107000",
+      "name": "新华镇"
+    },
+    {
+      "op": "add",
+      "code": "220822108000",
+      "name": "乌兰花镇",
+      "level": 4,
+      "parent_code": "220822000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220822201000",
+      "name": "新发乡"
+    },
+    {
+      "op": "update",
+      "code": "220822202000",
+      "name": "新兴乡"
+    },
+    {
+      "op": "update",
+      "code": "220822204000",
+      "name": "向海蒙古族乡"
+    },
+    {
+      "op": "update",
+      "code": "220822205000",
+      "name": "包拉温都蒙古族乡"
+    },
+    {
+      "op": "update",
+      "code": "220822206000",
+      "name": "团结乡"
+    },
+    {
+      "op": "update",
+      "code": "220822207000",
+      "name": "十花道乡"
+    },
+    {
+      "op": "add",
+      "code": "220822208000",
+      "name": "八面乡",
+      "level": 4,
+      "parent_code": "220822000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220822209000",
+      "name": "苏公坨乡",
+      "level": 4,
+      "parent_code": "220822000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220881007000",
+      "name": "向阳街道"
+    },
+    {
+      "op": "update",
+      "code": "220881008000",
+      "name": "洮府街道"
+    },
+    {
+      "op": "update",
+      "code": "220881204000",
+      "name": "东升乡"
+    },
+    {
+      "op": "update",
+      "code": "220881205000",
+      "name": "野马乡"
+    },
+    {
+      "op": "update",
+      "code": "220881206000",
+      "name": "永茂乡"
+    },
+    {
+      "op": "add",
+      "code": "220881208000",
+      "name": "蛟流河乡",
+      "level": 4,
+      "parent_code": "220881000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220881209000",
+      "name": "大通乡"
+    },
+    {
+      "op": "add",
+      "code": "220881212000",
+      "name": "二龙乡",
+      "level": 4,
+      "parent_code": "220881000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220881214000",
+      "name": "呼和车力蒙古族乡",
+      "level": 4,
+      "parent_code": "220881000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220882203000",
+      "name": "乐胜乡"
+    },
+    {
+      "op": "update",
+      "code": "220882204000",
+      "name": "大赉乡"
+    },
+    {
+      "op": "update",
+      "code": "220882205000",
+      "name": "红岗子乡"
+    },
+    {
+      "op": "add",
+      "code": "220882208000",
+      "name": "烧锅镇乡",
+      "level": 4,
+      "parent_code": "220882000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220882210000",
+      "name": "海坨乡",
+      "level": 4,
+      "parent_code": "220882000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "220882211000",
+      "name": "新艾里蒙古族乡",
+      "level": 4,
+      "parent_code": "220882000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "222401103000",
+      "name": "朝阳川镇",
+      "level": 4,
+      "parent_code": "222401000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "222404004000",
+      "name": "近海街道",
+      "level": 4,
+      "parent_code": "222404000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "222406001000",
+      "name": "民惠街道"
+    },
+    {
+      "op": "add",
+      "code": "222406108000",
+      "name": "龙城镇",
+      "level": 4,
+      "parent_code": "222406000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "222424001000",
+      "name": "大川街道",
+      "level": 4,
+      "parent_code": "222424000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "222424002000",
+      "name": "新民街道",
+      "level": 4,
+      "parent_code": "222424000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "222424003000",
+      "name": "长荣街道",
+      "level": 4,
+      "parent_code": "222424000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "222424109000",
+      "name": "汪清镇",
+      "level": 4,
+      "parent_code": "222424000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "222424202000",
+      "name": "鸡冠乡",
+      "level": 4,
+      "parent_code": "222424000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "222426001000",
+      "name": "九龙街道"
+    },
+    {
+      "op": "update",
+      "code": "222426003000",
+      "name": "长兴街道"
+    },
+    {
+      "op": "update",
+      "code": "222426201000",
+      "name": "新合乡"
+    },
+    {
+      "op": "add",
+      "code": "222426202000",
+      "name": "永庆乡",
+      "level": 4,
+      "parent_code": "222426000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "220103100000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220103171000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220104100000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220105100000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220105173000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220105174000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220105270000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220106400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220106401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220112105000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220122104000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220122108000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220122110000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220122200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220122203000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220122206000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220122400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220171000000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220171001000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220171002000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220171003000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220171004000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220171100000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220172000000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220172001000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220172002000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220172003000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220172004000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220172005000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220172006000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220172007000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220172008000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220172009000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220172100000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220172101000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220172102000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220173000000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220173001000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220173002000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220173003000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220173004000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220173005000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220173200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220174000000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220174001000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220174002000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220174003000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220174004000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220174005000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220174006000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220182114000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220182202000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220182205000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220182206000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220182207000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220183003000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220183107000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220183108000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220183109000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220183201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220184400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220184401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220184402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220184404000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220184405000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220184407000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220202401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220202402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220203014000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220203200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220203400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220203401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220204400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220211071000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220211270000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220221100000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220221171000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220221172000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220221200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220221201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220271000000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220271001000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220271013000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220272000000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220272001000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220272002000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220273000000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220273100000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220281004000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220281105000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220281201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220282101000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220282105000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220282201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220282204000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220283201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220284070000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220302400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220303101000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220303102000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220322101000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220322103000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220322104000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220322109000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220322110000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220322111000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220322112000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220322200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220322201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220322203000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220323202000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220382104000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220382402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220402070000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220421200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220422108000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220422203000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220502120000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220521101000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220521102000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220521120000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220521200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220521201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220521204000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220521401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220523107000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220523109000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220524200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220581070000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220581071000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220581072000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220581104000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220581201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220581205000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220581206000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220602100000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220621120000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220621121000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220621200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220621201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220622201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220681100000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220702101000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220702401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220702402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220702403000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220702404000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220702405000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220702406000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721101000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721203000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721204000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721403000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721404000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721405000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721406000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721407000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721408000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721409000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721411000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721412000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721413000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721415000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220721417000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220722200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220722201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220722208000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220722400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220722401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220722405000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220722406000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220722407000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220722408000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220722409000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220722410000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220723201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220723202000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220723400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220723401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220723402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220723403000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220723404000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220723405000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220771000000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220771200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220771599000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220781206000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220781401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220781402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220802170000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220802200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220802203000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220802402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220802403000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220802404000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220802405000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220821104000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220821200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220821202000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220821400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220821402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220821403000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220821406000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220822106000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220822200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220822203000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220822400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220822401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220822405000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220871000000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220871001000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220871002000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220871003000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220881203000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220881207000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220881210000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220881402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220882202000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220882206000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220882207000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220882400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220882401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220882402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220882404000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220882406000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220882407000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220882408000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220882409000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220882410000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "220882411000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222401105000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222401400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222401401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222401402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222401404000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222403400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222403401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222403402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222403403000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222403404000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222404060000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222404400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222405400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222405401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222406107000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222406400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222406401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222406402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222424011000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222424012000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222424013000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222424100000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222424200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222424400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222424401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222424402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222426120000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222426200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222426400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222426401000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "222426402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    }
+  ]
+}

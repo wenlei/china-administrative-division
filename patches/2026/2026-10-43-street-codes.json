@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "author": "wenlei-official-2026-10",
+    "source_url": "https://mzt.hunan.gov.cn/mzt/xxgk/tzgg/202610/t20261014_34080813.html",
+    "evidence_confidence": "high",
+    "apply_after": "2023-baseline",
+    "source_pipeline": "community",
+    "created_at": "2026-10-20T00:00:00.000Z",
+    "notes": "2026-10-14湖南省民政厅确定6个街道行政区划代码；原件SHA-256=5ef395532ed4b9c51d7b9711e780520dcfcea592715de972f4378a3ed4fa7335。在本批2025年底湖南全量表补丁之后应用；不代表湖南全省现势已核验。"
+  },
+  "operations": [
+    {
+      "op": "add",
+      "code": "430802007000",
+      "name": "阳湖坪街道",
+      "level": 4,
+      "parent_code": "430802000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "430802008000",
+      "name": "沙堤街道",
+      "level": 4,
+      "parent_code": "430802000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "430802009000",
+      "name": "枫香岗街道",
+      "level": 4,
+      "parent_code": "430802000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "430802010000",
+      "name": "后坪街道",
+      "level": 4,
+      "parent_code": "430802000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "430811006000",
+      "name": "索溪峪街道",
+      "level": 4,
+      "parent_code": "430811000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "430811007000",
+      "name": "天子山街道",
+      "level": 4,
+      "parent_code": "430811000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    }
+  ]
+}
