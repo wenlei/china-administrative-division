@@ -1,12 +1,12 @@
 {
   "meta": {
     "author": "wenlei-official-2026-10",
-    "source_url": "https://dmfw.mca.gov.cn/9095/xzqh/getList?code=510000&maxLevel=2",
+    "source_url": "https://mzt.sc.gov.cn/scmzt/quhuaxinxi/2026/7/24/3e9fade9afb548958c2387ed44b5f29a.shtml",
     "evidence_confidence": "high",
     "apply_after": "2023-baseline",
     "source_pipeline": "community",
     "created_at": "2026-10-21T00:00:00.000Z",
-    "notes": "2026年10月整理；官方数据截止未注明，不能认定2026现势；原件SHA-256=5e7b4272e03e7ce4b5177c6155853bc7f20fffcde0b092ed5b32269d0664fce2；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级3101条。省厅原件取得/识别受限，改用民政部国家地名信息库公开接口完整父树；逐市（含省直辖县级市）采集，排除名称明确标注“撤销”的节点。接口未声明版本截止日期，year参数不能证明版本，不认定2026现势。有效乡级3101条与省厅截至2025-12-31名录总数一致；112张原图已归档并完成机器比对，未把OCR结果直接作为名称来源。"
+    "notes": "2026年10月整理；官方数据截止2026-06-30；原件SHA-256=7632f246cdcd09a79498a2db3784af17f735c43f7ddca14b44ed26156f08e85a；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级3101条。已取得并核验2026年上半年省厅完整代码名录；保留来源真实时点。原图连续序号、代码唯一性和逐页覆盖核验，机器不一致处逐图复核；接口仅交叉校对，不补入原表外节点。"
   },
   "operations": [
     {
@@ -22546,18 +22546,16 @@
       "new_parent": "513428000000"
     },
     {
-      "op": "add",
-      "code": "513428108000",
-      "name": "大坪镇",
-      "level": 4,
-      "parent_code": "513428000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
       "op": "update",
       "code": "513428203000",
       "name": "黎安乡",
+      "status": "active",
+      "new_parent": "513428000000"
+    },
+    {
+      "op": "update",
+      "code": "513428206000",
+      "name": "大坪乡",
       "status": "active",
       "new_parent": "513428000000"
     },
@@ -22989,22 +22987,18 @@
       "new_parent": "513432000000"
     },
     {
-      "op": "add",
-      "code": "513432107000",
-      "name": "贺波洛镇",
-      "level": 4,
-      "parent_code": "513432000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
+      "op": "update",
+      "code": "513432202000",
+      "name": "贺波洛乡",
+      "status": "active",
+      "new_parent": "513432000000"
     },
     {
-      "op": "add",
-      "code": "513432108000",
-      "name": "鲁基镇",
-      "level": 4,
-      "parent_code": "513432000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
+      "op": "update",
+      "code": "513432203000",
+      "name": "鲁基乡",
+      "status": "active",
+      "new_parent": "513432000000"
     },
     {
       "op": "update",
@@ -23478,15 +23472,6 @@
       "new_parent": "513436000000"
     },
     {
-      "op": "add",
-      "code": "513436107000",
-      "name": "峨曲古镇",
-      "level": 4,
-      "parent_code": "513436000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
       "op": "update",
       "code": "513436200000",
       "name": "觉洛乡",
@@ -23532,6 +23517,13 @@
       "op": "update",
       "code": "513436221000",
       "name": "柳洪乡",
+      "status": "active",
+      "new_parent": "513436000000"
+    },
+    {
+      "op": "update",
+      "code": "513436225000",
+      "name": "峨曲古乡",
       "status": "active",
       "new_parent": "513436000000"
     },
@@ -25422,31 +25414,7 @@
     },
     {
       "op": "update",
-      "code": "513428206000",
-      "status": "deprecated",
-      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
-    },
-    {
-      "op": "update",
-      "code": "513432202000",
-      "status": "deprecated",
-      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
-    },
-    {
-      "op": "update",
-      "code": "513432203000",
-      "status": "deprecated",
-      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
-    },
-    {
-      "op": "update",
       "code": "513433106000",
-      "status": "deprecated",
-      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
-    },
-    {
-      "op": "update",
-      "code": "513436225000",
       "status": "deprecated",
       "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
     }

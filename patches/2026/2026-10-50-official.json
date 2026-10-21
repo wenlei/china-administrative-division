@@ -1,12 +1,12 @@
 {
   "meta": {
     "author": "wenlei-official-2026-10",
-    "source_url": "https://mzj.cq.gov.cn/zwgk_218/zfxxgkml/tzgg/202601/t20260119_15332641.html",
+    "source_url": "https://mzj.cq.gov.cn/zwgk_218/zfxxgkml/tzgg/202607/t20260710_15816287.html",
     "evidence_confidence": "high",
     "apply_after": "2023-baseline",
     "source_pipeline": "community",
-    "created_at": "2026-10-20T00:00:00.000Z",
-    "notes": "2026年10月整理；官方数据截止2025-12-31；原件SHA-256=96e7e32f95af7328467a74c084f27e7e5063e2b2c3b09c0ea0439a000c974c18；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1028条。本批取得2025年底官方全量表；尚未取得2026年中更新，不能标为2026年中现势。"
+    "created_at": "2026-10-21T00:00:00.000Z",
+    "notes": "2026年10月整理；官方数据截止2026-06-30；原件SHA-256=a68b9bd43ba494eee136a260957d128d9461ca50280f49766cbafb52666a7bb2；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1028条。已取得并核验2026年上半年省厅完整代码名录；保留来源真实时点。另合入9月1日4组新旧码公告。"
   },
   "operations": [
     {

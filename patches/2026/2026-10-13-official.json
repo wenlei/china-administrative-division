@@ -1,12 +1,12 @@
 {
   "meta": {
     "author": "wenlei-official-2026-10",
-    "source_url": "https://minzheng.hebei.gov.cn/detail?id=1050734",
+    "source_url": "https://minzheng.hebei.gov.cn/detail?id=1051398",
     "evidence_confidence": "high",
     "apply_after": "2023-baseline",
     "source_pipeline": "community",
     "created_at": "2026-10-21T00:00:00.000Z",
-    "notes": "2026年10月整理；官方数据截止2025-12-31；原件SHA-256=87b0d21cac30945a6db38d6597ebf707fbdbe1f47b1b529355a3dc5d0bb6d4b3；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级2254条。官方完整附件已取得；代码、名称和乡级总数核验。来源截至2025年底，不认定2026年中现势。PDF缺字130207110经原页及民政部接口校对为柳树𨟠镇；130731999赵家蓬区公所按省厅原件保留。"
+    "notes": "2026年10月整理；官方数据截止2026-06-30；原件SHA-256=24cff23558f36d5424a0cc61f0ca745e7c73007e2feff36f8cac69996b02b5a2；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级2254条。已取得并核验2026年上半年省厅完整代码名录；保留来源真实时点。保留130731999赵家蓬区公所，恢复PDF缺字柳树𨟠镇。"
   },
   "operations": [
     {

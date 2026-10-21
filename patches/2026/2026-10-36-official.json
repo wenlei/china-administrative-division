@@ -1,12 +1,12 @@
 {
   "meta": {
     "author": "wenlei-official-2026-10",
-    "source_url": "https://mzt.jiangxi.gov.cn/jxsmzt/col/col34862/content/content_2005906662723948544.html",
+    "source_url": "https://mzt.jiangxi.gov.cn/jxsmzt/col/col34862/content/content_2072245187928301568.html",
     "evidence_confidence": "high",
     "apply_after": "2023-baseline",
     "source_pipeline": "community",
-    "created_at": "2026-10-20T00:00:00.000Z",
-    "notes": "2026年10月整理；官方数据截止2025-12-31；原件SHA-256=150d0f6ff5688eb155ab9f72297afad8a65abed1b1e0c52cd3b27ba20417e5b2；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1581条。本批取得2025年底官方全量表；尚未取得2026年中更新，不能标为2026年中现势。"
+    "created_at": "2026-10-21T00:00:00.000Z",
+    "notes": "2026年10月整理；官方数据截止2026-06-30；原件SHA-256=aef907e27889ceb070f4aea7b0aeb1aaabc99df1e026d8026e254372227ee29e；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1581条。已取得并核验2026年上半年省厅完整代码名录；保留来源真实时点。本期原件有一处字形缺失，名称按同码上期官方表恢复；恢复来源和校验值已单列，未把缺字名称当作真实更名。"
   },
   "operations": [
     {

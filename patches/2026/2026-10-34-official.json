@@ -1,12 +1,12 @@
 {
   "meta": {
     "author": "wenlei-official-2026-10",
-    "source_url": "https://mz.ah.gov.cn/public/21761/123265421.html",
+    "source_url": "https://mz.ah.gov.cn/public/21761/123433761.html",
     "evidence_confidence": "high",
     "apply_after": "2023-baseline",
     "source_pipeline": "community",
-    "created_at": "2026-10-20T00:00:00.000Z",
-    "notes": "2026年10月整理；官方数据截止2025-12-31；原件SHA-256=59bc8a0f3007a0b0c2159fed0a27adc72e51978bedaebe89a8b228f943c2c8ba；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1522条。本批取得2025年底官方全量表；尚未取得2026年中更新，不能标为2026年中现势。"
+    "created_at": "2026-10-21T00:00:00.000Z",
+    "notes": "2026年10月整理；官方数据截止2026-06-30；原件SHA-256=96d5b70b4c4f1c7f3e63c005e2d7ea42982a4e93d10ff7ca378caa57ce64f795；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1531条。已取得并核验2026年上半年省厅完整代码名录；保留来源真实时点。"
   },
   "operations": [
     {
@@ -28,20 +28,6 @@
       "name": "瑶海区",
       "status": "active",
       "new_parent": "340100000000"
-    },
-    {
-      "op": "update",
-      "code": "340102001000",
-      "name": "明光路街道",
-      "status": "active",
-      "new_parent": "340102000000"
-    },
-    {
-      "op": "update",
-      "code": "340102003000",
-      "name": "胜利路街道",
-      "status": "active",
-      "new_parent": "340102000000"
     },
     {
       "op": "update",
@@ -128,6 +114,24 @@
       "op": "add",
       "code": "340102016000",
       "name": "磨店街道",
+      "level": 4,
+      "parent_code": "340102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "340102017000",
+      "name": "淮浦街道",
+      "level": 4,
+      "parent_code": "340102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "340102018000",
+      "name": "龙岗街道",
       "level": 4,
       "parent_code": "340102000000",
       "source_type": "mca_decree",
@@ -415,6 +419,24 @@
     },
     {
       "op": "add",
+      "code": "340111012000",
+      "name": "驷佩塘街道",
+      "level": 4,
+      "parent_code": "340111000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "340111013000",
+      "name": "方兴街道",
+      "level": 4,
+      "parent_code": "340111000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
       "code": "340111101000",
       "name": "大圩镇",
       "level": 4,
@@ -552,6 +574,33 @@
       "new_parent": "340100000000"
     },
     {
+      "op": "add",
+      "code": "340122001000",
+      "name": "唐杨街道",
+      "level": 4,
+      "parent_code": "340122000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "340122002000",
+      "name": "燎原街道",
+      "level": 4,
+      "parent_code": "340122000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "340122003000",
+      "name": "和睦湖街道",
+      "level": 4,
+      "parent_code": "340122000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
       "op": "update",
       "code": "340122100000",
       "name": "店埠镇",
@@ -687,6 +736,42 @@
       "name": "肥西县",
       "status": "active",
       "new_parent": "340100000000"
+    },
+    {
+      "op": "add",
+      "code": "340123001000",
+      "name": "幸福坝街道",
+      "level": 4,
+      "parent_code": "340123000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "340123002000",
+      "name": "中派街道",
+      "level": 4,
+      "parent_code": "340123000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "340123003000",
+      "name": "紫云街道",
+      "level": 4,
+      "parent_code": "340123000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "340123004000",
+      "name": "群英街道",
+      "level": 4,
+      "parent_code": "340123000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
     },
     {
       "op": "update",
@@ -4028,18 +4113,22 @@
       "confidence_score": 100
     },
     {
-      "op": "update",
-      "code": "340802200000",
-      "name": "龙狮桥乡",
-      "status": "active",
-      "new_parent": "340802000000"
+      "op": "add",
+      "code": "340802101000",
+      "name": "龙狮桥镇",
+      "level": 4,
+      "parent_code": "340802000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
     },
     {
-      "op": "update",
-      "code": "340802201000",
-      "name": "长风乡",
-      "status": "active",
-      "new_parent": "340802000000"
+      "op": "add",
+      "code": "340802102000",
+      "name": "长风镇",
+      "level": 4,
+      "parent_code": "340802000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
     },
     {
       "op": "add",
@@ -4537,6 +4626,24 @@
       "new_parent": "340826000000"
     },
     {
+      "op": "add",
+      "code": "340826109000",
+      "name": "洲头镇",
+      "level": 4,
+      "parent_code": "340826000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "340826110000",
+      "name": "佐坝镇",
+      "level": 4,
+      "parent_code": "340826000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
       "op": "update",
       "code": "340826200000",
       "name": "高岭乡",
@@ -4561,20 +4668,6 @@
       "op": "update",
       "code": "340826203000",
       "name": "千岭乡",
-      "status": "active",
-      "new_parent": "340826000000"
-    },
-    {
-      "op": "update",
-      "code": "340826204000",
-      "name": "洲头乡",
-      "status": "active",
-      "new_parent": "340826000000"
-    },
-    {
-      "op": "update",
-      "code": "340826205000",
-      "name": "佐坝乡",
       "status": "active",
       "new_parent": "340826000000"
     },
@@ -11571,8 +11664,8 @@
     },
     {
       "op": "add",
-      "code": "341823204000",
-      "name": "汀溪乡",
+      "code": "341823111000",
+      "name": "汀溪镇",
       "level": 4,
       "parent_code": "341823000000",
       "source_type": "mca_decree",
@@ -11580,8 +11673,8 @@
     },
     {
       "op": "add",
-      "code": "341823207000",
-      "name": "昌桥乡",
+      "code": "341823112000",
+      "name": "昌桥镇",
       "level": 4,
       "parent_code": "341823000000",
       "source_type": "mca_decree",
@@ -11988,6 +12081,18 @@
       "parent_code": "341882000000",
       "source_type": "mca_decree",
       "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "340102001000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "340102003000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
     },
     {
       "op": "update",
@@ -13143,6 +13248,18 @@
     },
     {
       "op": "update",
+      "code": "340802200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "340802201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
       "code": "340802202000",
       "status": "deprecated",
       "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
@@ -13204,6 +13321,18 @@
     {
       "op": "update",
       "code": "340825400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "340826204000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "340826205000",
       "status": "deprecated",
       "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
     },

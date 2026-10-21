@@ -1,0 +1,407 @@
+{
+  "source_url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d.shtml",
+  "images": [
+    {
+      "page": 1,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124554750001.png",
+      "file": "65-images/001.png",
+      "sha256": "62345aa01c7418bcb6f3fe9cbc4016ec6276591ea9da1b1c966faff0d69b4c53"
+    },
+    {
+      "page": 2,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124554614002.png",
+      "file": "65-images/002.png",
+      "sha256": "bbb440d0a01375ebfe9f51903e280fb4a8adfd6fc4d869bfa90bf84175c891ac"
+    },
+    {
+      "page": 3,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124554141003.png",
+      "file": "65-images/003.png",
+      "sha256": "914662c9e209000da0a2db336094ee2232eaa50f2905e8ae51e6b7990d5dfeb0"
+    },
+    {
+      "page": 4,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124554415004.png",
+      "file": "65-images/004.png",
+      "sha256": "38853daf9f4057eb1c6ff9a13b95d777021be22d183cc4ddc71c43a845a2b6ad"
+    },
+    {
+      "page": 5,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124554476005.png",
+      "file": "65-images/005.png",
+      "sha256": "01ea32486bdc74f3ad22513ae2a3190acff45636984fc687f71122deffe713d8"
+    },
+    {
+      "page": 6,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124554267006.png",
+      "file": "65-images/006.png",
+      "sha256": "426b99824864fdbaefcd2434f40de41ef28ea512dfbef4bb5e8f1e1bb8e06a0a"
+    },
+    {
+      "page": 7,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124554847007.png",
+      "file": "65-images/007.png",
+      "sha256": "7903f38ad1f9c9becb1397cd9589170046737c2524e309e4bb7edbb75909ee78"
+    },
+    {
+      "page": 8,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124554256008.png",
+      "file": "65-images/008.png",
+      "sha256": "2426e8ea4a7bd8b74b3fd834807ecb5486c7694bbfb9d74e090f61ea7b2fcba5"
+    },
+    {
+      "page": 9,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124554387009.png",
+      "file": "65-images/009.png",
+      "sha256": "e4d3ec7084c91c5e7dc7d2ece752d1d14382a1606b7897d3ab811ee83b331b1a"
+    },
+    {
+      "page": 10,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124554821010.png",
+      "file": "65-images/010.png",
+      "sha256": "553bc80c564a8954e4a5d53a9a8dccd4ceb12a764b32a6c765076b0501a8a21f"
+    },
+    {
+      "page": 11,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124555906011.png",
+      "file": "65-images/011.png",
+      "sha256": "e8f8e3b22b772257ecbdd21d23a708ae27b8583c05b39c41ea75311f9b61bcb1"
+    },
+    {
+      "page": 12,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124555868012.png",
+      "file": "65-images/012.png",
+      "sha256": "a0fa82d5661cb2d109be4063938010bfb7db8eccc73c2641bf9bb6af4c450f9b"
+    },
+    {
+      "page": 13,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124555790013.png",
+      "file": "65-images/013.png",
+      "sha256": "bcffdb06aceb6f8f09922b348501575a7668b47f25370a2c5f7dd88c1dab24ee"
+    },
+    {
+      "page": 14,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124555497014.png",
+      "file": "65-images/014.png",
+      "sha256": "59e7204c882e21e0f464c4b707d76687d9027fbccfb70a0cff27d12a2713e04e"
+    },
+    {
+      "page": 15,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124555818015.png",
+      "file": "65-images/015.png",
+      "sha256": "efcf5b48e6bb08bf4565e0a3f60763f2c064eef9617e9c4c406e3b59002b8d40"
+    },
+    {
+      "page": 16,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124555119016.png",
+      "file": "65-images/016.png",
+      "sha256": "8d31bf67b093f52b92c62f8ae23d97d4402e3be1766706612d383637993f2abd"
+    },
+    {
+      "page": 17,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124555714017.png",
+      "file": "65-images/017.png",
+      "sha256": "dd9f96d1df07179c756603418507e7f1d4553cb1a8afc4163e8b80b06f5ac55a"
+    },
+    {
+      "page": 18,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124555664018.png",
+      "file": "65-images/018.png",
+      "sha256": "86f2ceee1aa863d38345b4459db1b13aa1b487eed5d68da8c8c42a05eb4aa8d1"
+    },
+    {
+      "page": 19,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124555533019.png",
+      "file": "65-images/019.png",
+      "sha256": "69111d27b1a714d723fb8a609bf6db08c794e31500ad0d53664bd19e7a48dbc8"
+    },
+    {
+      "page": 20,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124556315020.png",
+      "file": "65-images/020.png",
+      "sha256": "790041a6fa4fcb1dafd23a2db56ee56002d28bc0352c1cbd70d00388d57871bf"
+    },
+    {
+      "page": 21,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124556778021.png",
+      "file": "65-images/021.png",
+      "sha256": "d023674fbf633a959a624dd6c0f481b6c6de0f03c01cfc0640fb48e3b4d2c477"
+    },
+    {
+      "page": 22,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124556104022.png",
+      "file": "65-images/022.png",
+      "sha256": "7eaea1235f9ca54f541a2388bb7497bb32a7221975ed9893f00b0aeb2c1a8f36"
+    },
+    {
+      "page": 23,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124556991023.png",
+      "file": "65-images/023.png",
+      "sha256": "9fdd26a050cae260594edd7222cc634e9c98e85a947ed302d07db4cd19f8a079"
+    },
+    {
+      "page": 24,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124556834024.png",
+      "file": "65-images/024.png",
+      "sha256": "3bb8127277044ce316b3bc61dc3750946a372309fb4fa3f86650cb86f4f697f5"
+    },
+    {
+      "page": 25,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124556324025.png",
+      "file": "65-images/025.png",
+      "sha256": "c907f38929c9ccb266609c0bd926ccc32e9c342ef83f4275a621abb673cfeeef"
+    },
+    {
+      "page": 26,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124556681026.png",
+      "file": "65-images/026.png",
+      "sha256": "c88e6dddfcc4b731b0c30feed360b8fb2bcbf910f560c3bb52dbb6303a0cf979"
+    },
+    {
+      "page": 27,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124556841027.png",
+      "file": "65-images/027.png",
+      "sha256": "894b33e4cd99d4f015ff76b70135062761d703cc3f6879c208c60097278f69a8"
+    },
+    {
+      "page": 28,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124557838028.png",
+      "file": "65-images/028.png",
+      "sha256": "bf89b89e773089ea560b0197b4e77dce21c02baa4e57d54cc4ba838db34057f8"
+    },
+    {
+      "page": 29,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124557395029.png",
+      "file": "65-images/029.png",
+      "sha256": "e421442bb963ec6852dadf1d3a4b03e28a67e798e4cfd59978bac766fd317110"
+    },
+    {
+      "page": 30,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124557340030.png",
+      "file": "65-images/030.png",
+      "sha256": "717b2fdd19d5a80abc9e0b879f93643fcc022da923860d8c670200e813627b0f"
+    },
+    {
+      "page": 31,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124557327031.png",
+      "file": "65-images/031.png",
+      "sha256": "af73cd93b3d1a5563cad4129abde979d7ec4be736df863bb315278afadbbe403"
+    },
+    {
+      "page": 32,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124557481032.png",
+      "file": "65-images/032.png",
+      "sha256": "d676e534a3b3aebb79984ef09511fdb723a9b4bedbb9480b5b97c0b725112b81"
+    },
+    {
+      "page": 33,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124557788033.png",
+      "file": "65-images/033.png",
+      "sha256": "47ad936067533ae6eee49a4e888e0ef7d435b49de3228c6359fdfd4c8d86e459"
+    },
+    {
+      "page": 34,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124557448034.png",
+      "file": "65-images/034.png",
+      "sha256": "3fb98b509c380e914735576bbac8e0dae5fb24c5e6bb75b67ead0a6bebdbf1f1"
+    },
+    {
+      "page": 35,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124557454035.png",
+      "file": "65-images/035.png",
+      "sha256": "056ea402642bd88e96f2f11c9ff455fb148170d352ea1af666cf35a3f56478bf"
+    },
+    {
+      "page": 36,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124558522036.png",
+      "file": "65-images/036.png",
+      "sha256": "837a9445bc71d862caaea9c5fb8a894b0a5befe6cdb61618402b27ed834a64e0"
+    },
+    {
+      "page": 37,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124558183037.png",
+      "file": "65-images/037.png",
+      "sha256": "48d48281c3f53174e4c8c8dd5e4919b55e9b5932f580d2507e30b26878edfdf6"
+    },
+    {
+      "page": 38,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124558397038.png",
+      "file": "65-images/038.png",
+      "sha256": "03f94882b981c8b8b1ccd46ef96003986ff94e89bdbf8f8b6938ae11c58e6d4a"
+    },
+    {
+      "page": 39,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124558766039.png",
+      "file": "65-images/039.png",
+      "sha256": "2d90cb6c6674d607ea4850553286d4db9d0e40b49681e98ceacae447f4cba395"
+    },
+    {
+      "page": 40,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124558648040.png",
+      "file": "65-images/040.png",
+      "sha256": "22f111a2f0f8606e24ec253b27daead6f4634d3eed3e83c7c548ccc69b65302c"
+    },
+    {
+      "page": 41,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124558325041.png",
+      "file": "65-images/041.png",
+      "sha256": "0ec146b68fa485063be3660cfbc383ea146021f1fb5c38f98c93ac872f7bc441"
+    },
+    {
+      "page": 42,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124558410042.png",
+      "file": "65-images/042.png",
+      "sha256": "176e98238f74bb3b4b0787655aed4db30b81814e745be45b30929004aa6ecc62"
+    },
+    {
+      "page": 43,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124558447043.png",
+      "file": "65-images/043.png",
+      "sha256": "81b177072c970f63870d257a94a2e916b9c6a8e10ae7cf3f3284505bfdd28782"
+    },
+    {
+      "page": 44,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124558721044.png",
+      "file": "65-images/044.png",
+      "sha256": "20e3e699699bb9e85fc879575dc61ebb3422674010757f32d80cd8702bb1d9e4"
+    },
+    {
+      "page": 45,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124559965045.png",
+      "file": "65-images/045.png",
+      "sha256": "ae90edfdb734d0e032fccbc874c92f3b222f6a3373636906efcf49ff980b52ce"
+    },
+    {
+      "page": 46,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124559623046.png",
+      "file": "65-images/046.png",
+      "sha256": "cdcce909b5722a34fcdfe0ce8ab07b65c90098485f3b40eaebe54af9a9be8ecb"
+    },
+    {
+      "page": 47,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124559257047.png",
+      "file": "65-images/047.png",
+      "sha256": "c50d1698a6bdc80ea23d3cfb15813336b4e5259d3b384140de6cf489ea5af269"
+    },
+    {
+      "page": 48,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124559168048.png",
+      "file": "65-images/048.png",
+      "sha256": "e95b5bdb425b0cd30d8d4cd28cae31a748e2c72c097c667c8de118f5a935cddc"
+    },
+    {
+      "page": 49,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124559317049.png",
+      "file": "65-images/049.png",
+      "sha256": "9f2b3e622eb83e464a8fda7a8545452679aac26fbcf23d0ff38b59bc5c285aa5"
+    },
+    {
+      "page": 50,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124559600050.png",
+      "file": "65-images/050.png",
+      "sha256": "0a423dcb43f488da080d578f2f3148b87a1a5a9b63da342bebc670cfbbf6e2c5"
+    },
+    {
+      "page": 51,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124559629051.png",
+      "file": "65-images/051.png",
+      "sha256": "dc34800cd2f2c1c197b9f8ec9a4e96c1dcd52020bae39bff4f63767e42014fa5"
+    },
+    {
+      "page": 52,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124559539052.png",
+      "file": "65-images/052.png",
+      "sha256": "278d72d0ae45fd02364293905c0ea29392429005ac8462ff5031eca5035137fa"
+    },
+    {
+      "page": 53,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124559661053.png",
+      "file": "65-images/053.png",
+      "sha256": "27f7a4c523b7baa904099e6fe89b88725f63fe6643e297ed64d75b3470631db5"
+    },
+    {
+      "page": 54,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124600813054.png",
+      "file": "65-images/054.png",
+      "sha256": "d7b29aae4dfda3b6b2785c57e535363c7297aba942b4a31e32e1d176a32d35e5"
+    },
+    {
+      "page": 55,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124600320055.png",
+      "file": "65-images/055.png",
+      "sha256": "5152f21e002d6d29257d1c08706bc7aa1983be9e7e2e0b2ec52abd1b4caae65d"
+    },
+    {
+      "page": 56,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124600592056.png",
+      "file": "65-images/056.png",
+      "sha256": "e46f2d5e5eab0476a5f0b635142d188780e36d1c6c8abebde4778dbe3a73ea88"
+    },
+    {
+      "page": 57,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124600922057.png",
+      "file": "65-images/057.png",
+      "sha256": "807483d9a62751c023c9417b48509b1952f5096f76ad074285c1e53fb5ea8074"
+    },
+    {
+      "page": 58,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124600788058.png",
+      "file": "65-images/058.png",
+      "sha256": "cae8c8aeae2bccde4c33a3dde427c608abeb7cb731afbb003de2ec9d3ed4e79d"
+    },
+    {
+      "page": 59,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124600571059.png",
+      "file": "65-images/059.png",
+      "sha256": "67c05be247d1e339cc620fbbbc101bc9390d4f848f353c414688108180a579c3"
+    },
+    {
+      "page": 60,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124600640060.png",
+      "file": "65-images/060.png",
+      "sha256": "fafb9070427031e73b579de33f4c2c47f456345e33d8f56a8836df9993b735a9"
+    },
+    {
+      "page": 61,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124601601061.png",
+      "file": "65-images/061.png",
+      "sha256": "b48195267f4e87a0d591703696656bc41160c6976af05cb6451d681f0ce6c451"
+    },
+    {
+      "page": 62,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124601922062.png",
+      "file": "65-images/062.png",
+      "sha256": "fdadbea5b922895ddd30cefd1ad748faebe462f86d4aba100600a22d77bebfb4"
+    },
+    {
+      "page": 63,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124601973063.png",
+      "file": "65-images/063.png",
+      "sha256": "aba76832339a10c6cf87b5b48a231a0a1435d635c1e305b22d56f810787e0a3e"
+    },
+    {
+      "page": 64,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124601666064.png",
+      "file": "65-images/064.png",
+      "sha256": "e37868b00b878c69fe437aeb33b2649f63a7fc31752955f6b5ecb1c9380fc863"
+    },
+    {
+      "page": 65,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124601983065.png",
+      "file": "65-images/065.png",
+      "sha256": "04b4803a556ce1a0f0cf512bd7f78b163063176261a3d00db71fe77ac1a7d328"
+    },
+    {
+      "page": 66,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124601508066.png",
+      "file": "65-images/066.png",
+      "sha256": "10c4cbc62c02d0bdc57f9b651352b2854a2b3cfb521a8b7fc289a2cccf4f7c55"
+    },
+    {
+      "page": 67,
+      "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d/images/20260730124601827067.png",
+      "file": "65-images/067.png",
+      "sha256": "982e42d867c823275ce5782f2435fa07489160d97b85fde9822400af9f802319"
+    }
+  ]
+}

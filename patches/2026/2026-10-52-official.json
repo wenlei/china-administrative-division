@@ -1,12 +1,12 @@
 {
   "meta": {
     "author": "wenlei-official-2026-10",
-    "source_url": "https://dmfw.mca.gov.cn/9095/xzqh/getList?code=520000&maxLevel=2",
+    "source_url": "https://mzt.guizhou.gov.cn/xxgk/xxgkml/zdlyxx1/qhdm_88523/202607/t20260723_90652299.html",
     "evidence_confidence": "high",
     "apply_after": "2023-baseline",
     "source_pipeline": "community",
     "created_at": "2026-10-21T00:00:00.000Z",
-    "notes": "2026年10月整理；官方数据截止未注明，不能认定2026现势；原件SHA-256=0de2d4b6c76cc7bdfdfa77c0515453e17f799285057c62a0aa1320cc012f2fa1；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1513条。省厅原件取得/识别受限，改用民政部国家地名信息库公开接口完整父树；逐市（含省直辖县级市）采集，排除名称明确标注“撤销”的节点。接口未声明版本截止日期，year参数不能证明版本，不认定2026现势。"
+    "notes": "2026年10月整理；官方数据截止2026-06-30；原件SHA-256=4f03b74cea3a93a4803c37d98eba536632a1d62a9ceb0acf794bb7f3d60cbf12；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1513条。已取得并核验2026年上半年省厅完整代码名录；保留来源真实时点。"
   },
   "operations": [
     {

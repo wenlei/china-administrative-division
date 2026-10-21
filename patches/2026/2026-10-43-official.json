@@ -1,12 +1,12 @@
 {
   "meta": {
     "author": "wenlei-official-2026-10",
-    "source_url": "https://mzt.hunan.gov.cn/mzt/xxgk/tjsj/202512/t20251231_33884260.html",
+    "source_url": "https://mzt.hunan.gov.cn/mzt/xxgk/tjsj/202608/t20260803_34038652.html",
     "evidence_confidence": "high",
     "apply_after": "2023-baseline",
     "source_pipeline": "community",
-    "created_at": "2026-10-20T00:00:00.000Z",
-    "notes": "2026年10月整理；官方数据截止2025-12-31；原件SHA-256=86b4d12722047a174bc6971023b12fd831a53de343451ecce4fa10c7d1b332b5；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1947条。全量表仍截至2025-12-31，另合入2026-10-14六个街道代码公告；未据此认定2026全省现势。"
+    "created_at": "2026-10-21T00:00:00.000Z",
+    "notes": "2026年10月整理；官方数据截止2026-06-30；原件SHA-256=fdae2be1b37f6cb69dc389dc8c96da32dbef8a868809fa9dd6c58bf0cc1abea2；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1947条。已取得并核验2026年上半年省厅完整代码名录；保留来源真实时点。另按2026-10-14公告补6个街道，更新后1953条；不把10月增量日期改写成整省截止日。"
   },
   "operations": [
     {
@@ -1562,11 +1562,13 @@
       "new_parent": "430200000000"
     },
     {
-      "op": "update",
-      "code": "430212100000",
-      "name": "渌口镇",
-      "status": "active",
-      "new_parent": "430212000000"
+      "op": "add",
+      "code": "430212001000",
+      "name": "伏波街道",
+      "level": 4,
+      "parent_code": "430212000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
     },
     {
       "op": "update",
@@ -1619,11 +1621,13 @@
       "new_parent": "430212000000"
     },
     {
-      "op": "update",
-      "code": "430212107000",
-      "name": "龙门镇",
-      "status": "active",
-      "new_parent": "430212000000"
+      "op": "add",
+      "code": "430212112000",
+      "name": "漂沙井镇",
+      "level": 4,
+      "parent_code": "430212000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
     },
     {
       "op": "update",
@@ -15249,6 +15253,18 @@
     {
       "op": "update",
       "code": "430204102000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "430212100000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "430212107000",
       "status": "deprecated",
       "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
     },
