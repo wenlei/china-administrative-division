@@ -4,11 +4,11 @@
 
 - 服务器：121.40.121.163。
 - 目录：`/root/infra/eplant/regionCheck`，独立compose项目`regioncheck`。
-- 容器：`regionCheck`，镜像`region-check:0.1.0`。
-- 镜像ID：`sha256:31fe5b4a03903d83657a0916b9b75da3cc2ba84ff7a34f17e444246b6b8133f4`。
-- 部署源码提交：`300cbe5614c9597d4d071579a859d2670463435f`。后续本记录的提交不改变已部署源码。
+- 容器：`regionCheck`，镜像`region-check:0.1.1`。
+- 镜像ID：`sha256:40c80cf38b9194dcd89ffd379e15d82bccc7f19167eecfe2d20a47d9eb47ad80`。
+- 部署源码提交：`2b9c8f87e1a610279ad98c49dcf0dd1ab49326e6`。后续本记录的提交不改变已部署源码。
 - 数据SHA-256：`fd33e1b4aaecde4ba516beb03fa171da09d5418600fc588e8044aa40486fb393`。
-- 发布包：`/root/infra/eplant/region-check-0.1.0.tar.gz`，服务目录内`release-manifest.json`记录所有发布文件校验值。
+- 发布包：`/root/infra/eplant/region-check-0.1.1.tar.gz`，服务目录内`release-manifest.json`记录所有发布文件校验值。
 
 ## 访问与架构
 
@@ -30,6 +30,7 @@
 - 发布包全部文件校验值与本地一致，服务启动再次验证数据哈希。
 - 本地及正式Python 3.12镜像内21项测试通过，包括真实HTTP请求、中文JSON、批量顺序、错误输入、大小限制、数据校验、历史转换及歧义处理。
 - 服务器正式HTTP接口验证5条随机电站地址：3条到乡镇，2条到区县；不补造缺失乡镇。
+- 现名地址匹配也通过`related_events`返回所属单位及上级历史；确认“偃师区大口镇”的结果含2021年撤市设区记录。
 - 额外旧地址“河南省洛阳市偃师市大口镇董村”返回`historical`，建议地址为“河南省洛阳市偃师区大口镇董村”，附2021年撤市设区记录。
 - “朝阳区”返回`ambiguous`；“不存在省不存在县”返回`unmatched`。
 - `371603104`在不同年份的同码异名不生成更名事件。
@@ -43,3 +44,5 @@
 ## 更新与回退
 
 构建、接口契约、限额及回退步骤见[服务说明](../apps/region-check/README.md)。首次发布回退只需在本服务目录执行`docker-compose -p regioncheck down`，不移除共享网络或其他容器。后续升级需保留旧发布包、数据及镜像标识后再替换。
+
+0.1.1升级前的完整部署目录保留于`/root/infra/eplant/regionCheck-backup-0.1.0`，旧镜像`region-check:0.1.0`也保留。新发布包先在独立目录完成校验与正式镜像回归，再切换目录及容器，不覆盖正在使用的数据文件。
