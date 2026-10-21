@@ -86,6 +86,14 @@ class OfficialUpdateTests(unittest.TestCase):
         self.assertEqual(data['220100']['name'],'长春市')
         self.assertEqual(data['220102']['name'],'南关区')
 
+    def test_guangxi_merged_names_without_upper_codes(self):
+        rows=[['1','广西壮族自治区（1街道）','南宁市（1街道）','兴宁区（1街道）','民生街道',450102001.0],
+              ['2','','','','朝阳街道','450102002']]
+        data=module.parse_table(rows,'45','广西壮族自治区',2)
+        self.assertEqual(data['450100']['name'],'南宁市')
+        self.assertEqual(data['450102']['name'],'兴宁区')
+        self.assertEqual(data['450102002']['parent_code'],'450102')
+
     def test_conflicting_duplicate_and_partial_source_are_rejected(self):
         rows=[['福建省','350000'],['福州市','350100'],['鼓楼区','350102'],['鼓东街道','350102001']]
         with self.assertRaisesRegex(ValueError,'expected 2'):

@@ -1,25 +1,20 @@
 {
   "checked_at": "2026-10-21",
   "requested_provinces": 20,
-  "updated_provinces": 16,
-  "dated_2026_provinces": 27,
-  "remaining_provinces": [
-    "12",
-    "31",
-    "37",
-    "45"
-  ],
+  "updated_provinces": 18,
+  "dated_2026_provinces": 29,
+  "remaining_provinces": [],
   "results": [
     {
       "province": "12",
       "name": "天津市",
       "checked_at": "2026-10-21",
-      "result": "published_2026_cutoff_not_declared",
+      "result": "official_table_included_date_unspecified",
       "as_of": null,
       "townships": 252,
       "previous_townships": 252,
       "url": "https://mz.tj.gov.cn/BMFW1537/wyc/xzqhxxcx/202304/t20230425_6215701.html",
-      "reason": "2026-10-21复核官网页面发布时间为2026-07-31，但附件仍为同一252条表，原文件未声明截止日。已发布不等于已证明2026现势；本次保留原件及未知截止日，不称“未发布”。"
+      "reason": "官方完整表已纳入，共252个乡级。页面发布日期2026-07-31；原表未声明截止日，保持as_of=null。日期未声明属于来源元信息，不是数据覆盖缺口，也不阻止纳入。"
     },
     {
       "province": "13",
@@ -58,12 +53,12 @@
       "province": "31",
       "name": "上海市",
       "checked_at": "2026-10-21",
-      "result": "published_2026_cutoff_not_declared",
+      "result": "official_table_included_date_unspecified",
       "as_of": null,
       "townships": 218,
       "previous_townships": 218,
       "url": "https://mzj.sh.gov.cn/MZ_zhuzhan1539_0-2-8-1459/20260727/535996b5abd045baac0c65552f4527d9.html",
-      "reason": "2026-07-27发布的218条全量代码表已纳入，正文与表格未声明数据截止日。本次保持整表，不虚构2026-06-30截止日；属于时点证据缺口。"
+      "reason": "官方完整表已纳入，共218个乡级。页面发布日期2026-07-27；原表未声明截止日，保持as_of=null。日期未声明属于来源元信息，不是数据覆盖缺口，也不阻止纳入。"
     },
     {
       "province": "34",
@@ -91,12 +86,12 @@
       "province": "37",
       "name": "山东省",
       "checked_at": "2026-10-21",
-      "result": "official_original_unavailable",
-      "as_of": null,
+      "result": "updated_to_2026_official_table",
+      "as_of": "2026-07-31",
       "townships": 1826,
       "previous_townships": 1826,
-      "url": "https://dmfw.mca.gov.cn/9095/xzqh/getList?code=370000&maxLevel=2",
-      "reason": "2026-10-21复查：检索到8月3日省厅公告及截至2026-07-31整表的媒体转载线索，但省厅站点证书/访问异常，官网原件未能取得校验；保留未声明版本的民政部接口归档，不把转载日期或采集日当作官方整表日期。"
+      "url": "http://mzt.shandong.gov.cn/art/2026/8/3/art_15318_10336701.html",
+      "reason": "已从省厅官网HTTP入口取得2026年官方全量Excel，完整代码、名称和乡级数量核验；HTTPS连接失败不代表官网原件不存在。官方明确数据截止2026-07-31。"
     },
     {
       "province": "41",
@@ -146,12 +141,12 @@
       "province": "45",
       "name": "广西壮族自治区",
       "checked_at": "2026-10-21",
-      "result": "official_original_unavailable",
-      "as_of": null,
+      "result": "updated_to_2026_official_table",
+      "as_of": "2026-07-28",
       "townships": 1257,
       "previous_townships": 1257,
-      "url": "https://dmfw.mca.gov.cn/9095/xzqh/getList?code=450000&maxLevel=2",
-      "reason": "2026-10-21复查：省厅站点TLS握手失败，浏览器及网页读取工具均未取得2026全量代码原件，政府门户区划人口栏目为2025年底数量介绍，不能代替乡级代码表。保留未声明版本的民政部接口归档；无法据检索未找到断言“未发布”。"
+      "url": "http://mzt.gxzf.gov.cn/gg/t27966511.shtml",
+      "reason": "已从省厅官网HTTP入口取得2026年官方全量Excel，完整代码、名称和乡级数量核验；HTTPS连接失败不代表官网原件不存在。官方明确数据截止2026-07-28。"
     },
     {
       "province": "46",
@@ -230,5 +225,11 @@
       "url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d.shtml",
       "reason": "已取得并核验2026年上半年省厅完整代码名录；保留来源真实时点。原图连续序号、代码唯一性和逐页覆盖核验，机器不一致处逐图复核；接口仅交叉校对，不补入原表外节点。67页原表共1205条（含省直辖县级市）；纠正此前把OCR成功条数1170当作表总数的错误；旧接口1280条另有口径/状态差异，已改按原表。"
     }
-  ]
+  ],
+  "resolved_provinces": 20,
+  "date_unspecified_provinces": [
+    "12",
+    "31"
+  ],
+  "all_provincial_tables_included": true
 }

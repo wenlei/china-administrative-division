@@ -86,6 +86,12 @@ async function main() {
     );
   }
   const pending = provinces.filter((p) => p.status !== 'included');
+  const tableGaps = provinces.filter(
+    (p) => p.status !== 'included' || p.parser === 'mca-snapshot'
+  );
+  if (process.argv.includes('--require-provincial-tables') && tableGaps.length) {
+    throw new Error(`Provincial full tables missing: ${tableGaps.map((p) => p.province).join(',')}`);
+  }
   const outdated = provinces.filter(
     (p) => p.status === 'included' && (!p.as_of || p.as_of < `${year}-01-01`)
   );
@@ -228,6 +234,7 @@ async function main() {
           name_restorations: p.name_restorations,
           date_basis: p.date_basis ?? p.as_of_basis,
           published_at: p.published_at,
+          publication_sha256: p.publication_sha256,
           image_index: p.image_index,
           image_manifest_sha256: p.image_manifest_sha256,
           review_file: p.review_file,
@@ -242,6 +249,9 @@ async function main() {
         edition: manifest.edition,
         complete_national: false,
         all_provinces_included: pending.length === 0,
+        all_provincial_tables_included: tableGaps.length === 0,
+        provincial_table_gaps: tableGaps.map((p) => p.province),
+        date_unspecified_provinces: provinces.filter((p) => p.status === 'included' && !p.as_of).map((p) => p.province),
         target_year: year,
         baseline_year: baseYear,
         baseline_unchanged: true,
