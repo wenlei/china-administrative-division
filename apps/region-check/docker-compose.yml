@@ -1,6 +1,6 @@
 services:
   region-check:
-    image: region-check:0.1.0
+    image: region-check:0.1.1
     build: .
     container_name: regionCheck
     restart: unless-stopped

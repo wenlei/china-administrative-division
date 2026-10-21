@@ -6,7 +6,7 @@ import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 
 
 def normalize(value):
@@ -78,11 +78,35 @@ class RegionIndex:
                 'supplements': self.data.get('supplements', []),
                 'limitations': self.data['limitations']}
 
+    def related_events(self, path):
+        # Attach changes to the matched unit AND its ancestors, even when the
+        # input already uses today's name. Seed only explicit name+code pairs.
+        by_code = {r['code']: r for r in path}
+        events = []
+        related = set()
+        for event in self.data['events']:
+            links = event['successors'] + [{'code': event['old_code'], 'name': event['old_name']}]
+            if any(link['code'] in by_code and link['name'] == by_code[link['code']]['name']
+                   for link in links):
+                events.append(event)
+                related.update(link['code'] for link in links)
+        changed = True
+        while changed:
+            changed = False
+            for event in self.data['events']:
+                links = {event['old_code']} | {s['code'] for s in event['successors']}
+                if links & related and event not in events:
+                    events.append(event)
+                    related.update(links)
+                    changed = True
+        return sorted(events, key=lambda e: (e['year'], e['old_code']))
+
     def describe(self, code):
         row = self.current[code]
         path = self.paths[code]
         return {**row, 'path': [{k: r[k] for k in ('code', 'name', 'level')} for r in path],
                 'administrative_address': ''.join(r['name'] for r in path),
+                'related_events': self.related_events(path),
                 'source': {**self.provinces[code[:2]],
                            'record_source': row.get('record_source')}, 'code_system': 'mca_2026'}
 

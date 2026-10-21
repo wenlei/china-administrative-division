@@ -65,6 +65,7 @@ class MatchingTests(unittest.TestCase):
         self.assertEqual(r['status'], 'matched')
         self.assertEqual(r['candidates'][0]['suggested_address'], r['input'])
         self.assertFalse(r['village_verified'])
+        self.assertEqual(r['candidates'][0]['related_events'][0]['old_code'], '410381000000')
 
     def test_old_name_converts_using_official_event(self):
         r = self.index.match('河南省洛阳市偃师市大口镇董村12号')

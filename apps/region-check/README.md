@@ -29,7 +29,7 @@
 
 POST使用`Content-Type: application/json`，请求体上限256 KiB；每个地址2—1000字符。批次任一输入非法则整批返回400，不返回部分成功。
 
-匹配响应的`candidates`包含现行`code`、`path`、`source`、`matched_level`、`match_method`、`evidence`、`unmatched_prefix`、`unparsed_suffix`和`suggested_address`。`evidence`只存明确事件，包含事件年份、原码、承接码、原始理由和来源；未取得准确生效日时`effective_date=null`，不把补丁整理时间当作生效日。`history_complete=false`与`village_verified=false`在首版始终返回。
+匹配响应的`candidates`包含现行`code`、`path`、`source`、`matched_level`、`match_method`、`evidence`、`unmatched_prefix`、`unparsed_suffix`和`suggested_address`。`related_events`返回匹配单位及其上级关联的明确历史事件，即使输入已是现名也会返回；例如现名“偃师区大口镇”仍能看到偃师市撤市设区记录。`evidence`只存本次名称转换采用的明确事件，包含事件年份、原码、承接码、原始理由和来源；未取得准确生效日时`effective_date=null`，不把补丁整理时间当作生效日。`history_complete=false`与`village_verified=false`在首版始终返回。
 
 | status | 含义 | 系统处理建议 |
 |---|---|---|
@@ -68,7 +68,7 @@ python3 apps/region-check/server.py --data /path/release-data --host 127.0.0.1 -
 
 现有eplant的ui、ctrl、rum、data继续使用原有职责。regionCheck作为旁挂查询服务，加入`eplant_default`网络，由Rum通过`http://regionCheck:8000`调用；不建立第二套电站业务数据库或网关。
 
-部署位置：`/root/infra/eplant/regionCheck`。容器名`regionCheck`，镜像`region-check:0.1.0`，宿主机绑定`127.0.0.1:6130`。这是内部接口，没有身份鉴权，不开放公网；如需外网访问，应经过系统现有鉴权入口。
+部署位置：`/root/infra/eplant/regionCheck`。容器名`regionCheck`，镜像`region-check:0.1.1`，宿主机绑定`127.0.0.1:6130`。这是内部接口，没有身份鉴权，不开放公网；如需外网访问，应经过系统现有鉴权入口。
 
 ```bash
 # 在服务器部署目录内，先将构建好的发布数据放到data/
