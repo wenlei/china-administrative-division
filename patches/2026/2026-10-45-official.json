@@ -1,12 +1,12 @@
 {
   "meta": {
     "author": "wenlei-official-2026-10",
-    "source_url": "https://dmfw.mca.gov.cn/9095/xzqh/getList?code=450000&maxLevel=2",
+    "source_url": "http://mzt.gxzf.gov.cn/gg/t27966511.shtml",
     "evidence_confidence": "high",
     "apply_after": "2023-baseline",
     "source_pipeline": "community",
     "created_at": "2026-10-21T00:00:00.000Z",
-    "notes": "2026年10月整理；官方数据截止未注明，不能认定2026现势；原件SHA-256=a999b75a48cb7ed1bd174d83801fd8b67f7fdaae5f5b7a710ea0da51f4d17c48；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1257条。2026-10-21复查：省厅站点TLS握手失败，浏览器及网页读取工具均未取得2026全量代码原件，政府门户区划人口栏目为2025年底数量介绍，不能代替乡级代码表。保留未声明版本的民政部接口归档；无法据检索未找到断言“未发布”。"
+    "notes": "2026年10月整理；官方数据截止2026-07-28；原件SHA-256=b7d083f2e1ce00012ddf9390dbd22e9598597225b98411536f6ed399dbb957a7；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1257条。已从省厅官网HTTP入口取得2026年官方全量Excel，完整代码、名称和乡级数量核验；HTTPS连接失败不代表官网原件不存在。官方明确数据截止2026-07-28。"
   },
   "operations": [
     {

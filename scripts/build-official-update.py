@@ -76,6 +76,8 @@ def verify_source_files(source, raw_root):
                              (source['file'],source['parsed_sha256'])]:
         if hashlib.sha256((raw_root/filename).read_bytes()).hexdigest() != digest:
             raise ValueError(f"{source['province']}: source checksum mismatch: {filename}")
+    if source.get('publication_file') and hashlib.sha256((raw_root/source['publication_file']).read_bytes()).hexdigest() != source['publication_sha256']:
+        raise ValueError('Publication page checksum mismatch')
     repo_root=Path(__file__).resolve().parent.parent
     for field,digest_field in [('review_file','parsed_sha256'),('image_index','image_manifest_sha256')]:
         if source.get(field) and hashlib.sha256((repo_root/source[field]).read_bytes()).hexdigest() != source[digest_field]:
@@ -196,16 +198,17 @@ def parse_table(rows, province, root_name, expected_towns):
             elif len(cell)<250:
                 m = re.match(r'\s*([^\d]+?)\s*('+province+r'\d{4})(?!\d)',cell)
                 if m: put(m[2],m[1])
-        # Tianjin and Chongqing explicitly list county names but omit separate county codes.
-        if province in {'12','22','50'}:
+        # These tables explicitly list upper names but omit separate upper codes.
+        if province in {'12','22','45','50'}:
             towns = [clean(c) for c in cells if re.fullmatch(province+r'\d{7}',clean(c))]
             if towns:
-                col = 2 if province in {'12','22'} else 1
+                col = 3 if province=='45' else 2 if province in {'12','22'} else 1
                 county_cell = cells[col] if len(cells)>col and (province!='50' or len(cells)>=4) else ''
                 if name_only(county_cell) and not re.fullmatch(r'\d+',clean(county_cell)):
                     put(towns[0][:6],county_cell)
-                if province=='22' and name_only(cells[1]):
-                    put(towns[0][:4]+'00',cells[1])
+                city_col=2 if province=='45' else 1
+                if province in {'22','45'} and name_only(cells[city_col]):
+                    put(towns[0][:4]+'00',cells[city_col])
     towns = [r for r in entries.values() if r['level']==4]
     if len(towns)!=expected_towns:
         raise ValueError(f'{province}: expected {expected_towns} townships, parsed {len(towns)}')
