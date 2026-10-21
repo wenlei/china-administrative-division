@@ -27,6 +27,8 @@ def name_only(value):
     return clean(value).rstrip('*＊')
 
 def read_rows(path, kind):
+    if kind == 'rows-json':
+        return json.loads(path.read_text())
     if kind == 'html':
         from bs4 import BeautifulSoup
         soup = BeautifulSoup(path.read_bytes(), 'html.parser')
@@ -55,6 +57,64 @@ def read_rows(path, kind):
                 rows.append([re.sub(r'^\d+\s+', '', m[1]), m[2]])
         return rows
     raise ValueError(f'Unsupported parser: {kind}')
+
+def parse_mca_snapshot(snapshot, province, expected_towns, resolutions=None):
+    """Use the published parent tree; never infer a direct-administered parent."""
+    entries = {}
+    requested = set()
+    root = None
+    def walk(node, parent=None):
+        code = str(node['code'])
+        level = node['level']
+        if not re.fullmatch(province+r'\d{10}', code) or level not in {1,2,3,4}:
+            raise ValueError(f'Invalid official API node: {code}')
+        # The public API mixes explicitly withdrawn units into its result tree.
+        if re.search(r'[（(](?:已)?撤销[）)]', node['name']):
+            return
+        short = code[:9 if level == 4 else 6]
+        name = node['name']
+        resolution = (resolutions or {}).get(short)
+        if resolution:
+            if name not in resolution['observed_names'] or resolution['name'] not in resolution['observed_names']:
+                raise ValueError(f'Unreviewed official API alias: {short}: {name}')
+            name = resolution['name']
+        row = dict(code=short, name=name, level=level, parent_code=parent)
+        if short in entries and entries[short] != row:
+            raise ValueError(f'Conflicting official API node: {short}')
+        entries[short] = row
+        for child in node.get('children', []):
+            walk(child, short)
+    for request in snapshot['requests']:
+        from urllib.parse import urlparse, parse_qs
+        url = urlparse(request['url'])
+        if url.scheme != 'https' or url.netloc != 'dmfw.mca.gov.cn' or url.path != '/9095/xzqh/getList':
+            raise ValueError('Unexpected official API source')
+        query = parse_qs(url.query)
+        code = query.get('code', [''])[0]
+        response = request['response']
+        node = response.get('data')
+        if response.get('status') != 200 or not node or node['code'][:6] != code:
+            raise ValueError(f'Incomplete official API response: {code}')
+        if query.get('maxLevel') != ['2'] or code in requested:
+            raise ValueError(f'Invalid/repeated official API request: {code}')
+        requested.add(code)
+        if code == province+'0000':
+            root = node
+            walk(node)
+    if root is None:
+        raise ValueError('Official API province root missing')
+    expected_requests = {province+'0000'} | {n['code'][:6] for n in root.get('children', [])
+        if n['level'] <= 3 and not re.search(r'[（(](?:已)?撤销[）)]', n['name'])}
+    if requested != expected_requests:
+        raise ValueError('Official API city/direct-county request coverage incomplete')
+    for request in snapshot['requests']:
+        node = request['response']['data']
+        if node['level'] > 1:
+            parent = entries[node['code'][:6]]['parent_code']
+            walk(node, parent)
+    if sum(r['level'] == 4 for r in entries.values()) != expected_towns:
+        raise ValueError('Official API township count mismatch')
+    return entries
 
 def parse_table(rows, province, root_name, expected_towns):
     entries = {}
@@ -100,6 +160,14 @@ def build_patch(source, entries, baseline):
     prefix = source['province']
     base = {r['code'][:9 if r['level']==4 else 6]:dict(r) for r in baseline
             if r['code'].startswith(prefix) and r['level']<=4}
+    # The API flattens province-direct county units. The repository retains its
+    # existing xx9000 grouping node; it is a compatibility group, not a new entity.
+    for row in entries.values():
+        if row['level']==3 and row['parent_code']==prefix+'0000' and row['code'][2:4]=='90':
+            group=row['code'][:4]+'00'
+            if group not in base:
+                raise ValueError(f'{prefix}: historical direct-county group missing: {group}')
+            row['parent_code']=group
     # Existing intermediate placeholders remain solely for compatible historical hierarchy.
     for row in list(entries.values()):
         p=row['parent_code']
@@ -115,20 +183,21 @@ def build_patch(source, entries, baseline):
             operations.append(dict(op='add',code=full,name=row['name'],level=row['level'],parent_code=parent,
                                    source_type='mca_decree',confidence_score=100))
         else:
-            changes={}
-            if prev['name']!=row['name']:changes['name']=row['name']
-            if prev['parent_code']!=parent:changes['new_parent']=parent
-            if changes:operations.append(dict(op='update',code=full,**changes))
+            # Replay follows earlier-year events. Their target state can differ
+            # from 2023 even when this source agrees with the original baseline.
+            changes=dict(name=row['name'],status='active')
+            if parent:changes['new_parent']=parent
+            operations.append(dict(op='update',code=full,**changes))
     for code,row in sorted(base.items()):
         if code not in entries:
             operations.append(dict(op='update',code=row['code'],status='deprecated',
                 note='不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。'))
     return dict(meta=dict(author='wenlei-official-2026-10',source_url=source['url'],evidence_confidence='high',
-        apply_after='2023-baseline',source_pipeline='community',created_at='2026-10-20T00:00:00.000Z',
+        apply_after='2023-baseline',source_pipeline='community',created_at=source.get('checked_at','2026-10-20')+'T00:00:00.000Z',
         notes=f"2026年10月整理；官方数据截止{source['as_of'] or '未注明，不能认定2026现势'}；原件SHA-256={source['sha256']}；"
               '仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；'
               'NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；'
-              f"本表乡级{source['expected_towns']}条。"),operations=operations)
+              f"本表乡级{source['expected_towns']}条。" + source.get('reason','')),operations=operations)
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--sources',type=Path,required=True);ap.add_argument('--raw',type=Path,required=True)
@@ -146,7 +215,10 @@ def main():
         if actual!=s['sha256']:raise ValueError(f"{s['province']}: original SHA-256 mismatch")
         if hashlib.sha256(raw.read_bytes()).hexdigest()!=s['parsed_sha256']:
             raise ValueError(f"{s['province']}: parsed input SHA-256 mismatch")
-        entries=parse_table(read_rows(raw,s['parser']),s['province'],s['name'],s['expected_towns'])
+        if s['parser'] == 'mca-snapshot':
+            entries=parse_mca_snapshot(json.loads(raw.read_text()),s['province'],s['expected_towns'],s.get('name_resolutions'))
+        else:
+            entries=parse_table(read_rows(raw,s['parser']),s['province'],s['name'],s['expected_towns'])
         patch=build_patch(s,entries,baseline)
         output=a.output/s['patch'].split('/')[-1]
         if patch['operations']:outputs.append((output,patch))

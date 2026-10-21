@@ -6,33 +6,1141 @@
     "apply_after": "2023-baseline",
     "source_pipeline": "community",
     "created_at": "2026-10-20T00:00:00.000Z",
-    "notes": "2026年10月整理；官方数据截止未注明，不能认定2026现势；原件SHA-256=1fa28c4d0898748fb55317fa5aefddb52784670235d827d3cca24a84ab2b6dc7；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级252条。"
+    "notes": "2026年10月整理；官方数据截止未注明，不能认定2026现势；原件SHA-256=1fa28c4d0898748fb55317fa5aefddb52784670235d827d3cca24a84ab2b6dc7；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级252条。官方表取得并核验252条乡级，文件未明示数据截止日期，不认定2026现势。"
   },
   "operations": [
     {
       "op": "update",
+      "code": "120000000000",
+      "name": "天津市",
+      "status": "active"
+    },
+    {
+      "op": "update",
+      "code": "120100000000",
+      "name": "市辖区",
+      "status": "active",
+      "new_parent": "120000000000"
+    },
+    {
+      "op": "update",
+      "code": "120101000000",
+      "name": "和平区",
+      "status": "active",
+      "new_parent": "120100000000"
+    },
+    {
+      "op": "update",
+      "code": "120101001000",
+      "name": "劝业场街道",
+      "status": "active",
+      "new_parent": "120101000000"
+    },
+    {
+      "op": "update",
+      "code": "120101002000",
+      "name": "小白楼街道",
+      "status": "active",
+      "new_parent": "120101000000"
+    },
+    {
+      "op": "update",
+      "code": "120101003000",
+      "name": "五大道街道",
+      "status": "active",
+      "new_parent": "120101000000"
+    },
+    {
+      "op": "update",
+      "code": "120101004000",
+      "name": "新兴街道",
+      "status": "active",
+      "new_parent": "120101000000"
+    },
+    {
+      "op": "update",
+      "code": "120101005000",
+      "name": "南营门街道",
+      "status": "active",
+      "new_parent": "120101000000"
+    },
+    {
+      "op": "update",
+      "code": "120101006000",
+      "name": "南市街道",
+      "status": "active",
+      "new_parent": "120101000000"
+    },
+    {
+      "op": "update",
+      "code": "120102000000",
+      "name": "河东区",
+      "status": "active",
+      "new_parent": "120100000000"
+    },
+    {
+      "op": "update",
+      "code": "120102001000",
+      "name": "大王庄街道",
+      "status": "active",
+      "new_parent": "120102000000"
+    },
+    {
+      "op": "update",
+      "code": "120102002000",
+      "name": "大直沽街道",
+      "status": "active",
+      "new_parent": "120102000000"
+    },
+    {
+      "op": "update",
+      "code": "120102003000",
+      "name": "中山门街道",
+      "status": "active",
+      "new_parent": "120102000000"
+    },
+    {
+      "op": "update",
+      "code": "120102004000",
+      "name": "富民路街道",
+      "status": "active",
+      "new_parent": "120102000000"
+    },
+    {
+      "op": "update",
+      "code": "120102005000",
+      "name": "二号桥街道",
+      "status": "active",
+      "new_parent": "120102000000"
+    },
+    {
+      "op": "update",
+      "code": "120102006000",
+      "name": "春华街道",
+      "status": "active",
+      "new_parent": "120102000000"
+    },
+    {
+      "op": "update",
+      "code": "120102007000",
+      "name": "唐家口街道",
+      "status": "active",
+      "new_parent": "120102000000"
+    },
+    {
+      "op": "update",
+      "code": "120102008000",
+      "name": "向阳楼街道",
+      "status": "active",
+      "new_parent": "120102000000"
+    },
+    {
+      "op": "update",
+      "code": "120102009000",
+      "name": "常州道街道",
+      "status": "active",
+      "new_parent": "120102000000"
+    },
+    {
+      "op": "update",
+      "code": "120102010000",
+      "name": "上杭路街道",
+      "status": "active",
+      "new_parent": "120102000000"
+    },
+    {
+      "op": "update",
+      "code": "120102011000",
+      "name": "东新街道",
+      "status": "active",
+      "new_parent": "120102000000"
+    },
+    {
+      "op": "update",
+      "code": "120102012000",
+      "name": "鲁山道街道",
+      "status": "active",
+      "new_parent": "120102000000"
+    },
+    {
+      "op": "update",
+      "code": "120102013000",
+      "name": "天津铁厂街道",
+      "status": "active",
+      "new_parent": "120102000000"
+    },
+    {
+      "op": "update",
+      "code": "120103000000",
+      "name": "河西区",
+      "status": "active",
+      "new_parent": "120100000000"
+    },
+    {
+      "op": "update",
+      "code": "120103001000",
+      "name": "大营门街道",
+      "status": "active",
+      "new_parent": "120103000000"
+    },
+    {
+      "op": "update",
+      "code": "120103002000",
+      "name": "下瓦房街道",
+      "status": "active",
+      "new_parent": "120103000000"
+    },
+    {
+      "op": "update",
+      "code": "120103003000",
+      "name": "桃园街道",
+      "status": "active",
+      "new_parent": "120103000000"
+    },
+    {
+      "op": "update",
+      "code": "120103004000",
+      "name": "挂甲寺街道",
+      "status": "active",
+      "new_parent": "120103000000"
+    },
+    {
+      "op": "update",
+      "code": "120103005000",
+      "name": "马场街道",
+      "status": "active",
+      "new_parent": "120103000000"
+    },
+    {
+      "op": "update",
+      "code": "120103006000",
+      "name": "越秀路街道",
+      "status": "active",
+      "new_parent": "120103000000"
+    },
+    {
+      "op": "update",
+      "code": "120103007000",
+      "name": "友谊路街道",
+      "status": "active",
+      "new_parent": "120103000000"
+    },
+    {
+      "op": "update",
+      "code": "120103008000",
+      "name": "天塔街道",
+      "status": "active",
+      "new_parent": "120103000000"
+    },
+    {
+      "op": "update",
+      "code": "120103009000",
+      "name": "尖山街道",
+      "status": "active",
+      "new_parent": "120103000000"
+    },
+    {
+      "op": "update",
+      "code": "120103010000",
+      "name": "陈塘庄街道",
+      "status": "active",
+      "new_parent": "120103000000"
+    },
+    {
+      "op": "update",
+      "code": "120103011000",
+      "name": "柳林街道",
+      "status": "active",
+      "new_parent": "120103000000"
+    },
+    {
+      "op": "update",
+      "code": "120103012000",
+      "name": "东海街道",
+      "status": "active",
+      "new_parent": "120103000000"
+    },
+    {
+      "op": "update",
+      "code": "120103013000",
+      "name": "梅江街道",
+      "status": "active",
+      "new_parent": "120103000000"
+    },
+    {
+      "op": "update",
+      "code": "120103014000",
+      "name": "太湖路街道",
+      "status": "active",
+      "new_parent": "120103000000"
+    },
+    {
+      "op": "update",
+      "code": "120104000000",
+      "name": "南开区",
+      "status": "active",
+      "new_parent": "120100000000"
+    },
+    {
+      "op": "update",
+      "code": "120104001000",
+      "name": "长虹街道",
+      "status": "active",
+      "new_parent": "120104000000"
+    },
+    {
+      "op": "update",
+      "code": "120104002000",
+      "name": "鼓楼街道",
+      "status": "active",
+      "new_parent": "120104000000"
+    },
+    {
+      "op": "update",
+      "code": "120104003000",
+      "name": "兴南街道",
+      "status": "active",
+      "new_parent": "120104000000"
+    },
+    {
+      "op": "update",
+      "code": "120104004000",
+      "name": "广开街道",
+      "status": "active",
+      "new_parent": "120104000000"
+    },
+    {
+      "op": "update",
+      "code": "120104005000",
+      "name": "万兴街道",
+      "status": "active",
+      "new_parent": "120104000000"
+    },
+    {
+      "op": "update",
+      "code": "120104006000",
+      "name": "学府街道",
+      "status": "active",
+      "new_parent": "120104000000"
+    },
+    {
+      "op": "update",
+      "code": "120104007000",
+      "name": "向阳路街道",
+      "status": "active",
+      "new_parent": "120104000000"
+    },
+    {
+      "op": "update",
+      "code": "120104008000",
+      "name": "嘉陵道街道",
+      "status": "active",
+      "new_parent": "120104000000"
+    },
+    {
+      "op": "update",
+      "code": "120104009000",
+      "name": "王顶堤街道",
+      "status": "active",
+      "new_parent": "120104000000"
+    },
+    {
+      "op": "update",
+      "code": "120104010000",
+      "name": "水上公园街道",
+      "status": "active",
+      "new_parent": "120104000000"
+    },
+    {
+      "op": "update",
+      "code": "120104011000",
+      "name": "体育中心街道",
+      "status": "active",
+      "new_parent": "120104000000"
+    },
+    {
+      "op": "update",
+      "code": "120104012000",
+      "name": "华苑街道",
+      "status": "active",
+      "new_parent": "120104000000"
+    },
+    {
+      "op": "update",
+      "code": "120105000000",
+      "name": "河北区",
+      "status": "active",
+      "new_parent": "120100000000"
+    },
+    {
+      "op": "update",
+      "code": "120105001000",
+      "name": "光复道街道",
+      "status": "active",
+      "new_parent": "120105000000"
+    },
+    {
+      "op": "update",
+      "code": "120105002000",
+      "name": "望海楼街道",
+      "status": "active",
+      "new_parent": "120105000000"
+    },
+    {
+      "op": "update",
+      "code": "120105003000",
+      "name": "鸿顺里街道",
+      "status": "active",
+      "new_parent": "120105000000"
+    },
+    {
+      "op": "update",
+      "code": "120105004000",
+      "name": "新开河街道",
+      "status": "active",
+      "new_parent": "120105000000"
+    },
+    {
+      "op": "update",
+      "code": "120105005000",
+      "name": "铁东路街道",
+      "status": "active",
+      "new_parent": "120105000000"
+    },
+    {
+      "op": "update",
+      "code": "120105006000",
+      "name": "建昌道街道",
+      "status": "active",
+      "new_parent": "120105000000"
+    },
+    {
+      "op": "update",
+      "code": "120105007000",
+      "name": "宁园街道",
+      "status": "active",
+      "new_parent": "120105000000"
+    },
+    {
+      "op": "update",
+      "code": "120105008000",
+      "name": "王串场街道",
+      "status": "active",
+      "new_parent": "120105000000"
+    },
+    {
+      "op": "update",
+      "code": "120105009000",
+      "name": "江都路街道",
+      "status": "active",
+      "new_parent": "120105000000"
+    },
+    {
+      "op": "update",
+      "code": "120105010000",
+      "name": "月牙河街道",
+      "status": "active",
+      "new_parent": "120105000000"
+    },
+    {
+      "op": "update",
+      "code": "120106000000",
+      "name": "红桥区",
+      "status": "active",
+      "new_parent": "120100000000"
+    },
+    {
+      "op": "update",
+      "code": "120106001000",
+      "name": "西于庄街道",
+      "status": "active",
+      "new_parent": "120106000000"
+    },
+    {
+      "op": "update",
+      "code": "120106003000",
+      "name": "咸阳北路街道",
+      "status": "active",
+      "new_parent": "120106000000"
+    },
+    {
+      "op": "update",
+      "code": "120106004000",
+      "name": "丁字沽街道",
+      "status": "active",
+      "new_parent": "120106000000"
+    },
+    {
+      "op": "update",
+      "code": "120106005000",
+      "name": "西沽街道",
+      "status": "active",
+      "new_parent": "120106000000"
+    },
+    {
+      "op": "update",
+      "code": "120106006000",
+      "name": "三条石街道",
+      "status": "active",
+      "new_parent": "120106000000"
+    },
+    {
+      "op": "update",
+      "code": "120106008000",
+      "name": "邵公庄街道",
+      "status": "active",
+      "new_parent": "120106000000"
+    },
+    {
+      "op": "update",
+      "code": "120106009000",
+      "name": "芥园街道",
+      "status": "active",
+      "new_parent": "120106000000"
+    },
+    {
+      "op": "update",
+      "code": "120106010000",
+      "name": "铃铛阁街道",
+      "status": "active",
+      "new_parent": "120106000000"
+    },
+    {
+      "op": "update",
+      "code": "120106012000",
+      "name": "和苑街道",
+      "status": "active",
+      "new_parent": "120106000000"
+    },
+    {
+      "op": "update",
+      "code": "120110000000",
+      "name": "东丽区",
+      "status": "active",
+      "new_parent": "120100000000"
+    },
+    {
+      "op": "update",
+      "code": "120110001000",
+      "name": "张贵庄街道",
+      "status": "active",
+      "new_parent": "120110000000"
+    },
+    {
+      "op": "update",
+      "code": "120110002000",
+      "name": "丰年村街道",
+      "status": "active",
+      "new_parent": "120110000000"
+    },
+    {
+      "op": "update",
+      "code": "120110003000",
+      "name": "万新街道",
+      "status": "active",
+      "new_parent": "120110000000"
+    },
+    {
+      "op": "update",
+      "code": "120110004000",
+      "name": "无瑕街道",
+      "status": "active",
+      "new_parent": "120110000000"
+    },
+    {
+      "op": "update",
+      "code": "120110005000",
+      "name": "新立街道",
+      "status": "active",
+      "new_parent": "120110000000"
+    },
+    {
+      "op": "update",
+      "code": "120110006000",
+      "name": "华明街道",
+      "status": "active",
+      "new_parent": "120110000000"
+    },
+    {
+      "op": "update",
+      "code": "120110007000",
+      "name": "金钟街道",
+      "status": "active",
+      "new_parent": "120110000000"
+    },
+    {
+      "op": "update",
+      "code": "120110008000",
+      "name": "军粮城街道",
+      "status": "active",
+      "new_parent": "120110000000"
+    },
+    {
+      "op": "update",
+      "code": "120110009000",
+      "name": "金桥街道",
+      "status": "active",
+      "new_parent": "120110000000"
+    },
+    {
+      "op": "update",
       "code": "120110010000",
-      "name": "东丽湖街道"
+      "name": "东丽湖街道",
+      "status": "active",
+      "new_parent": "120110000000"
     },
     {
       "op": "update",
       "code": "120110011000",
-      "name": "华新街道"
+      "name": "华新街道",
+      "status": "active",
+      "new_parent": "120110000000"
+    },
+    {
+      "op": "update",
+      "code": "120111000000",
+      "name": "西青区",
+      "status": "active",
+      "new_parent": "120100000000"
+    },
+    {
+      "op": "update",
+      "code": "120111001000",
+      "name": "西营门街道",
+      "status": "active",
+      "new_parent": "120111000000"
+    },
+    {
+      "op": "update",
+      "code": "120111002000",
+      "name": "李七庄街道",
+      "status": "active",
+      "new_parent": "120111000000"
+    },
+    {
+      "op": "update",
+      "code": "120111003000",
+      "name": "赤龙南街道",
+      "status": "active",
+      "new_parent": "120111000000"
+    },
+    {
+      "op": "update",
+      "code": "120111004000",
+      "name": "赤龙北街道",
+      "status": "active",
+      "new_parent": "120111000000"
+    },
+    {
+      "op": "update",
+      "code": "120111005000",
+      "name": "津门湖街道",
+      "status": "active",
+      "new_parent": "120111000000"
+    },
+    {
+      "op": "update",
+      "code": "120111100000",
+      "name": "中北镇",
+      "status": "active",
+      "new_parent": "120111000000"
+    },
+    {
+      "op": "update",
+      "code": "120111101000",
+      "name": "杨柳青镇",
+      "status": "active",
+      "new_parent": "120111000000"
+    },
+    {
+      "op": "update",
+      "code": "120111102000",
+      "name": "辛口镇",
+      "status": "active",
+      "new_parent": "120111000000"
+    },
+    {
+      "op": "update",
+      "code": "120111103000",
+      "name": "张家窝镇",
+      "status": "active",
+      "new_parent": "120111000000"
+    },
+    {
+      "op": "update",
+      "code": "120111104000",
+      "name": "精武镇",
+      "status": "active",
+      "new_parent": "120111000000"
+    },
+    {
+      "op": "update",
+      "code": "120111105000",
+      "name": "大寺镇",
+      "status": "active",
+      "new_parent": "120111000000"
+    },
+    {
+      "op": "update",
+      "code": "120111106000",
+      "name": "王稳庄镇",
+      "status": "active",
+      "new_parent": "120111000000"
+    },
+    {
+      "op": "update",
+      "code": "120112000000",
+      "name": "津南区",
+      "status": "active",
+      "new_parent": "120100000000"
+    },
+    {
+      "op": "update",
+      "code": "120112001000",
+      "name": "双新街道",
+      "status": "active",
+      "new_parent": "120112000000"
+    },
+    {
+      "op": "update",
+      "code": "120112002000",
+      "name": "双林街道",
+      "status": "active",
+      "new_parent": "120112000000"
+    },
+    {
+      "op": "update",
+      "code": "120112003000",
+      "name": "海棠街道",
+      "status": "active",
+      "new_parent": "120112000000"
+    },
+    {
+      "op": "update",
+      "code": "120112100000",
+      "name": "咸水沽镇",
+      "status": "active",
+      "new_parent": "120112000000"
+    },
+    {
+      "op": "update",
+      "code": "120112101000",
+      "name": "葛沽镇",
+      "status": "active",
+      "new_parent": "120112000000"
+    },
+    {
+      "op": "update",
+      "code": "120112102000",
+      "name": "小站镇",
+      "status": "active",
+      "new_parent": "120112000000"
+    },
+    {
+      "op": "update",
+      "code": "120112103000",
+      "name": "双港镇",
+      "status": "active",
+      "new_parent": "120112000000"
+    },
+    {
+      "op": "update",
+      "code": "120112104000",
+      "name": "辛庄镇",
+      "status": "active",
+      "new_parent": "120112000000"
+    },
+    {
+      "op": "update",
+      "code": "120112106000",
+      "name": "双桥河镇",
+      "status": "active",
+      "new_parent": "120112000000"
+    },
+    {
+      "op": "update",
+      "code": "120112107000",
+      "name": "八里台镇",
+      "status": "active",
+      "new_parent": "120112000000"
+    },
+    {
+      "op": "update",
+      "code": "120112108000",
+      "name": "北闸口镇",
+      "status": "active",
+      "new_parent": "120112000000"
+    },
+    {
+      "op": "update",
+      "code": "120113000000",
+      "name": "北辰区",
+      "status": "active",
+      "new_parent": "120100000000"
+    },
+    {
+      "op": "update",
+      "code": "120113001000",
+      "name": "果园新村街道",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120113002000",
+      "name": "集贤里街道",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120113003000",
+      "name": "普东街道",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120113004000",
+      "name": "瑞景街道",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120113005000",
+      "name": "佳荣里街道",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120113006000",
+      "name": "青源街道",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120113007000",
+      "name": "广源街道",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120113008000",
+      "name": "双环邨街道",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120113100000",
+      "name": "天穆镇",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120113101000",
+      "name": "北仓镇",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120113102000",
+      "name": "双街镇",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120113103000",
+      "name": "双口镇",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120113104000",
+      "name": "青光镇",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120113106000",
+      "name": "宜兴埠镇",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120113107000",
+      "name": "小淀镇",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120113108000",
+      "name": "大张庄镇",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120113111000",
+      "name": "西堤头镇",
+      "status": "active",
+      "new_parent": "120113000000"
+    },
+    {
+      "op": "update",
+      "code": "120114000000",
+      "name": "武清区",
+      "status": "active",
+      "new_parent": "120100000000"
+    },
+    {
+      "op": "update",
+      "code": "120114001000",
+      "name": "杨村街道",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114002000",
+      "name": "下朱庄街道",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114003000",
+      "name": "东蒲洼街道",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114004000",
+      "name": "黄庄街道",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114005000",
+      "name": "徐官屯街道",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114006000",
+      "name": "运河西街道",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114101000",
+      "name": "梅厂镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114102000",
+      "name": "大碱厂镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114103000",
+      "name": "崔黄口镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114104000",
+      "name": "大良镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114105000",
+      "name": "下伍旗镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114106000",
+      "name": "南蔡村镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114107000",
+      "name": "大孟庄镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114108000",
+      "name": "泗村店镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114109000",
+      "name": "河西务镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114110000",
+      "name": "城关镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114111000",
+      "name": "东马圈镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114112000",
+      "name": "黄花店镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114113000",
+      "name": "石各庄镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114114000",
+      "name": "王庆坨镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114115000",
+      "name": "汊沽港镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114116000",
+      "name": "河北屯镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114117000",
+      "name": "上马台镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114118000",
+      "name": "大王古庄镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114119000",
+      "name": "陈咀镇",
+      "status": "active",
+      "new_parent": "120114000000"
     },
     {
       "op": "update",
       "code": "120114120000",
-      "name": "白古屯镇"
+      "name": "白古屯镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114121000",
+      "name": "曹子里镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120114122000",
+      "name": "大黄堡镇",
+      "status": "active",
+      "new_parent": "120114000000"
     },
     {
       "op": "update",
       "code": "120114123000",
-      "name": "豆张庄镇"
+      "name": "豆张庄镇",
+      "status": "active",
+      "new_parent": "120114000000"
     },
     {
       "op": "update",
       "code": "120114124000",
-      "name": "高村镇"
+      "name": "高村镇",
+      "status": "active",
+      "new_parent": "120114000000"
+    },
+    {
+      "op": "update",
+      "code": "120115000000",
+      "name": "宝坻区",
+      "status": "active",
+      "new_parent": "120100000000"
+    },
+    {
+      "op": "update",
+      "code": "120115001000",
+      "name": "海滨街道",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115002000",
+      "name": "宝平街道",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115003000",
+      "name": "钰华街道",
+      "status": "active",
+      "new_parent": "120115000000"
     },
     {
       "op": "add",
@@ -46,17 +1154,198 @@
     {
       "op": "update",
       "code": "120115007000",
-      "name": "朝霞街道"
+      "name": "朝霞街道",
+      "status": "active",
+      "new_parent": "120115000000"
     },
     {
       "op": "update",
       "code": "120115008000",
-      "name": "潮阳街道"
+      "name": "潮阳街道",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115101000",
+      "name": "大口屯镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115103000",
+      "name": "王卜庄镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115104000",
+      "name": "方家庄镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115105000",
+      "name": "林亭口镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115106000",
+      "name": "八门城镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115107000",
+      "name": "大钟庄镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115108000",
+      "name": "新安镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115111000",
+      "name": "霍各庄镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115113000",
+      "name": "新开口镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115115000",
+      "name": "大唐庄镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115119000",
+      "name": "牛道口镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115120000",
+      "name": "史各庄镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115121000",
+      "name": "郝各庄镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115123000",
+      "name": "牛家牌镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115124000",
+      "name": "尔王庄镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115125000",
+      "name": "黄庄镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115126000",
+      "name": "口东镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120115127000",
+      "name": "大白庄镇",
+      "status": "active",
+      "new_parent": "120115000000"
+    },
+    {
+      "op": "update",
+      "code": "120116000000",
+      "name": "滨海新区",
+      "status": "active",
+      "new_parent": "120100000000"
+    },
+    {
+      "op": "update",
+      "code": "120116005000",
+      "name": "杭州道街道",
+      "status": "active",
+      "new_parent": "120116000000"
+    },
+    {
+      "op": "update",
+      "code": "120116006000",
+      "name": "新河街道",
+      "status": "active",
+      "new_parent": "120116000000"
+    },
+    {
+      "op": "update",
+      "code": "120116007000",
+      "name": "大沽街道",
+      "status": "active",
+      "new_parent": "120116000000"
+    },
+    {
+      "op": "update",
+      "code": "120116008000",
+      "name": "新北街道",
+      "status": "active",
+      "new_parent": "120116000000"
+    },
+    {
+      "op": "update",
+      "code": "120116009000",
+      "name": "北塘街道",
+      "status": "active",
+      "new_parent": "120116000000"
+    },
+    {
+      "op": "update",
+      "code": "120116011000",
+      "name": "胡家园街道",
+      "status": "active",
+      "new_parent": "120116000000"
     },
     {
       "op": "update",
       "code": "120116012000",
-      "name": "泰达街道"
+      "name": "泰达街道",
+      "status": "active",
+      "new_parent": "120116000000"
     },
     {
       "op": "add",
@@ -79,7 +1368,9 @@
     {
       "op": "update",
       "code": "120116033000",
-      "name": "古林街道"
+      "name": "古林街道",
+      "status": "active",
+      "new_parent": "120116000000"
     },
     {
       "op": "add",
@@ -136,6 +1427,13 @@
       "confidence_score": 100
     },
     {
+      "op": "update",
+      "code": "120116100000",
+      "name": "新城镇",
+      "status": "active",
+      "new_parent": "120116000000"
+    },
+    {
       "op": "add",
       "code": "120116102000",
       "name": "杨家泊镇",
@@ -172,6 +1470,27 @@
       "confidence_score": 100
     },
     {
+      "op": "update",
+      "code": "120117000000",
+      "name": "宁河区",
+      "status": "active",
+      "new_parent": "120100000000"
+    },
+    {
+      "op": "update",
+      "code": "120117001000",
+      "name": "芦台街道",
+      "status": "active",
+      "new_parent": "120117000000"
+    },
+    {
+      "op": "update",
+      "code": "120117002000",
+      "name": "桥北街道",
+      "status": "active",
+      "new_parent": "120117000000"
+    },
+    {
       "op": "add",
       "code": "120117101000",
       "name": "宁河镇",
@@ -183,32 +1502,44 @@
     {
       "op": "update",
       "code": "120117102000",
-      "name": "苗庄镇"
+      "name": "苗庄镇",
+      "status": "active",
+      "new_parent": "120117000000"
     },
     {
       "op": "update",
       "code": "120117103000",
-      "name": "丰台镇"
+      "name": "丰台镇",
+      "status": "active",
+      "new_parent": "120117000000"
     },
     {
       "op": "update",
       "code": "120117104000",
-      "name": "岳龙镇"
+      "name": "岳龙镇",
+      "status": "active",
+      "new_parent": "120117000000"
     },
     {
       "op": "update",
       "code": "120117105000",
-      "name": "板桥镇"
+      "name": "板桥镇",
+      "status": "active",
+      "new_parent": "120117000000"
     },
     {
       "op": "update",
       "code": "120117106000",
-      "name": "潘庄镇"
+      "name": "潘庄镇",
+      "status": "active",
+      "new_parent": "120117000000"
     },
     {
       "op": "update",
       "code": "120117107000",
-      "name": "造甲城镇"
+      "name": "造甲城镇",
+      "status": "active",
+      "new_parent": "120117000000"
     },
     {
       "op": "add",
@@ -222,22 +1553,380 @@
     {
       "op": "update",
       "code": "120117109000",
-      "name": "大北涧沽镇"
+      "name": "大北涧沽镇",
+      "status": "active",
+      "new_parent": "120117000000"
     },
     {
       "op": "update",
       "code": "120117110000",
-      "name": "东棘坨镇"
+      "name": "东棘坨镇",
+      "status": "active",
+      "new_parent": "120117000000"
     },
     {
       "op": "update",
       "code": "120117111000",
-      "name": "俵口镇"
+      "name": "俵口镇",
+      "status": "active",
+      "new_parent": "120117000000"
     },
     {
       "op": "update",
       "code": "120117112000",
-      "name": "廉庄镇"
+      "name": "廉庄镇",
+      "status": "active",
+      "new_parent": "120117000000"
+    },
+    {
+      "op": "update",
+      "code": "120117113000",
+      "name": "北淮淀镇",
+      "status": "active",
+      "new_parent": "120117000000"
+    },
+    {
+      "op": "update",
+      "code": "120118000000",
+      "name": "静海区",
+      "status": "active",
+      "new_parent": "120100000000"
+    },
+    {
+      "op": "update",
+      "code": "120118001000",
+      "name": "华康街道",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118002000",
+      "name": "朝阳街道",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118100000",
+      "name": "静海镇",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118101000",
+      "name": "唐官屯镇",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118102000",
+      "name": "独流镇",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118103000",
+      "name": "王口镇",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118104000",
+      "name": "台头镇",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118105000",
+      "name": "子牙镇",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118106000",
+      "name": "陈官屯镇",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118107000",
+      "name": "中旺镇",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118108000",
+      "name": "大邱庄镇",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118109000",
+      "name": "蔡公庄镇",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118110000",
+      "name": "梁头镇",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118111000",
+      "name": "团泊镇",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118112000",
+      "name": "双塘镇",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118113000",
+      "name": "大丰堆镇",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118114000",
+      "name": "沿庄镇",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118115000",
+      "name": "西翟庄镇",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118200000",
+      "name": "良王庄乡",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120118201000",
+      "name": "杨成庄乡",
+      "status": "active",
+      "new_parent": "120118000000"
+    },
+    {
+      "op": "update",
+      "code": "120119000000",
+      "name": "蓟州区",
+      "status": "active",
+      "new_parent": "120100000000"
+    },
+    {
+      "op": "update",
+      "code": "120119001000",
+      "name": "文昌街道",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119100000",
+      "name": "渔阳镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119101000",
+      "name": "洇溜镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119102000",
+      "name": "官庄镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119103000",
+      "name": "马伸桥镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119104000",
+      "name": "下营镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119105000",
+      "name": "邦均镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119106000",
+      "name": "别山镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119108000",
+      "name": "尤古庄镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119109000",
+      "name": "上仓镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119111000",
+      "name": "下仓镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119112000",
+      "name": "罗庄子镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119113000",
+      "name": "白涧镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119115000",
+      "name": "侯家营镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119116000",
+      "name": "桑梓镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119117000",
+      "name": "东施古镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119118000",
+      "name": "下窝头镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119119000",
+      "name": "杨津庄镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119120000",
+      "name": "出头岭镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119121000",
+      "name": "西龙虎峪镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119122000",
+      "name": "穿芳峪镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119123000",
+      "name": "东二营镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119124000",
+      "name": "许家台镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119125000",
+      "name": "礼明庄镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119126000",
+      "name": "东赵各庄镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119127000",
+      "name": "州河湾镇",
+      "status": "active",
+      "new_parent": "120119000000"
+    },
+    {
+      "op": "update",
+      "code": "120119203000",
+      "name": "孙各庄满族乡",
+      "status": "active",
+      "new_parent": "120119000000"
     },
     {
       "op": "update",

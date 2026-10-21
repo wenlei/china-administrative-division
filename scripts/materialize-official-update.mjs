@@ -221,6 +221,10 @@ async function main() {
           as_of: p.as_of ?? null,
           source_url: p.url,
           source_sha256: p.sha256,
+          source_kind: p.source_kind ?? 'provincial_table',
+          retrieved_at: p.retrieved_at ?? p.checked_at,
+          count_basis: p.count_basis,
+          name_resolutions: p.name_resolutions,
           date_basis: p.date_basis,
           supplements: p.supplements ?? [],
           counts,
@@ -232,6 +236,7 @@ async function main() {
       const metadata = {
         edition: manifest.edition,
         complete_national: false,
+        all_provinces_included: pending.length === 0,
         target_year: year,
         baseline_year: baseYear,
         baseline_unchanged: true,
@@ -257,7 +262,7 @@ async function main() {
     fs.renameSync(stage, output);
     published = true;
     console.log(
-      `Published ${output}; ${31 - pending.length}/31 provinces have verified source tables; ${pending.length} pending, ${outdated.length} old/undated. Historical ${baseYear} unchanged. Village level remains frozen.`
+      `Published ${output}; ${31 - pending.length}/31 provinces have admitted official sources; ${pending.length} pending, ${outdated.length} old/undated. Historical ${baseYear} unchanged. Village level remains frozen.`
     );
   } finally {
     if (!published) fs.rmSync(stage, { recursive: true, force: true });

@@ -45,9 +45,62 @@ class OfficialUpdateTests(unittest.TestCase):
             dict(code='350102400000',name='统计用农场',level=4,parent_code='350102000000')]
         data=module.parse_table([['福建省','350000'],['福州市','350100'],['鼓楼区','350102'],['鼓东街道','350102001']],'35','福建省',1)
         patch=module.build_patch(dict(province='35',url='https://example.gov.cn/source',as_of='2026-06-30',sha256='a'*64,expected_towns=1),data,baseline)
-        self.assertIn(dict(op='update',code='350102001000',name='鼓东街道'),patch['operations'])
+        town=next(o for o in patch['operations'] if o['code']=='350102001000')
+        self.assertEqual(town['name'],'鼓东街道')
+        self.assertEqual(town['status'],'active')
+        self.assertEqual(town['new_parent'],'350102000000')
+        # Unchanged 2023 names still need an explicit restore after older events.
+        self.assertTrue(any(o['code']=='350102000000' and o.get('status')=='active' for o in patch['operations']))
         self.assertTrue(any(o.get('status')=='deprecated' and o['code']=='350102400000' for o in patch['operations']))
         self.assertEqual(baseline[3]['name'],'旧码名称')
         self.assertEqual(patch['meta']['apply_after'],'2023-baseline')
+
+    def api_snapshot(self, names=('莞城街道',)):
+        def node(code,name,level,children=()):
+            return dict(code=code.ljust(12,'0'),name=name,level=level,children=list(children))
+        towns=[node('441900001',name,4) for name in names]
+        city=node('441900','东莞市',2,towns)
+        root=node('440000','广东省',1,[node('441900','东莞市',2)])
+        def response(code,data):
+            return dict(url='https://dmfw.mca.gov.cn/9095/xzqh/getList?code='+code+'&maxLevel=2',response=dict(status=200,data=data))
+        return dict(requests=[response('440000',root),response('441900',city)])
+
+    def test_official_api_preserves_direct_city_parent(self):
+        data=module.parse_mca_snapshot(self.api_snapshot(),'44',1)
+        self.assertEqual(data['441900001']['parent_code'],'441900')
+        self.assertEqual(data['441900001']['level'],4)
+
+    def test_official_api_rejects_missing_city_or_untrusted_origin(self):
+        snapshot=self.api_snapshot()
+        snapshot['requests'].pop()
+        with self.assertRaisesRegex(ValueError,'coverage incomplete'):
+            module.parse_mca_snapshot(snapshot,'44',1)
+        snapshot=self.api_snapshot()
+        snapshot['requests'][0]['url']=snapshot['requests'][0]['url'].replace('dmfw.mca.gov.cn','example.com')
+        with self.assertRaisesRegex(ValueError,'Unexpected official API source'):
+            module.parse_mca_snapshot(snapshot,'44',1)
+
+    def test_official_api_filters_withdrawn_aliases_and_rejects_conflicts(self):
+        snapshot=self.api_snapshot(('莞城街道','旧街道（已撤销）'))
+        self.assertEqual(len(module.parse_mca_snapshot(snapshot,'44',1)),3)
+        with self.assertRaisesRegex(ValueError,'Conflicting official API node'):
+            module.parse_mca_snapshot(self.api_snapshot(('莞城街道','同码另一名称')),'44',1)
+
+    def test_official_api_alias_resolution_is_explicit_and_closed(self):
+        rule={'441900001':dict(name='莞城街道',observed_names=['莞城街道','已审查别名'])}
+        result=module.parse_mca_snapshot(self.api_snapshot(('莞城街道','已审查别名')),'44',1,rule)
+        self.assertEqual(result['441900001']['name'],'莞城街道')
+        with self.assertRaisesRegex(ValueError,'Unreviewed official API alias'):
+            module.parse_mca_snapshot(self.api_snapshot(('莞城街道','新出现的别名')),'44',1,rule)
+
+    def test_direct_county_keeps_repository_compatibility_group(self):
+        baseline=[dict(code='650000000000',name='新疆维吾尔自治区',level=1,parent_code=None),
+                  dict(code='659000000000',name='自治区直辖县级行政区划',level=2,parent_code='650000000000')]
+        entries={'650000':dict(code='650000',name='新疆维吾尔自治区',level=1,parent_code=None),
+                 '659013':dict(code='659013',name='草湖市',level=3,parent_code='650000')}
+        source=dict(province='65',url='https://dmfw.mca.gov.cn/',as_of=None,sha256='a'*64,expected_towns=0)
+        patch=module.build_patch(source,entries,baseline)
+        self.assertEqual(next(o for o in patch['operations'] if o['code']=='659013000000')['parent_code'],'659000000000')
+        self.assertEqual(entries['659000']['name'],'自治区直辖县级行政区划')
 
 if __name__=='__main__':unittest.main()
