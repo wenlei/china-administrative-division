@@ -55,6 +55,9 @@ jobs:
       - name: Test
         run: pnpm test
 
+      - name: Test official update parser
+        run: python3 -m unittest discover -s scripts -p 'test_official_update.py'
+
       - name: Validate patch files (schema)
         run: pnpm validate-patches
 

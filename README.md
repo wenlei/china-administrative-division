@@ -14,15 +14,17 @@
 
 > **村级口径如实声明**：村 / 社区级（L5）数据冻结于 NBS 2023 快照。官方村级统计渠道停更后无权威活源（国家地名信息库 stname 村级覆盖约 90% 且存在成批县域缺口与噪声，仅用于坐标增强，见 [DATA-ASSETS 疑点 5](docs/DATA-ASSETS.md)）；2024+ 的 Patch 增量覆盖省 / 市 / 县 / 乡镇四级。
 
+> **本 fork 的2026年10月更新**：沿用 `patches/2026/*.json`，31省均纳入官方来源（25份省厅名录、6份民政部接口快照），另补湖南2026-10-14公告，保留旧年度。11省名录明确截至2026年；其余20省为旧时点或无明确截止日。覆盖31省不等同于全国2026年10月同一时点现势。[覆盖、来源及重建方法](docs/2026-10-official-update.md)
+
 ---
 
 ## 两个产品
 
-| 产品 | 说明 |
-|------|------|
-| **npm 包** (`@cndiv/*`) | 9 个包：数据快照、只读查询、CLI 注水导出、区划码校验、采集爬虫、法令抽取 |
-| **文档站** | [全国行政区划代码](https://tonyc726.github.io/china-administrative-division/) -- Pages 根路径 |
-| **交互式站点** | [时光机](https://tonyc726.github.io/china-administrative-division/time-machine/) -- 四十年县级变迁可视化；64 万个村庄可全文搜索 |
+| 产品                    | 说明                                                                                                                            |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| **npm 包** (`@cndiv/*`) | 9 个包：数据快照、只读查询、CLI 注水导出、区划码校验、采集爬虫、法令抽取                                                        |
+| **文档站**              | [全国行政区划代码](https://tonyc726.github.io/china-administrative-division/) -- Pages 根路径                                   |
+| **交互式站点**          | [时光机](https://tonyc726.github.io/china-administrative-division/time-machine/) -- 四十年县级变迁可视化；64 万个村庄可全文搜索 |
 
 ---
 
@@ -41,8 +43,8 @@ cndiv export --year=2023 --output=out.csv    # 导出 CSV
 import { openCache } from '@cndiv/reader';
 
 const cn = openCache();
-cn.findByCode('110101000000', 2023);                              // 东城区
-cn.getChildren('110000000000', 2023, { skipPlaceholder: true });  // [东城区, 西城区, ...]
+cn.findByCode('110101000000', 2023); // 东城区
+cn.getChildren('110000000000', 2023, { skipPlaceholder: true }); // [东城区, 西城区, ...]
 cn.close();
 ```
 
@@ -53,13 +55,13 @@ cn.close();
 
 ## 包参考
 
-| 我想做什么 | 用这个包 |
-|------------|----------|
-| 校验 / 解析 12 位区划码（判级、取父码、补零） | [`@cndiv/core`](./packages/core) -- 纯函数、零依赖 |
-| 在代码里查询注水后的数据 | [`@cndiv/reader`](./packages/reader) |
-| 命令行：注水、应用 patch、导出 | [`@cndiv/cli`](./packages/cli) |
-| 校验社区 Patch / 复用 SQLite schema | [`@cndiv/data-protocol`](./packages/data-protocol) |
-| 直接使用快照数据 | [`@cndiv/source-2023`](./packages/source-2023) · [`@cndiv/source-history`](./packages/source-history) · [`@cndiv/source-postal`](./packages/source-postal) |
+| 我想做什么                                    | 用这个包                                                                                                                                                   |
+| --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 校验 / 解析 12 位区划码（判级、取父码、补零） | [`@cndiv/core`](./packages/core) -- 纯函数、零依赖                                                                                                         |
+| 在代码里查询注水后的数据                      | [`@cndiv/reader`](./packages/reader)                                                                                                                       |
+| 命令行：注水、应用 patch、导出                | [`@cndiv/cli`](./packages/cli)                                                                                                                             |
+| 校验社区 Patch / 复用 SQLite schema           | [`@cndiv/data-protocol`](./packages/data-protocol)                                                                                                         |
+| 直接使用快照数据                              | [`@cndiv/source-2023`](./packages/source-2023) · [`@cndiv/source-history`](./packages/source-history) · [`@cndiv/source-postal`](./packages/source-postal) |
 
 > 维护侧包（采集 `@cndiv/crawler`、公告抽取 `@cndiv/extractor`）见 [在线文档](https://tonyc726.github.io/china-administrative-division/)「贡献者」一节。
 
@@ -100,9 +102,9 @@ pnpm typecheck && pnpm lint && pnpm test && pnpm validate-patches   # 本地复�
 
 数据来源于公开政府网站（国家统计局、民政部国家地名信息库），仅供学习与研究使用。代码以 [MIT](./LICENSE) 许可。
 
-| 来源 | 用途 | 链接 |
-|------|------|------|
-| 国家地名信息库 | 2021--2026 增量主源、交叉校验 | <https://dmfw.mca.gov.cn> |
-| 民政部 | 县级以上行政区划变更法令 | <https://www.mca.gov.cn> |
-| GB/T 2260 | 1980--2020 逐年全量快照 | 历史国标编码 |
-| modood/Administrative-divisions-of-China | 历史五级镜像参考 (WTFPL) | <https://github.com/modood/Administrative-divisions-of-China> |
+| 来源                                     | 用途                          | 链接                                                          |
+| ---------------------------------------- | ----------------------------- | ------------------------------------------------------------- |
+| 国家地名信息库                           | 2021--2026 增量主源、交叉校验 | <https://dmfw.mca.gov.cn>                                     |
+| 民政部                                   | 县级以上行政区划变更法令      | <https://www.mca.gov.cn>                                      |
+| GB/T 2260                                | 1980--2020 逐年全量快照       | 历史国标编码                                                  |
+| modood/Administrative-divisions-of-China | 历史五级镜像参考 (WTFPL)      | <https://github.com/modood/Administrative-divisions-of-China> |

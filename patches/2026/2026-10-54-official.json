@@ -1,0 +1,6027 @@
+{
+  "meta": {
+    "author": "wenlei-official-2026-10",
+    "source_url": "https://mzt.xizang.gov.cn/zxzx/tzgg/202607/t20260729_551733.html",
+    "evidence_confidence": "high",
+    "apply_after": "2023-baseline",
+    "source_pipeline": "community",
+    "created_at": "2026-10-20T00:00:00.000Z",
+    "notes": "2026年10月整理；官方数据截止2026-06-30；原件SHA-256=b746b510993af9133ad769d5eecdafaf1cb9d44d6762bb3de8474ed57162dcf9；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级731条。"
+  },
+  "operations": [
+    {
+      "op": "update",
+      "code": "540000000000",
+      "name": "西藏自治区",
+      "status": "active"
+    },
+    {
+      "op": "update",
+      "code": "540100000000",
+      "name": "拉萨市",
+      "status": "active",
+      "new_parent": "540000000000"
+    },
+    {
+      "op": "update",
+      "code": "540102000000",
+      "name": "城关区",
+      "status": "active",
+      "new_parent": "540100000000"
+    },
+    {
+      "op": "update",
+      "code": "540102002000",
+      "name": "八廓街道",
+      "status": "active",
+      "new_parent": "540102000000"
+    },
+    {
+      "op": "update",
+      "code": "540102003000",
+      "name": "吉日街道",
+      "status": "active",
+      "new_parent": "540102000000"
+    },
+    {
+      "op": "update",
+      "code": "540102004000",
+      "name": "吉崩岗街道",
+      "status": "active",
+      "new_parent": "540102000000"
+    },
+    {
+      "op": "update",
+      "code": "540102005000",
+      "name": "扎细街道",
+      "status": "active",
+      "new_parent": "540102000000"
+    },
+    {
+      "op": "update",
+      "code": "540102006000",
+      "name": "功德林街道",
+      "status": "active",
+      "new_parent": "540102000000"
+    },
+    {
+      "op": "update",
+      "code": "540102007000",
+      "name": "嘎玛贡桑街道",
+      "status": "active",
+      "new_parent": "540102000000"
+    },
+    {
+      "op": "update",
+      "code": "540102008000",
+      "name": "两岛街道",
+      "status": "active",
+      "new_parent": "540102000000"
+    },
+    {
+      "op": "update",
+      "code": "540102009000",
+      "name": "金珠西路街道",
+      "status": "active",
+      "new_parent": "540102000000"
+    },
+    {
+      "op": "update",
+      "code": "540102010000",
+      "name": "蔡公堂街道",
+      "status": "active",
+      "new_parent": "540102000000"
+    },
+    {
+      "op": "update",
+      "code": "540102011000",
+      "name": "夺底街道",
+      "status": "active",
+      "new_parent": "540102000000"
+    },
+    {
+      "op": "update",
+      "code": "540102012000",
+      "name": "娘热街道",
+      "status": "active",
+      "new_parent": "540102000000"
+    },
+    {
+      "op": "update",
+      "code": "540102013000",
+      "name": "纳金街道",
+      "status": "active",
+      "new_parent": "540102000000"
+    },
+    {
+      "op": "add",
+      "code": "540102014000",
+      "name": "慈觉林街道",
+      "level": 4,
+      "parent_code": "540102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540102015000",
+      "name": "塔玛街道",
+      "level": 4,
+      "parent_code": "540102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540102016000",
+      "name": "八一街道",
+      "level": 4,
+      "parent_code": "540102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540103000000",
+      "name": "堆龙德庆区",
+      "status": "active",
+      "new_parent": "540100000000"
+    },
+    {
+      "op": "update",
+      "code": "540103001000",
+      "name": "东嘎街道",
+      "status": "active",
+      "new_parent": "540103000000"
+    },
+    {
+      "op": "update",
+      "code": "540103002000",
+      "name": "乃琼街道",
+      "status": "active",
+      "new_parent": "540103000000"
+    },
+    {
+      "op": "update",
+      "code": "540103003000",
+      "name": "羊达街道",
+      "status": "active",
+      "new_parent": "540103000000"
+    },
+    {
+      "op": "update",
+      "code": "540103004000",
+      "name": "柳梧街道",
+      "status": "active",
+      "new_parent": "540103000000"
+    },
+    {
+      "op": "add",
+      "code": "540103006000",
+      "name": "热玛岗街道",
+      "level": 4,
+      "parent_code": "540103000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540103007000",
+      "name": "加玛街道",
+      "level": 4,
+      "parent_code": "540103000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540103102000",
+      "name": "古荣镇",
+      "status": "active",
+      "new_parent": "540103000000"
+    },
+    {
+      "op": "update",
+      "code": "540103103000",
+      "name": "马镇",
+      "status": "active",
+      "new_parent": "540103000000"
+    },
+    {
+      "op": "update",
+      "code": "540103104000",
+      "name": "德庆镇",
+      "status": "active",
+      "new_parent": "540103000000"
+    },
+    {
+      "op": "update",
+      "code": "540104000000",
+      "name": "达孜区",
+      "status": "active",
+      "new_parent": "540100000000"
+    },
+    {
+      "op": "update",
+      "code": "540104100000",
+      "name": "德庆镇",
+      "status": "active",
+      "new_parent": "540104000000"
+    },
+    {
+      "op": "update",
+      "code": "540104200000",
+      "name": "塔杰乡",
+      "status": "active",
+      "new_parent": "540104000000"
+    },
+    {
+      "op": "update",
+      "code": "540104201000",
+      "name": "章多乡",
+      "status": "active",
+      "new_parent": "540104000000"
+    },
+    {
+      "op": "update",
+      "code": "540104202000",
+      "name": "唐嘎乡",
+      "status": "active",
+      "new_parent": "540104000000"
+    },
+    {
+      "op": "update",
+      "code": "540104203000",
+      "name": "雪乡",
+      "status": "active",
+      "new_parent": "540104000000"
+    },
+    {
+      "op": "update",
+      "code": "540104204000",
+      "name": "邦堆乡",
+      "status": "active",
+      "new_parent": "540104000000"
+    },
+    {
+      "op": "update",
+      "code": "540121000000",
+      "name": "林周县",
+      "status": "active",
+      "new_parent": "540100000000"
+    },
+    {
+      "op": "update",
+      "code": "540121100000",
+      "name": "甘丹曲果镇",
+      "status": "active",
+      "new_parent": "540121000000"
+    },
+    {
+      "op": "add",
+      "code": "540121101000",
+      "name": "强嘎镇",
+      "level": 4,
+      "parent_code": "540121000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540121102000",
+      "name": "边交林镇",
+      "level": 4,
+      "parent_code": "540121000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540121103000",
+      "name": "唐古镇",
+      "level": 4,
+      "parent_code": "540121000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540121200000",
+      "name": "春堆乡",
+      "status": "active",
+      "new_parent": "540121000000"
+    },
+    {
+      "op": "update",
+      "code": "540121201000",
+      "name": "松盘乡",
+      "status": "active",
+      "new_parent": "540121000000"
+    },
+    {
+      "op": "update",
+      "code": "540121204000",
+      "name": "江热夏乡",
+      "status": "active",
+      "new_parent": "540121000000"
+    },
+    {
+      "op": "update",
+      "code": "540121205000",
+      "name": "卡孜乡",
+      "status": "active",
+      "new_parent": "540121000000"
+    },
+    {
+      "op": "update",
+      "code": "540121206000",
+      "name": "旁多乡",
+      "status": "active",
+      "new_parent": "540121000000"
+    },
+    {
+      "op": "update",
+      "code": "540121208000",
+      "name": "阿朗乡",
+      "status": "active",
+      "new_parent": "540121000000"
+    },
+    {
+      "op": "update",
+      "code": "540122000000",
+      "name": "当雄县",
+      "status": "active",
+      "new_parent": "540100000000"
+    },
+    {
+      "op": "update",
+      "code": "540122100000",
+      "name": "当曲卡镇",
+      "status": "active",
+      "new_parent": "540122000000"
+    },
+    {
+      "op": "update",
+      "code": "540122101000",
+      "name": "羊八井镇",
+      "status": "active",
+      "new_parent": "540122000000"
+    },
+    {
+      "op": "add",
+      "code": "540122102000",
+      "name": "纳木湖镇",
+      "level": 4,
+      "parent_code": "540122000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540122200000",
+      "name": "格达乡",
+      "status": "active",
+      "new_parent": "540122000000"
+    },
+    {
+      "op": "update",
+      "code": "540122201000",
+      "name": "宁中乡",
+      "status": "active",
+      "new_parent": "540122000000"
+    },
+    {
+      "op": "update",
+      "code": "540122202000",
+      "name": "公塘乡",
+      "status": "active",
+      "new_parent": "540122000000"
+    },
+    {
+      "op": "update",
+      "code": "540122203000",
+      "name": "龙仁乡",
+      "status": "active",
+      "new_parent": "540122000000"
+    },
+    {
+      "op": "update",
+      "code": "540122204000",
+      "name": "乌玛塘乡",
+      "status": "active",
+      "new_parent": "540122000000"
+    },
+    {
+      "op": "update",
+      "code": "540123000000",
+      "name": "尼木县",
+      "status": "active",
+      "new_parent": "540100000000"
+    },
+    {
+      "op": "update",
+      "code": "540123100000",
+      "name": "塔荣镇",
+      "status": "active",
+      "new_parent": "540123000000"
+    },
+    {
+      "op": "update",
+      "code": "540123101000",
+      "name": "吞巴镇",
+      "status": "active",
+      "new_parent": "540123000000"
+    },
+    {
+      "op": "update",
+      "code": "540123200000",
+      "name": "麻江乡",
+      "status": "active",
+      "new_parent": "540123000000"
+    },
+    {
+      "op": "update",
+      "code": "540123201000",
+      "name": "普松乡",
+      "status": "active",
+      "new_parent": "540123000000"
+    },
+    {
+      "op": "update",
+      "code": "540123202000",
+      "name": "卡如乡",
+      "status": "active",
+      "new_parent": "540123000000"
+    },
+    {
+      "op": "update",
+      "code": "540123203000",
+      "name": "尼木乡",
+      "status": "active",
+      "new_parent": "540123000000"
+    },
+    {
+      "op": "update",
+      "code": "540123204000",
+      "name": "续迈乡",
+      "status": "active",
+      "new_parent": "540123000000"
+    },
+    {
+      "op": "update",
+      "code": "540123205000",
+      "name": "帕古乡",
+      "status": "active",
+      "new_parent": "540123000000"
+    },
+    {
+      "op": "update",
+      "code": "540124000000",
+      "name": "曲水县",
+      "status": "active",
+      "new_parent": "540100000000"
+    },
+    {
+      "op": "update",
+      "code": "540124100000",
+      "name": "曲水镇",
+      "status": "active",
+      "new_parent": "540124000000"
+    },
+    {
+      "op": "update",
+      "code": "540124101000",
+      "name": "达嘎镇",
+      "status": "active",
+      "new_parent": "540124000000"
+    },
+    {
+      "op": "add",
+      "code": "540124102000",
+      "name": "才纳镇",
+      "level": 4,
+      "parent_code": "540124000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540124103000",
+      "name": "聂当镇",
+      "level": 4,
+      "parent_code": "540124000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540124202000",
+      "name": "南木乡",
+      "status": "active",
+      "new_parent": "540124000000"
+    },
+    {
+      "op": "update",
+      "code": "540124204000",
+      "name": "茶巴拉乡",
+      "status": "active",
+      "new_parent": "540124000000"
+    },
+    {
+      "op": "update",
+      "code": "540127000000",
+      "name": "墨竹工卡县",
+      "status": "active",
+      "new_parent": "540100000000"
+    },
+    {
+      "op": "update",
+      "code": "540127100000",
+      "name": "工卡镇",
+      "status": "active",
+      "new_parent": "540127000000"
+    },
+    {
+      "op": "add",
+      "code": "540127101000",
+      "name": "甲玛镇",
+      "level": 4,
+      "parent_code": "540127000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540127200000",
+      "name": "唐加乡",
+      "status": "active",
+      "new_parent": "540127000000"
+    },
+    {
+      "op": "update",
+      "code": "540127202000",
+      "name": "尼玛江热乡",
+      "status": "active",
+      "new_parent": "540127000000"
+    },
+    {
+      "op": "update",
+      "code": "540127203000",
+      "name": "日多乡",
+      "status": "active",
+      "new_parent": "540127000000"
+    },
+    {
+      "op": "update",
+      "code": "540127204000",
+      "name": "扎西岗乡",
+      "status": "active",
+      "new_parent": "540127000000"
+    },
+    {
+      "op": "update",
+      "code": "540127205000",
+      "name": "门巴乡",
+      "status": "active",
+      "new_parent": "540127000000"
+    },
+    {
+      "op": "update",
+      "code": "540127206000",
+      "name": "扎雪乡",
+      "status": "active",
+      "new_parent": "540127000000"
+    },
+    {
+      "op": "update",
+      "code": "540200000000",
+      "name": "日喀则市",
+      "status": "active",
+      "new_parent": "540000000000"
+    },
+    {
+      "op": "update",
+      "code": "540202000000",
+      "name": "桑珠孜区",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540202001000",
+      "name": "城南街道",
+      "status": "active",
+      "new_parent": "540202000000"
+    },
+    {
+      "op": "update",
+      "code": "540202002000",
+      "name": "城北街道",
+      "status": "active",
+      "new_parent": "540202000000"
+    },
+    {
+      "op": "update",
+      "code": "540202003000",
+      "name": "城东街道",
+      "status": "active",
+      "new_parent": "540202000000"
+    },
+    {
+      "op": "update",
+      "code": "540202004000",
+      "name": "城西街道",
+      "status": "active",
+      "new_parent": "540202000000"
+    },
+    {
+      "op": "update",
+      "code": "540202200000",
+      "name": "曲布雄乡",
+      "status": "active",
+      "new_parent": "540202000000"
+    },
+    {
+      "op": "update",
+      "code": "540202201000",
+      "name": "曲美乡",
+      "status": "active",
+      "new_parent": "540202000000"
+    },
+    {
+      "op": "update",
+      "code": "540202202000",
+      "name": "聂日雄乡",
+      "status": "active",
+      "new_parent": "540202000000"
+    },
+    {
+      "op": "update",
+      "code": "540202203000",
+      "name": "甲措雄乡",
+      "status": "active",
+      "new_parent": "540202000000"
+    },
+    {
+      "op": "update",
+      "code": "540202204000",
+      "name": "纳尔乡",
+      "status": "active",
+      "new_parent": "540202000000"
+    },
+    {
+      "op": "update",
+      "code": "540202205000",
+      "name": "东嘎乡",
+      "status": "active",
+      "new_parent": "540202000000"
+    },
+    {
+      "op": "update",
+      "code": "540202206000",
+      "name": "边雄乡",
+      "status": "active",
+      "new_parent": "540202000000"
+    },
+    {
+      "op": "update",
+      "code": "540202207000",
+      "name": "江当乡",
+      "status": "active",
+      "new_parent": "540202000000"
+    },
+    {
+      "op": "update",
+      "code": "540202208000",
+      "name": "年木乡",
+      "status": "active",
+      "new_parent": "540202000000"
+    },
+    {
+      "op": "update",
+      "code": "540202209000",
+      "name": "联乡",
+      "status": "active",
+      "new_parent": "540202000000"
+    },
+    {
+      "op": "update",
+      "code": "540221000000",
+      "name": "南木林县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540221100000",
+      "name": "南木林镇",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540221200000",
+      "name": "达那乡",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540221201000",
+      "name": "卡孜乡",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540221202000",
+      "name": "多角乡",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540221203000",
+      "name": "秋木乡",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540221204000",
+      "name": "艾玛乡",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540221205000",
+      "name": "土布加乡",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540221206000",
+      "name": "查尔乡",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540221207000",
+      "name": "索金乡",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540221208000",
+      "name": "达孜乡",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540221209000",
+      "name": "奴玛乡",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540221210000",
+      "name": "热当乡",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540221211000",
+      "name": "拉布普乡",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540221212000",
+      "name": "普当乡",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540221213000",
+      "name": "仁堆乡",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540221214000",
+      "name": "芒热乡",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540221215000",
+      "name": "甲措乡",
+      "status": "active",
+      "new_parent": "540221000000"
+    },
+    {
+      "op": "update",
+      "code": "540222000000",
+      "name": "江孜县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540222100000",
+      "name": "江孜镇",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222200000",
+      "name": "纳如乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222201000",
+      "name": "卡麦乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222202000",
+      "name": "卡堆乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222203000",
+      "name": "藏改乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222204000",
+      "name": "日朗乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222205000",
+      "name": "达孜乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222206000",
+      "name": "热索乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222207000",
+      "name": "重孜乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222208000",
+      "name": "龙马乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222209000",
+      "name": "加克西乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222210000",
+      "name": "紫金乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222211000",
+      "name": "江热乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222212000",
+      "name": "年堆乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222213000",
+      "name": "康卓乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222214000",
+      "name": "金嘎乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222215000",
+      "name": "日星乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222216000",
+      "name": "车仁乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540222217000",
+      "name": "热龙乡",
+      "status": "active",
+      "new_parent": "540222000000"
+    },
+    {
+      "op": "update",
+      "code": "540223000000",
+      "name": "定日县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540223100000",
+      "name": "协格尔镇",
+      "status": "active",
+      "new_parent": "540223000000"
+    },
+    {
+      "op": "update",
+      "code": "540223101000",
+      "name": "岗嘎镇",
+      "status": "active",
+      "new_parent": "540223000000"
+    },
+    {
+      "op": "add",
+      "code": "540223102000",
+      "name": "扎西宗镇",
+      "level": 4,
+      "parent_code": "540223000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540223103000",
+      "name": "曲当镇",
+      "level": 4,
+      "parent_code": "540223000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540223104000",
+      "name": "扎果镇",
+      "level": 4,
+      "parent_code": "540223000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540223105000",
+      "name": "绒辖镇",
+      "level": 4,
+      "parent_code": "540223000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540223203000",
+      "name": "措果乡",
+      "status": "active",
+      "new_parent": "540223000000"
+    },
+    {
+      "op": "update",
+      "code": "540223204000",
+      "name": "曲洛乡",
+      "status": "active",
+      "new_parent": "540223000000"
+    },
+    {
+      "op": "update",
+      "code": "540223205000",
+      "name": "长所乡",
+      "status": "active",
+      "new_parent": "540223000000"
+    },
+    {
+      "op": "update",
+      "code": "540223206000",
+      "name": "尼辖乡",
+      "status": "active",
+      "new_parent": "540223000000"
+    },
+    {
+      "op": "update",
+      "code": "540223208000",
+      "name": "克玛乡",
+      "status": "active",
+      "new_parent": "540223000000"
+    },
+    {
+      "op": "update",
+      "code": "540223209000",
+      "name": "盆吉乡",
+      "status": "active",
+      "new_parent": "540223000000"
+    },
+    {
+      "op": "update",
+      "code": "540223210000",
+      "name": "加措乡",
+      "status": "active",
+      "new_parent": "540223000000"
+    },
+    {
+      "op": "update",
+      "code": "540224000000",
+      "name": "萨迦县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540224100000",
+      "name": "萨迦镇",
+      "status": "active",
+      "new_parent": "540224000000"
+    },
+    {
+      "op": "update",
+      "code": "540224101000",
+      "name": "吉定镇",
+      "status": "active",
+      "new_parent": "540224000000"
+    },
+    {
+      "op": "update",
+      "code": "540224200000",
+      "name": "雄麦乡",
+      "status": "active",
+      "new_parent": "540224000000"
+    },
+    {
+      "op": "update",
+      "code": "540224201000",
+      "name": "麻布加乡",
+      "status": "active",
+      "new_parent": "540224000000"
+    },
+    {
+      "op": "update",
+      "code": "540224202000",
+      "name": "雄玛乡",
+      "status": "active",
+      "new_parent": "540224000000"
+    },
+    {
+      "op": "update",
+      "code": "540224203000",
+      "name": "扎西岗乡",
+      "status": "active",
+      "new_parent": "540224000000"
+    },
+    {
+      "op": "update",
+      "code": "540224204000",
+      "name": "扯休乡",
+      "status": "active",
+      "new_parent": "540224000000"
+    },
+    {
+      "op": "update",
+      "code": "540224205000",
+      "name": "赛乡",
+      "status": "active",
+      "new_parent": "540224000000"
+    },
+    {
+      "op": "update",
+      "code": "540224206000",
+      "name": "拉洛乡",
+      "status": "active",
+      "new_parent": "540224000000"
+    },
+    {
+      "op": "update",
+      "code": "540224207000",
+      "name": "查荣乡",
+      "status": "active",
+      "new_parent": "540224000000"
+    },
+    {
+      "op": "update",
+      "code": "540224208000",
+      "name": "木拉乡",
+      "status": "active",
+      "new_parent": "540224000000"
+    },
+    {
+      "op": "update",
+      "code": "540225000000",
+      "name": "拉孜县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540225100000",
+      "name": "曲下镇",
+      "status": "active",
+      "new_parent": "540225000000"
+    },
+    {
+      "op": "update",
+      "code": "540225101000",
+      "name": "拉孜镇",
+      "status": "active",
+      "new_parent": "540225000000"
+    },
+    {
+      "op": "update",
+      "code": "540225200000",
+      "name": "扎西宗乡",
+      "status": "active",
+      "new_parent": "540225000000"
+    },
+    {
+      "op": "update",
+      "code": "540225201000",
+      "name": "曲玛乡",
+      "status": "active",
+      "new_parent": "540225000000"
+    },
+    {
+      "op": "update",
+      "code": "540225202000",
+      "name": "彭措林乡",
+      "status": "active",
+      "new_parent": "540225000000"
+    },
+    {
+      "op": "update",
+      "code": "540225203000",
+      "name": "扎西岗乡",
+      "status": "active",
+      "new_parent": "540225000000"
+    },
+    {
+      "op": "update",
+      "code": "540225204000",
+      "name": "柳乡",
+      "status": "active",
+      "new_parent": "540225000000"
+    },
+    {
+      "op": "update",
+      "code": "540225205000",
+      "name": "热萨乡",
+      "status": "active",
+      "new_parent": "540225000000"
+    },
+    {
+      "op": "update",
+      "code": "540225206000",
+      "name": "锡钦乡",
+      "status": "active",
+      "new_parent": "540225000000"
+    },
+    {
+      "op": "update",
+      "code": "540225207000",
+      "name": "芒普乡",
+      "status": "active",
+      "new_parent": "540225000000"
+    },
+    {
+      "op": "update",
+      "code": "540225208000",
+      "name": "查务乡",
+      "status": "active",
+      "new_parent": "540225000000"
+    },
+    {
+      "op": "update",
+      "code": "540226000000",
+      "name": "昂仁县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540226100000",
+      "name": "卡嘎镇",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540226101000",
+      "name": "桑桑镇",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540226200000",
+      "name": "达若乡",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540226201000",
+      "name": "贡久布乡",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540226202000",
+      "name": "措迈乡",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540226203000",
+      "name": "雄巴乡",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540226204000",
+      "name": "查孜乡",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540226205000",
+      "name": "阿木雄乡",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540226206000",
+      "name": "如萨乡",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540226207000",
+      "name": "孔隆乡",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540226208000",
+      "name": "尼果乡",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540226209000",
+      "name": "日吾其乡",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540226210000",
+      "name": "多白乡",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540226211000",
+      "name": "切热乡",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540226212000",
+      "name": "秋窝乡",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540226213000",
+      "name": "达居乡",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540226214000",
+      "name": "亚木乡",
+      "status": "active",
+      "new_parent": "540226000000"
+    },
+    {
+      "op": "update",
+      "code": "540227000000",
+      "name": "谢通门县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540227100000",
+      "name": "卡嘎镇",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227200000",
+      "name": "达木夏乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227201000",
+      "name": "查布乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227202000",
+      "name": "春哲乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227203000",
+      "name": "则许乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227204000",
+      "name": "娘热乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227205000",
+      "name": "措布西乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227206000",
+      "name": "纳当乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227207000",
+      "name": "青都乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227208000",
+      "name": "切琼乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227209000",
+      "name": "美巴切勤乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227210000",
+      "name": "列巴乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227211000",
+      "name": "塔丁乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227212000",
+      "name": "荣玛乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227213000",
+      "name": "通门乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227214000",
+      "name": "达那普乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227215000",
+      "name": "达那答乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227216000",
+      "name": "南木切乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540227217000",
+      "name": "仁钦则乡",
+      "status": "active",
+      "new_parent": "540227000000"
+    },
+    {
+      "op": "update",
+      "code": "540228000000",
+      "name": "白朗县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540228100000",
+      "name": "洛江镇",
+      "status": "active",
+      "new_parent": "540228000000"
+    },
+    {
+      "op": "update",
+      "code": "540228101000",
+      "name": "嘎东镇",
+      "status": "active",
+      "new_parent": "540228000000"
+    },
+    {
+      "op": "update",
+      "code": "540228200000",
+      "name": "巴扎乡",
+      "status": "active",
+      "new_parent": "540228000000"
+    },
+    {
+      "op": "update",
+      "code": "540228201000",
+      "name": "玛乡",
+      "status": "active",
+      "new_parent": "540228000000"
+    },
+    {
+      "op": "update",
+      "code": "540228202000",
+      "name": "旺丹乡",
+      "status": "active",
+      "new_parent": "540228000000"
+    },
+    {
+      "op": "update",
+      "code": "540228203000",
+      "name": "曲奴乡",
+      "status": "active",
+      "new_parent": "540228000000"
+    },
+    {
+      "op": "update",
+      "code": "540228204000",
+      "name": "杜琼乡",
+      "status": "active",
+      "new_parent": "540228000000"
+    },
+    {
+      "op": "update",
+      "code": "540228205000",
+      "name": "强堆乡",
+      "status": "active",
+      "new_parent": "540228000000"
+    },
+    {
+      "op": "update",
+      "code": "540228206000",
+      "name": "嘎普乡",
+      "status": "active",
+      "new_parent": "540228000000"
+    },
+    {
+      "op": "update",
+      "code": "540228207000",
+      "name": "者下乡",
+      "status": "active",
+      "new_parent": "540228000000"
+    },
+    {
+      "op": "update",
+      "code": "540228208000",
+      "name": "东喜乡",
+      "status": "active",
+      "new_parent": "540228000000"
+    },
+    {
+      "op": "update",
+      "code": "540229000000",
+      "name": "仁布县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540229100000",
+      "name": "德吉林镇",
+      "status": "active",
+      "new_parent": "540229000000"
+    },
+    {
+      "op": "update",
+      "code": "540229200000",
+      "name": "康雄乡",
+      "status": "active",
+      "new_parent": "540229000000"
+    },
+    {
+      "op": "update",
+      "code": "540229201000",
+      "name": "普松乡",
+      "status": "active",
+      "new_parent": "540229000000"
+    },
+    {
+      "op": "update",
+      "code": "540229202000",
+      "name": "帕当乡",
+      "status": "active",
+      "new_parent": "540229000000"
+    },
+    {
+      "op": "update",
+      "code": "540229203000",
+      "name": "然巴乡",
+      "status": "active",
+      "new_parent": "540229000000"
+    },
+    {
+      "op": "update",
+      "code": "540229204000",
+      "name": "查巴乡",
+      "status": "active",
+      "new_parent": "540229000000"
+    },
+    {
+      "op": "update",
+      "code": "540229205000",
+      "name": "切娃乡",
+      "status": "active",
+      "new_parent": "540229000000"
+    },
+    {
+      "op": "update",
+      "code": "540229206000",
+      "name": "姆乡",
+      "status": "active",
+      "new_parent": "540229000000"
+    },
+    {
+      "op": "update",
+      "code": "540229207000",
+      "name": "仁布乡",
+      "status": "active",
+      "new_parent": "540229000000"
+    },
+    {
+      "op": "update",
+      "code": "540230000000",
+      "name": "康马县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540230100000",
+      "name": "康马镇",
+      "status": "active",
+      "new_parent": "540230000000"
+    },
+    {
+      "op": "update",
+      "code": "540230200000",
+      "name": "南尼乡",
+      "status": "active",
+      "new_parent": "540230000000"
+    },
+    {
+      "op": "update",
+      "code": "540230201000",
+      "name": "少岗乡",
+      "status": "active",
+      "new_parent": "540230000000"
+    },
+    {
+      "op": "update",
+      "code": "540230202000",
+      "name": "康如乡",
+      "status": "active",
+      "new_parent": "540230000000"
+    },
+    {
+      "op": "update",
+      "code": "540230203000",
+      "name": "萨玛达乡",
+      "status": "active",
+      "new_parent": "540230000000"
+    },
+    {
+      "op": "update",
+      "code": "540230204000",
+      "name": "嘎拉乡",
+      "status": "active",
+      "new_parent": "540230000000"
+    },
+    {
+      "op": "update",
+      "code": "540230205000",
+      "name": "涅如堆乡",
+      "status": "active",
+      "new_parent": "540230000000"
+    },
+    {
+      "op": "update",
+      "code": "540230206000",
+      "name": "涅如麦乡",
+      "status": "active",
+      "new_parent": "540230000000"
+    },
+    {
+      "op": "update",
+      "code": "540230207000",
+      "name": "雄章乡",
+      "status": "active",
+      "new_parent": "540230000000"
+    },
+    {
+      "op": "update",
+      "code": "540231000000",
+      "name": "定结县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540231100000",
+      "name": "江嘎镇",
+      "status": "active",
+      "new_parent": "540231000000"
+    },
+    {
+      "op": "update",
+      "code": "540231101000",
+      "name": "陈塘镇",
+      "status": "active",
+      "new_parent": "540231000000"
+    },
+    {
+      "op": "update",
+      "code": "540231102000",
+      "name": "日屋镇",
+      "status": "active",
+      "new_parent": "540231000000"
+    },
+    {
+      "op": "update",
+      "code": "540231201000",
+      "name": "确布乡",
+      "status": "active",
+      "new_parent": "540231000000"
+    },
+    {
+      "op": "update",
+      "code": "540231202000",
+      "name": "定结乡",
+      "status": "active",
+      "new_parent": "540231000000"
+    },
+    {
+      "op": "update",
+      "code": "540231203000",
+      "name": "多布扎乡",
+      "status": "active",
+      "new_parent": "540231000000"
+    },
+    {
+      "op": "update",
+      "code": "540231204000",
+      "name": "扎西岗乡",
+      "status": "active",
+      "new_parent": "540231000000"
+    },
+    {
+      "op": "update",
+      "code": "540231205000",
+      "name": "琼孜乡",
+      "status": "active",
+      "new_parent": "540231000000"
+    },
+    {
+      "op": "update",
+      "code": "540231206000",
+      "name": "萨尔乡",
+      "status": "active",
+      "new_parent": "540231000000"
+    },
+    {
+      "op": "update",
+      "code": "540231207000",
+      "name": "郭加乡",
+      "status": "active",
+      "new_parent": "540231000000"
+    },
+    {
+      "op": "update",
+      "code": "540232000000",
+      "name": "仲巴县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540232100000",
+      "name": "帕羊镇",
+      "status": "active",
+      "new_parent": "540232000000"
+    },
+    {
+      "op": "add",
+      "code": "540232101000",
+      "name": "里孜镇",
+      "level": 4,
+      "parent_code": "540232000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540232200000",
+      "name": "拉让乡",
+      "status": "active",
+      "new_parent": "540232000000"
+    },
+    {
+      "op": "update",
+      "code": "540232201000",
+      "name": "琼果乡",
+      "status": "active",
+      "new_parent": "540232000000"
+    },
+    {
+      "op": "update",
+      "code": "540232202000",
+      "name": "亚热乡",
+      "status": "active",
+      "new_parent": "540232000000"
+    },
+    {
+      "op": "update",
+      "code": "540232203000",
+      "name": "布多乡",
+      "status": "active",
+      "new_parent": "540232000000"
+    },
+    {
+      "op": "update",
+      "code": "540232204000",
+      "name": "偏吉乡",
+      "status": "active",
+      "new_parent": "540232000000"
+    },
+    {
+      "op": "update",
+      "code": "540232205000",
+      "name": "纳久乡",
+      "status": "active",
+      "new_parent": "540232000000"
+    },
+    {
+      "op": "update",
+      "code": "540232206000",
+      "name": "吉拉乡",
+      "status": "active",
+      "new_parent": "540232000000"
+    },
+    {
+      "op": "update",
+      "code": "540232207000",
+      "name": "霍尔巴乡",
+      "status": "active",
+      "new_parent": "540232000000"
+    },
+    {
+      "op": "update",
+      "code": "540232208000",
+      "name": "隆格尔乡",
+      "status": "active",
+      "new_parent": "540232000000"
+    },
+    {
+      "op": "update",
+      "code": "540232209000",
+      "name": "吉玛乡",
+      "status": "active",
+      "new_parent": "540232000000"
+    },
+    {
+      "op": "update",
+      "code": "540232211000",
+      "name": "帕江乡",
+      "status": "active",
+      "new_parent": "540232000000"
+    },
+    {
+      "op": "update",
+      "code": "540233000000",
+      "name": "亚东县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540233100000",
+      "name": "下司马镇",
+      "status": "active",
+      "new_parent": "540233000000"
+    },
+    {
+      "op": "update",
+      "code": "540233101000",
+      "name": "帕里镇",
+      "status": "active",
+      "new_parent": "540233000000"
+    },
+    {
+      "op": "update",
+      "code": "540233200000",
+      "name": "下亚东乡",
+      "status": "active",
+      "new_parent": "540233000000"
+    },
+    {
+      "op": "update",
+      "code": "540233201000",
+      "name": "上亚东乡",
+      "status": "active",
+      "new_parent": "540233000000"
+    },
+    {
+      "op": "update",
+      "code": "540233202000",
+      "name": "康布乡",
+      "status": "active",
+      "new_parent": "540233000000"
+    },
+    {
+      "op": "update",
+      "code": "540233203000",
+      "name": "堆纳乡",
+      "status": "active",
+      "new_parent": "540233000000"
+    },
+    {
+      "op": "update",
+      "code": "540233204000",
+      "name": "吉汝乡",
+      "status": "active",
+      "new_parent": "540233000000"
+    },
+    {
+      "op": "add",
+      "code": "540233205000",
+      "name": "基伍乡",
+      "level": 4,
+      "parent_code": "540233000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540233206000",
+      "name": "查玛乡",
+      "level": 4,
+      "parent_code": "540233000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540233207000",
+      "name": "邦嘎乡",
+      "level": 4,
+      "parent_code": "540233000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540233208000",
+      "name": "朗波多乡",
+      "level": 4,
+      "parent_code": "540233000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540233209000",
+      "name": "巴夏乡",
+      "level": 4,
+      "parent_code": "540233000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540233210000",
+      "name": "洞曲乡",
+      "level": 4,
+      "parent_code": "540233000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540233211000",
+      "name": "曲塘乡",
+      "level": 4,
+      "parent_code": "540233000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540234000000",
+      "name": "吉隆县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540234100000",
+      "name": "宗嘎镇",
+      "status": "active",
+      "new_parent": "540234000000"
+    },
+    {
+      "op": "update",
+      "code": "540234101000",
+      "name": "吉隆镇",
+      "status": "active",
+      "new_parent": "540234000000"
+    },
+    {
+      "op": "update",
+      "code": "540234200000",
+      "name": "差那乡",
+      "status": "active",
+      "new_parent": "540234000000"
+    },
+    {
+      "op": "update",
+      "code": "540234201000",
+      "name": "折巴乡",
+      "status": "active",
+      "new_parent": "540234000000"
+    },
+    {
+      "op": "update",
+      "code": "540234202000",
+      "name": "贡当乡",
+      "status": "active",
+      "new_parent": "540234000000"
+    },
+    {
+      "op": "update",
+      "code": "540234203000",
+      "name": "萨勒乡",
+      "status": "active",
+      "new_parent": "540234000000"
+    },
+    {
+      "op": "update",
+      "code": "540235000000",
+      "name": "聂拉木县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540235100000",
+      "name": "聂拉木镇",
+      "status": "active",
+      "new_parent": "540235000000"
+    },
+    {
+      "op": "update",
+      "code": "540235101000",
+      "name": "樟木镇",
+      "status": "active",
+      "new_parent": "540235000000"
+    },
+    {
+      "op": "update",
+      "code": "540235200000",
+      "name": "亚来乡",
+      "status": "active",
+      "new_parent": "540235000000"
+    },
+    {
+      "op": "update",
+      "code": "540235201000",
+      "name": "琐作乡",
+      "status": "active",
+      "new_parent": "540235000000"
+    },
+    {
+      "op": "update",
+      "code": "540235202000",
+      "name": "乃龙乡",
+      "status": "active",
+      "new_parent": "540235000000"
+    },
+    {
+      "op": "update",
+      "code": "540235203000",
+      "name": "门布乡",
+      "status": "active",
+      "new_parent": "540235000000"
+    },
+    {
+      "op": "update",
+      "code": "540235204000",
+      "name": "波绒乡",
+      "status": "active",
+      "new_parent": "540235000000"
+    },
+    {
+      "op": "update",
+      "code": "540236000000",
+      "name": "萨嘎县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540236100000",
+      "name": "加加镇",
+      "status": "active",
+      "new_parent": "540236000000"
+    },
+    {
+      "op": "update",
+      "code": "540236200000",
+      "name": "昌果乡",
+      "status": "active",
+      "new_parent": "540236000000"
+    },
+    {
+      "op": "update",
+      "code": "540236201000",
+      "name": "雄如乡",
+      "status": "active",
+      "new_parent": "540236000000"
+    },
+    {
+      "op": "update",
+      "code": "540236202000",
+      "name": "拉藏乡",
+      "status": "active",
+      "new_parent": "540236000000"
+    },
+    {
+      "op": "update",
+      "code": "540236203000",
+      "name": "如角乡",
+      "status": "active",
+      "new_parent": "540236000000"
+    },
+    {
+      "op": "update",
+      "code": "540236204000",
+      "name": "达吉岭乡",
+      "status": "active",
+      "new_parent": "540236000000"
+    },
+    {
+      "op": "update",
+      "code": "540236205000",
+      "name": "旦嘎乡",
+      "status": "active",
+      "new_parent": "540236000000"
+    },
+    {
+      "op": "update",
+      "code": "540236206000",
+      "name": "夏如乡",
+      "status": "active",
+      "new_parent": "540236000000"
+    },
+    {
+      "op": "update",
+      "code": "540237000000",
+      "name": "岗巴县",
+      "status": "active",
+      "new_parent": "540200000000"
+    },
+    {
+      "op": "update",
+      "code": "540237100000",
+      "name": "岗巴镇",
+      "status": "active",
+      "new_parent": "540237000000"
+    },
+    {
+      "op": "update",
+      "code": "540237200000",
+      "name": "昌龙乡",
+      "status": "active",
+      "new_parent": "540237000000"
+    },
+    {
+      "op": "update",
+      "code": "540237201000",
+      "name": "直克乡",
+      "status": "active",
+      "new_parent": "540237000000"
+    },
+    {
+      "op": "update",
+      "code": "540237202000",
+      "name": "孔玛乡",
+      "status": "active",
+      "new_parent": "540237000000"
+    },
+    {
+      "op": "update",
+      "code": "540237203000",
+      "name": "龙中乡",
+      "status": "active",
+      "new_parent": "540237000000"
+    },
+    {
+      "op": "update",
+      "code": "540300000000",
+      "name": "昌都市",
+      "status": "active",
+      "new_parent": "540000000000"
+    },
+    {
+      "op": "update",
+      "code": "540302000000",
+      "name": "卡若区",
+      "status": "active",
+      "new_parent": "540300000000"
+    },
+    {
+      "op": "add",
+      "code": "540302001000",
+      "name": "四川桥街道",
+      "level": 4,
+      "parent_code": "540302000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540302002000",
+      "name": "玛塘街道",
+      "level": 4,
+      "parent_code": "540302000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540302003000",
+      "name": "马草坝街道",
+      "level": 4,
+      "parent_code": "540302000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540302100000",
+      "name": "城关镇",
+      "status": "active",
+      "new_parent": "540302000000"
+    },
+    {
+      "op": "update",
+      "code": "540302101000",
+      "name": "俄洛镇",
+      "status": "active",
+      "new_parent": "540302000000"
+    },
+    {
+      "op": "update",
+      "code": "540302102000",
+      "name": "卡若镇",
+      "status": "active",
+      "new_parent": "540302000000"
+    },
+    {
+      "op": "update",
+      "code": "540302200000",
+      "name": "芒达乡",
+      "status": "active",
+      "new_parent": "540302000000"
+    },
+    {
+      "op": "update",
+      "code": "540302201000",
+      "name": "约巴乡",
+      "status": "active",
+      "new_parent": "540302000000"
+    },
+    {
+      "op": "update",
+      "code": "540302202000",
+      "name": "妥坝乡",
+      "status": "active",
+      "new_parent": "540302000000"
+    },
+    {
+      "op": "update",
+      "code": "540302203000",
+      "name": "拉多乡",
+      "status": "active",
+      "new_parent": "540302000000"
+    },
+    {
+      "op": "update",
+      "code": "540302204000",
+      "name": "面达乡",
+      "status": "active",
+      "new_parent": "540302000000"
+    },
+    {
+      "op": "update",
+      "code": "540302205000",
+      "name": "嘎玛乡",
+      "status": "active",
+      "new_parent": "540302000000"
+    },
+    {
+      "op": "update",
+      "code": "540302206000",
+      "name": "柴维乡",
+      "status": "active",
+      "new_parent": "540302000000"
+    },
+    {
+      "op": "update",
+      "code": "540302207000",
+      "name": "日通乡",
+      "status": "active",
+      "new_parent": "540302000000"
+    },
+    {
+      "op": "update",
+      "code": "540302208000",
+      "name": "如意乡",
+      "status": "active",
+      "new_parent": "540302000000"
+    },
+    {
+      "op": "update",
+      "code": "540302209000",
+      "name": "埃西乡",
+      "status": "active",
+      "new_parent": "540302000000"
+    },
+    {
+      "op": "update",
+      "code": "540302210000",
+      "name": "若巴乡",
+      "status": "active",
+      "new_parent": "540302000000"
+    },
+    {
+      "op": "update",
+      "code": "540302211000",
+      "name": "沙贡乡",
+      "status": "active",
+      "new_parent": "540302000000"
+    },
+    {
+      "op": "update",
+      "code": "540321000000",
+      "name": "江达县",
+      "status": "active",
+      "new_parent": "540300000000"
+    },
+    {
+      "op": "update",
+      "code": "540321100000",
+      "name": "江达镇",
+      "status": "active",
+      "new_parent": "540321000000"
+    },
+    {
+      "op": "update",
+      "code": "540321101000",
+      "name": "岗托镇",
+      "status": "active",
+      "new_parent": "540321000000"
+    },
+    {
+      "op": "update",
+      "code": "540321200000",
+      "name": "卡贡乡",
+      "status": "active",
+      "new_parent": "540321000000"
+    },
+    {
+      "op": "update",
+      "code": "540321201000",
+      "name": "岩比乡",
+      "status": "active",
+      "new_parent": "540321000000"
+    },
+    {
+      "op": "update",
+      "code": "540321202000",
+      "name": "邓柯乡",
+      "status": "active",
+      "new_parent": "540321000000"
+    },
+    {
+      "op": "update",
+      "code": "540321203000",
+      "name": "生达乡",
+      "status": "active",
+      "new_parent": "540321000000"
+    },
+    {
+      "op": "update",
+      "code": "540321204000",
+      "name": "娘西乡",
+      "status": "active",
+      "new_parent": "540321000000"
+    },
+    {
+      "op": "update",
+      "code": "540321205000",
+      "name": "字呷乡",
+      "status": "active",
+      "new_parent": "540321000000"
+    },
+    {
+      "op": "update",
+      "code": "540321206000",
+      "name": "青泥洞乡",
+      "status": "active",
+      "new_parent": "540321000000"
+    },
+    {
+      "op": "update",
+      "code": "540321207000",
+      "name": "汪布顶乡",
+      "status": "active",
+      "new_parent": "540321000000"
+    },
+    {
+      "op": "update",
+      "code": "540321208000",
+      "name": "德登乡",
+      "status": "active",
+      "new_parent": "540321000000"
+    },
+    {
+      "op": "update",
+      "code": "540321209000",
+      "name": "同普乡",
+      "status": "active",
+      "new_parent": "540321000000"
+    },
+    {
+      "op": "update",
+      "code": "540321210000",
+      "name": "波罗乡",
+      "status": "active",
+      "new_parent": "540321000000"
+    },
+    {
+      "op": "update",
+      "code": "540322000000",
+      "name": "贡觉县",
+      "status": "active",
+      "new_parent": "540300000000"
+    },
+    {
+      "op": "update",
+      "code": "540322100000",
+      "name": "莫洛镇",
+      "status": "active",
+      "new_parent": "540322000000"
+    },
+    {
+      "op": "update",
+      "code": "540322200000",
+      "name": "相皮乡",
+      "status": "active",
+      "new_parent": "540322000000"
+    },
+    {
+      "op": "update",
+      "code": "540322201000",
+      "name": "哈加乡",
+      "status": "active",
+      "new_parent": "540322000000"
+    },
+    {
+      "op": "update",
+      "code": "540322202000",
+      "name": "雄松乡",
+      "status": "active",
+      "new_parent": "540322000000"
+    },
+    {
+      "op": "update",
+      "code": "540322203000",
+      "name": "拉妥乡",
+      "status": "active",
+      "new_parent": "540322000000"
+    },
+    {
+      "op": "update",
+      "code": "540322204000",
+      "name": "阿旺乡",
+      "status": "active",
+      "new_parent": "540322000000"
+    },
+    {
+      "op": "update",
+      "code": "540322205000",
+      "name": "木协乡",
+      "status": "active",
+      "new_parent": "540322000000"
+    },
+    {
+      "op": "update",
+      "code": "540322206000",
+      "name": "罗麦乡",
+      "status": "active",
+      "new_parent": "540322000000"
+    },
+    {
+      "op": "update",
+      "code": "540322207000",
+      "name": "沙东乡",
+      "status": "active",
+      "new_parent": "540322000000"
+    },
+    {
+      "op": "update",
+      "code": "540322208000",
+      "name": "克日乡",
+      "status": "active",
+      "new_parent": "540322000000"
+    },
+    {
+      "op": "update",
+      "code": "540322209000",
+      "name": "则巴乡",
+      "status": "active",
+      "new_parent": "540322000000"
+    },
+    {
+      "op": "update",
+      "code": "540322210000",
+      "name": "敏都乡",
+      "status": "active",
+      "new_parent": "540322000000"
+    },
+    {
+      "op": "update",
+      "code": "540323000000",
+      "name": "类乌齐县",
+      "status": "active",
+      "new_parent": "540300000000"
+    },
+    {
+      "op": "update",
+      "code": "540323100000",
+      "name": "类乌齐镇",
+      "status": "active",
+      "new_parent": "540323000000"
+    },
+    {
+      "op": "update",
+      "code": "540323101000",
+      "name": "桑多镇",
+      "status": "active",
+      "new_parent": "540323000000"
+    },
+    {
+      "op": "update",
+      "code": "540323200000",
+      "name": "加桑卡乡",
+      "status": "active",
+      "new_parent": "540323000000"
+    },
+    {
+      "op": "update",
+      "code": "540323201000",
+      "name": "长毛岭乡",
+      "status": "active",
+      "new_parent": "540323000000"
+    },
+    {
+      "op": "update",
+      "code": "540323202000",
+      "name": "岗色乡",
+      "status": "active",
+      "new_parent": "540323000000"
+    },
+    {
+      "op": "update",
+      "code": "540323203000",
+      "name": "吉多乡",
+      "status": "active",
+      "new_parent": "540323000000"
+    },
+    {
+      "op": "update",
+      "code": "540323204000",
+      "name": "滨达乡",
+      "status": "active",
+      "new_parent": "540323000000"
+    },
+    {
+      "op": "update",
+      "code": "540323205000",
+      "name": "卡玛多乡",
+      "status": "active",
+      "new_parent": "540323000000"
+    },
+    {
+      "op": "update",
+      "code": "540323206000",
+      "name": "尚卡乡",
+      "status": "active",
+      "new_parent": "540323000000"
+    },
+    {
+      "op": "update",
+      "code": "540323207000",
+      "name": "伊日乡",
+      "status": "active",
+      "new_parent": "540323000000"
+    },
+    {
+      "op": "update",
+      "code": "540324000000",
+      "name": "丁青县",
+      "status": "active",
+      "new_parent": "540300000000"
+    },
+    {
+      "op": "update",
+      "code": "540324100000",
+      "name": "丁青镇",
+      "status": "active",
+      "new_parent": "540324000000"
+    },
+    {
+      "op": "update",
+      "code": "540324101000",
+      "name": "尺犊镇",
+      "status": "active",
+      "new_parent": "540324000000"
+    },
+    {
+      "op": "update",
+      "code": "540324200000",
+      "name": "觉恩乡",
+      "status": "active",
+      "new_parent": "540324000000"
+    },
+    {
+      "op": "update",
+      "code": "540324201000",
+      "name": "沙贡乡",
+      "status": "active",
+      "new_parent": "540324000000"
+    },
+    {
+      "op": "update",
+      "code": "540324202000",
+      "name": "当堆乡",
+      "status": "active",
+      "new_parent": "540324000000"
+    },
+    {
+      "op": "update",
+      "code": "540324203000",
+      "name": "桑多乡",
+      "status": "active",
+      "new_parent": "540324000000"
+    },
+    {
+      "op": "update",
+      "code": "540324204000",
+      "name": "木塔乡",
+      "status": "active",
+      "new_parent": "540324000000"
+    },
+    {
+      "op": "update",
+      "code": "540324205000",
+      "name": "布塔乡",
+      "status": "active",
+      "new_parent": "540324000000"
+    },
+    {
+      "op": "update",
+      "code": "540324206000",
+      "name": "巴达乡",
+      "status": "active",
+      "new_parent": "540324000000"
+    },
+    {
+      "op": "update",
+      "code": "540324207000",
+      "name": "甘岩乡",
+      "status": "active",
+      "new_parent": "540324000000"
+    },
+    {
+      "op": "update",
+      "code": "540324208000",
+      "name": "嘎塔乡",
+      "status": "active",
+      "new_parent": "540324000000"
+    },
+    {
+      "op": "update",
+      "code": "540324209000",
+      "name": "色扎乡",
+      "status": "active",
+      "new_parent": "540324000000"
+    },
+    {
+      "op": "update",
+      "code": "540324210000",
+      "name": "协雄乡",
+      "status": "active",
+      "new_parent": "540324000000"
+    },
+    {
+      "op": "update",
+      "code": "540325000000",
+      "name": "察雅县",
+      "status": "active",
+      "new_parent": "540300000000"
+    },
+    {
+      "op": "update",
+      "code": "540325100000",
+      "name": "烟多镇",
+      "status": "active",
+      "new_parent": "540325000000"
+    },
+    {
+      "op": "update",
+      "code": "540325101000",
+      "name": "香堆镇",
+      "status": "active",
+      "new_parent": "540325000000"
+    },
+    {
+      "op": "update",
+      "code": "540325102000",
+      "name": "吉塘镇",
+      "status": "active",
+      "new_parent": "540325000000"
+    },
+    {
+      "op": "update",
+      "code": "540325200000",
+      "name": "宗沙乡",
+      "status": "active",
+      "new_parent": "540325000000"
+    },
+    {
+      "op": "update",
+      "code": "540325201000",
+      "name": "卡贡乡",
+      "status": "active",
+      "new_parent": "540325000000"
+    },
+    {
+      "op": "update",
+      "code": "540325202000",
+      "name": "荣周乡",
+      "status": "active",
+      "new_parent": "540325000000"
+    },
+    {
+      "op": "update",
+      "code": "540325203000",
+      "name": "巴日乡",
+      "status": "active",
+      "new_parent": "540325000000"
+    },
+    {
+      "op": "update",
+      "code": "540325204000",
+      "name": "阿孜乡",
+      "status": "active",
+      "new_parent": "540325000000"
+    },
+    {
+      "op": "update",
+      "code": "540325205000",
+      "name": "王卡乡",
+      "status": "active",
+      "new_parent": "540325000000"
+    },
+    {
+      "op": "update",
+      "code": "540325206000",
+      "name": "新卡乡",
+      "status": "active",
+      "new_parent": "540325000000"
+    },
+    {
+      "op": "update",
+      "code": "540325207000",
+      "name": "肯通乡",
+      "status": "active",
+      "new_parent": "540325000000"
+    },
+    {
+      "op": "update",
+      "code": "540325208000",
+      "name": "扩达乡",
+      "status": "active",
+      "new_parent": "540325000000"
+    },
+    {
+      "op": "update",
+      "code": "540325209000",
+      "name": "察拉乡",
+      "status": "active",
+      "new_parent": "540325000000"
+    },
+    {
+      "op": "update",
+      "code": "540326000000",
+      "name": "八宿县",
+      "status": "active",
+      "new_parent": "540300000000"
+    },
+    {
+      "op": "update",
+      "code": "540326100000",
+      "name": "白玛镇",
+      "status": "active",
+      "new_parent": "540326000000"
+    },
+    {
+      "op": "update",
+      "code": "540326101000",
+      "name": "帮达镇",
+      "status": "active",
+      "new_parent": "540326000000"
+    },
+    {
+      "op": "update",
+      "code": "540326102000",
+      "name": "然乌镇",
+      "status": "active",
+      "new_parent": "540326000000"
+    },
+    {
+      "op": "update",
+      "code": "540326103000",
+      "name": "同卡镇",
+      "status": "active",
+      "new_parent": "540326000000"
+    },
+    {
+      "op": "update",
+      "code": "540326202000",
+      "name": "郭庆乡",
+      "status": "active",
+      "new_parent": "540326000000"
+    },
+    {
+      "op": "update",
+      "code": "540326203000",
+      "name": "拉根乡",
+      "status": "active",
+      "new_parent": "540326000000"
+    },
+    {
+      "op": "update",
+      "code": "540326204000",
+      "name": "益庆乡",
+      "status": "active",
+      "new_parent": "540326000000"
+    },
+    {
+      "op": "update",
+      "code": "540326205000",
+      "name": "吉中乡",
+      "status": "active",
+      "new_parent": "540326000000"
+    },
+    {
+      "op": "update",
+      "code": "540326206000",
+      "name": "卡瓦白庆乡",
+      "status": "active",
+      "new_parent": "540326000000"
+    },
+    {
+      "op": "update",
+      "code": "540326207000",
+      "name": "吉达乡",
+      "status": "active",
+      "new_parent": "540326000000"
+    },
+    {
+      "op": "update",
+      "code": "540326208000",
+      "name": "夏里乡",
+      "status": "active",
+      "new_parent": "540326000000"
+    },
+    {
+      "op": "update",
+      "code": "540326209000",
+      "name": "拥巴乡",
+      "status": "active",
+      "new_parent": "540326000000"
+    },
+    {
+      "op": "update",
+      "code": "540326210000",
+      "name": "瓦乡",
+      "status": "active",
+      "new_parent": "540326000000"
+    },
+    {
+      "op": "update",
+      "code": "540326211000",
+      "name": "林卡乡",
+      "status": "active",
+      "new_parent": "540326000000"
+    },
+    {
+      "op": "update",
+      "code": "540327000000",
+      "name": "左贡县",
+      "status": "active",
+      "new_parent": "540300000000"
+    },
+    {
+      "op": "update",
+      "code": "540327100000",
+      "name": "旺达镇",
+      "status": "active",
+      "new_parent": "540327000000"
+    },
+    {
+      "op": "update",
+      "code": "540327101000",
+      "name": "田妥镇",
+      "status": "active",
+      "new_parent": "540327000000"
+    },
+    {
+      "op": "update",
+      "code": "540327102000",
+      "name": "扎玉镇",
+      "status": "active",
+      "new_parent": "540327000000"
+    },
+    {
+      "op": "update",
+      "code": "540327203000",
+      "name": "东坝乡",
+      "status": "active",
+      "new_parent": "540327000000"
+    },
+    {
+      "op": "update",
+      "code": "540327204000",
+      "name": "仁果乡",
+      "status": "active",
+      "new_parent": "540327000000"
+    },
+    {
+      "op": "update",
+      "code": "540327207000",
+      "name": "绕金乡",
+      "status": "active",
+      "new_parent": "540327000000"
+    },
+    {
+      "op": "update",
+      "code": "540327208000",
+      "name": "碧土乡",
+      "status": "active",
+      "new_parent": "540327000000"
+    },
+    {
+      "op": "update",
+      "code": "540327210000",
+      "name": "美玉乡",
+      "status": "active",
+      "new_parent": "540327000000"
+    },
+    {
+      "op": "update",
+      "code": "540327211000",
+      "name": "中林卡乡",
+      "status": "active",
+      "new_parent": "540327000000"
+    },
+    {
+      "op": "update",
+      "code": "540327212000",
+      "name": "下林卡乡",
+      "status": "active",
+      "new_parent": "540327000000"
+    },
+    {
+      "op": "update",
+      "code": "540328000000",
+      "name": "芒康县",
+      "status": "active",
+      "new_parent": "540300000000"
+    },
+    {
+      "op": "update",
+      "code": "540328100000",
+      "name": "嘎托镇",
+      "status": "active",
+      "new_parent": "540328000000"
+    },
+    {
+      "op": "update",
+      "code": "540328101000",
+      "name": "如美镇",
+      "status": "active",
+      "new_parent": "540328000000"
+    },
+    {
+      "op": "update",
+      "code": "540328200000",
+      "name": "索多西乡",
+      "status": "active",
+      "new_parent": "540328000000"
+    },
+    {
+      "op": "update",
+      "code": "540328201000",
+      "name": "莽岭乡",
+      "status": "active",
+      "new_parent": "540328000000"
+    },
+    {
+      "op": "update",
+      "code": "540328202000",
+      "name": "宗西乡",
+      "status": "active",
+      "new_parent": "540328000000"
+    },
+    {
+      "op": "update",
+      "code": "540328203000",
+      "name": "昂多乡",
+      "status": "active",
+      "new_parent": "540328000000"
+    },
+    {
+      "op": "update",
+      "code": "540328204000",
+      "name": "措瓦乡",
+      "status": "active",
+      "new_parent": "540328000000"
+    },
+    {
+      "op": "update",
+      "code": "540328205000",
+      "name": "洛尼乡",
+      "status": "active",
+      "new_parent": "540328000000"
+    },
+    {
+      "op": "update",
+      "code": "540328206000",
+      "name": "戈波乡",
+      "status": "active",
+      "new_parent": "540328000000"
+    },
+    {
+      "op": "update",
+      "code": "540328207000",
+      "name": "帮达乡",
+      "status": "active",
+      "new_parent": "540328000000"
+    },
+    {
+      "op": "update",
+      "code": "540328208000",
+      "name": "徐中乡",
+      "status": "active",
+      "new_parent": "540328000000"
+    },
+    {
+      "op": "update",
+      "code": "540328209000",
+      "name": "曲登乡",
+      "status": "active",
+      "new_parent": "540328000000"
+    },
+    {
+      "op": "update",
+      "code": "540328210000",
+      "name": "木许乡",
+      "status": "active",
+      "new_parent": "540328000000"
+    },
+    {
+      "op": "update",
+      "code": "540328211000",
+      "name": "纳西民族乡",
+      "status": "active",
+      "new_parent": "540328000000"
+    },
+    {
+      "op": "update",
+      "code": "540328212000",
+      "name": "朱巴龙乡",
+      "status": "active",
+      "new_parent": "540328000000"
+    },
+    {
+      "op": "update",
+      "code": "540328213000",
+      "name": "曲孜卡乡",
+      "status": "active",
+      "new_parent": "540328000000"
+    },
+    {
+      "op": "update",
+      "code": "540329000000",
+      "name": "洛隆县",
+      "status": "active",
+      "new_parent": "540300000000"
+    },
+    {
+      "op": "update",
+      "code": "540329100000",
+      "name": "孜托镇",
+      "status": "active",
+      "new_parent": "540329000000"
+    },
+    {
+      "op": "update",
+      "code": "540329101000",
+      "name": "硕督镇",
+      "status": "active",
+      "new_parent": "540329000000"
+    },
+    {
+      "op": "update",
+      "code": "540329111000",
+      "name": "康沙镇",
+      "status": "active",
+      "new_parent": "540329000000"
+    },
+    {
+      "op": "update",
+      "code": "540329112000",
+      "name": "马利镇",
+      "status": "active",
+      "new_parent": "540329000000"
+    },
+    {
+      "op": "update",
+      "code": "540329200000",
+      "name": "达龙乡",
+      "status": "active",
+      "new_parent": "540329000000"
+    },
+    {
+      "op": "update",
+      "code": "540329201000",
+      "name": "新荣乡",
+      "status": "active",
+      "new_parent": "540329000000"
+    },
+    {
+      "op": "update",
+      "code": "540329202000",
+      "name": "白达乡",
+      "status": "active",
+      "new_parent": "540329000000"
+    },
+    {
+      "op": "update",
+      "code": "540329203000",
+      "name": "玉西乡",
+      "status": "active",
+      "new_parent": "540329000000"
+    },
+    {
+      "op": "update",
+      "code": "540329204000",
+      "name": "腊久乡",
+      "status": "active",
+      "new_parent": "540329000000"
+    },
+    {
+      "op": "update",
+      "code": "540329205000",
+      "name": "俄西乡",
+      "status": "active",
+      "new_parent": "540329000000"
+    },
+    {
+      "op": "update",
+      "code": "540329206000",
+      "name": "中亦乡",
+      "status": "active",
+      "new_parent": "540329000000"
+    },
+    {
+      "op": "update",
+      "code": "540330000000",
+      "name": "边坝县",
+      "status": "active",
+      "new_parent": "540300000000"
+    },
+    {
+      "op": "update",
+      "code": "540330100000",
+      "name": "边坝镇",
+      "status": "active",
+      "new_parent": "540330000000"
+    },
+    {
+      "op": "update",
+      "code": "540330101000",
+      "name": "草卡镇",
+      "status": "active",
+      "new_parent": "540330000000"
+    },
+    {
+      "op": "update",
+      "code": "540330201000",
+      "name": "沙丁乡",
+      "status": "active",
+      "new_parent": "540330000000"
+    },
+    {
+      "op": "update",
+      "code": "540330202000",
+      "name": "金岭乡",
+      "status": "active",
+      "new_parent": "540330000000"
+    },
+    {
+      "op": "update",
+      "code": "540330203000",
+      "name": "加贡乡",
+      "status": "active",
+      "new_parent": "540330000000"
+    },
+    {
+      "op": "update",
+      "code": "540330204000",
+      "name": "马武乡",
+      "status": "active",
+      "new_parent": "540330000000"
+    },
+    {
+      "op": "update",
+      "code": "540330205000",
+      "name": "热玉乡",
+      "status": "active",
+      "new_parent": "540330000000"
+    },
+    {
+      "op": "update",
+      "code": "540330206000",
+      "name": "尼木乡",
+      "status": "active",
+      "new_parent": "540330000000"
+    },
+    {
+      "op": "update",
+      "code": "540330207000",
+      "name": "马秀乡",
+      "status": "active",
+      "new_parent": "540330000000"
+    },
+    {
+      "op": "update",
+      "code": "540330208000",
+      "name": "拉孜乡",
+      "status": "active",
+      "new_parent": "540330000000"
+    },
+    {
+      "op": "update",
+      "code": "540330209000",
+      "name": "都瓦乡",
+      "status": "active",
+      "new_parent": "540330000000"
+    },
+    {
+      "op": "update",
+      "code": "540400000000",
+      "name": "林芝市",
+      "status": "active",
+      "new_parent": "540000000000"
+    },
+    {
+      "op": "update",
+      "code": "540402000000",
+      "name": "巴宜区",
+      "status": "active",
+      "new_parent": "540400000000"
+    },
+    {
+      "op": "update",
+      "code": "540402001000",
+      "name": "白玛岗街道",
+      "status": "active",
+      "new_parent": "540402000000"
+    },
+    {
+      "op": "update",
+      "code": "540402002000",
+      "name": "觉木街道",
+      "status": "active",
+      "new_parent": "540402000000"
+    },
+    {
+      "op": "update",
+      "code": "540402100000",
+      "name": "林芝镇",
+      "status": "active",
+      "new_parent": "540402000000"
+    },
+    {
+      "op": "update",
+      "code": "540402101000",
+      "name": "百巴镇",
+      "status": "active",
+      "new_parent": "540402000000"
+    },
+    {
+      "op": "update",
+      "code": "540402102000",
+      "name": "八一镇",
+      "status": "active",
+      "new_parent": "540402000000"
+    },
+    {
+      "op": "update",
+      "code": "540402103000",
+      "name": "鲁朗镇",
+      "status": "active",
+      "new_parent": "540402000000"
+    },
+    {
+      "op": "update",
+      "code": "540402200000",
+      "name": "更章门巴民族乡",
+      "status": "active",
+      "new_parent": "540402000000"
+    },
+    {
+      "op": "update",
+      "code": "540402202000",
+      "name": "布久乡",
+      "status": "active",
+      "new_parent": "540402000000"
+    },
+    {
+      "op": "update",
+      "code": "540402203000",
+      "name": "米瑞乡",
+      "status": "active",
+      "new_parent": "540402000000"
+    },
+    {
+      "op": "update",
+      "code": "540421000000",
+      "name": "工布江达县",
+      "status": "active",
+      "new_parent": "540400000000"
+    },
+    {
+      "op": "update",
+      "code": "540421100000",
+      "name": "工布江达镇",
+      "status": "active",
+      "new_parent": "540421000000"
+    },
+    {
+      "op": "update",
+      "code": "540421101000",
+      "name": "金达镇",
+      "status": "active",
+      "new_parent": "540421000000"
+    },
+    {
+      "op": "update",
+      "code": "540421102000",
+      "name": "巴河镇",
+      "status": "active",
+      "new_parent": "540421000000"
+    },
+    {
+      "op": "update",
+      "code": "540421200000",
+      "name": "朱拉乡",
+      "status": "active",
+      "new_parent": "540421000000"
+    },
+    {
+      "op": "update",
+      "code": "540421201000",
+      "name": "错高乡",
+      "status": "active",
+      "new_parent": "540421000000"
+    },
+    {
+      "op": "update",
+      "code": "540421202000",
+      "name": "仲萨乡",
+      "status": "active",
+      "new_parent": "540421000000"
+    },
+    {
+      "op": "update",
+      "code": "540421203000",
+      "name": "江达乡",
+      "status": "active",
+      "new_parent": "540421000000"
+    },
+    {
+      "op": "update",
+      "code": "540421204000",
+      "name": "娘蒲乡",
+      "status": "active",
+      "new_parent": "540421000000"
+    },
+    {
+      "op": "update",
+      "code": "540421205000",
+      "name": "加兴乡",
+      "status": "active",
+      "new_parent": "540421000000"
+    },
+    {
+      "op": "update",
+      "code": "540423000000",
+      "name": "墨脱县",
+      "status": "active",
+      "new_parent": "540400000000"
+    },
+    {
+      "op": "update",
+      "code": "540423100000",
+      "name": "墨脱镇",
+      "status": "active",
+      "new_parent": "540423000000"
+    },
+    {
+      "op": "update",
+      "code": "540423200000",
+      "name": "加热萨乡",
+      "status": "active",
+      "new_parent": "540423000000"
+    },
+    {
+      "op": "update",
+      "code": "540423201000",
+      "name": "甘登乡",
+      "status": "active",
+      "new_parent": "540423000000"
+    },
+    {
+      "op": "update",
+      "code": "540423202000",
+      "name": "达木珞巴民族乡",
+      "status": "active",
+      "new_parent": "540423000000"
+    },
+    {
+      "op": "update",
+      "code": "540423203000",
+      "name": "帮辛乡",
+      "status": "active",
+      "new_parent": "540423000000"
+    },
+    {
+      "op": "update",
+      "code": "540423204000",
+      "name": "格当乡",
+      "status": "active",
+      "new_parent": "540423000000"
+    },
+    {
+      "op": "update",
+      "code": "540423205000",
+      "name": "德兴乡",
+      "status": "active",
+      "new_parent": "540423000000"
+    },
+    {
+      "op": "update",
+      "code": "540423206000",
+      "name": "背崩乡",
+      "status": "active",
+      "new_parent": "540423000000"
+    },
+    {
+      "op": "update",
+      "code": "540424000000",
+      "name": "波密县",
+      "status": "active",
+      "new_parent": "540400000000"
+    },
+    {
+      "op": "update",
+      "code": "540424100000",
+      "name": "扎木镇",
+      "status": "active",
+      "new_parent": "540424000000"
+    },
+    {
+      "op": "update",
+      "code": "540424101000",
+      "name": "倾多镇",
+      "status": "active",
+      "new_parent": "540424000000"
+    },
+    {
+      "op": "update",
+      "code": "540424102000",
+      "name": "松宗镇",
+      "status": "active",
+      "new_parent": "540424000000"
+    },
+    {
+      "op": "update",
+      "code": "540424200000",
+      "name": "易贡乡",
+      "status": "active",
+      "new_parent": "540424000000"
+    },
+    {
+      "op": "update",
+      "code": "540424201000",
+      "name": "玉普乡",
+      "status": "active",
+      "new_parent": "540424000000"
+    },
+    {
+      "op": "update",
+      "code": "540424202000",
+      "name": "康玉乡",
+      "status": "active",
+      "new_parent": "540424000000"
+    },
+    {
+      "op": "update",
+      "code": "540424203000",
+      "name": "多吉乡",
+      "status": "active",
+      "new_parent": "540424000000"
+    },
+    {
+      "op": "update",
+      "code": "540424204000",
+      "name": "玉许乡",
+      "status": "active",
+      "new_parent": "540424000000"
+    },
+    {
+      "op": "update",
+      "code": "540424205000",
+      "name": "八盖乡",
+      "status": "active",
+      "new_parent": "540424000000"
+    },
+    {
+      "op": "update",
+      "code": "540424207000",
+      "name": "古乡",
+      "status": "active",
+      "new_parent": "540424000000"
+    },
+    {
+      "op": "update",
+      "code": "540425000000",
+      "name": "察隅县",
+      "status": "active",
+      "new_parent": "540400000000"
+    },
+    {
+      "op": "update",
+      "code": "540425100000",
+      "name": "竹瓦根镇",
+      "status": "active",
+      "new_parent": "540425000000"
+    },
+    {
+      "op": "update",
+      "code": "540425101000",
+      "name": "上察隅镇",
+      "status": "active",
+      "new_parent": "540425000000"
+    },
+    {
+      "op": "update",
+      "code": "540425102000",
+      "name": "下察隅镇",
+      "status": "active",
+      "new_parent": "540425000000"
+    },
+    {
+      "op": "update",
+      "code": "540425200000",
+      "name": "察瓦龙乡",
+      "status": "active",
+      "new_parent": "540425000000"
+    },
+    {
+      "op": "update",
+      "code": "540425201000",
+      "name": "古拉乡",
+      "status": "active",
+      "new_parent": "540425000000"
+    },
+    {
+      "op": "update",
+      "code": "540425202000",
+      "name": "古玉乡",
+      "status": "active",
+      "new_parent": "540425000000"
+    },
+    {
+      "op": "update",
+      "code": "540426000000",
+      "name": "朗县",
+      "status": "active",
+      "new_parent": "540400000000"
+    },
+    {
+      "op": "update",
+      "code": "540426100000",
+      "name": "朗镇",
+      "status": "active",
+      "new_parent": "540426000000"
+    },
+    {
+      "op": "update",
+      "code": "540426101000",
+      "name": "仲达镇",
+      "status": "active",
+      "new_parent": "540426000000"
+    },
+    {
+      "op": "update",
+      "code": "540426102000",
+      "name": "洞嘎镇",
+      "status": "active",
+      "new_parent": "540426000000"
+    },
+    {
+      "op": "update",
+      "code": "540426200000",
+      "name": "拉多乡",
+      "status": "active",
+      "new_parent": "540426000000"
+    },
+    {
+      "op": "update",
+      "code": "540426201000",
+      "name": "金东乡",
+      "status": "active",
+      "new_parent": "540426000000"
+    },
+    {
+      "op": "update",
+      "code": "540426202000",
+      "name": "登木乡",
+      "status": "active",
+      "new_parent": "540426000000"
+    },
+    {
+      "op": "update",
+      "code": "540481000000",
+      "name": "米林市",
+      "status": "active",
+      "new_parent": "540400000000"
+    },
+    {
+      "op": "update",
+      "code": "540481100000",
+      "name": "米林镇",
+      "status": "active",
+      "new_parent": "540481000000"
+    },
+    {
+      "op": "update",
+      "code": "540481101000",
+      "name": "派镇",
+      "status": "active",
+      "new_parent": "540481000000"
+    },
+    {
+      "op": "update",
+      "code": "540481102000",
+      "name": "卧龙镇",
+      "status": "active",
+      "new_parent": "540481000000"
+    },
+    {
+      "op": "add",
+      "code": "540481103000",
+      "name": "羌纳镇",
+      "level": 4,
+      "parent_code": "540481000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540481104000",
+      "name": "扎西绕登镇",
+      "level": 4,
+      "parent_code": "540481000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540481200000",
+      "name": "丹娘乡",
+      "status": "active",
+      "new_parent": "540481000000"
+    },
+    {
+      "op": "update",
+      "code": "540481201000",
+      "name": "南伊珞巴民族乡",
+      "status": "active",
+      "new_parent": "540481000000"
+    },
+    {
+      "op": "update",
+      "code": "540481203000",
+      "name": "里龙乡",
+      "status": "active",
+      "new_parent": "540481000000"
+    },
+    {
+      "op": "update",
+      "code": "540500000000",
+      "name": "山南市",
+      "status": "active",
+      "new_parent": "540000000000"
+    },
+    {
+      "op": "update",
+      "code": "540502000000",
+      "name": "乃东区",
+      "status": "active",
+      "new_parent": "540500000000"
+    },
+    {
+      "op": "update",
+      "code": "540502001000",
+      "name": "泽当街道",
+      "status": "active",
+      "new_parent": "540502000000"
+    },
+    {
+      "op": "update",
+      "code": "540502002000",
+      "name": "乃东街道",
+      "status": "active",
+      "new_parent": "540502000000"
+    },
+    {
+      "op": "update",
+      "code": "540502003000",
+      "name": "结莎街道",
+      "status": "active",
+      "new_parent": "540502000000"
+    },
+    {
+      "op": "update",
+      "code": "540502101000",
+      "name": "昌珠镇",
+      "status": "active",
+      "new_parent": "540502000000"
+    },
+    {
+      "op": "update",
+      "code": "540502200000",
+      "name": "亚堆乡",
+      "status": "active",
+      "new_parent": "540502000000"
+    },
+    {
+      "op": "update",
+      "code": "540502201000",
+      "name": "索珠乡",
+      "status": "active",
+      "new_parent": "540502000000"
+    },
+    {
+      "op": "update",
+      "code": "540502202000",
+      "name": "多颇章乡",
+      "status": "active",
+      "new_parent": "540502000000"
+    },
+    {
+      "op": "update",
+      "code": "540502203000",
+      "name": "结巴乡",
+      "status": "active",
+      "new_parent": "540502000000"
+    },
+    {
+      "op": "update",
+      "code": "540502204000",
+      "name": "颇章乡",
+      "status": "active",
+      "new_parent": "540502000000"
+    },
+    {
+      "op": "update",
+      "code": "540521000000",
+      "name": "扎囊县",
+      "status": "active",
+      "new_parent": "540500000000"
+    },
+    {
+      "op": "update",
+      "code": "540521100000",
+      "name": "扎塘镇",
+      "status": "active",
+      "new_parent": "540521000000"
+    },
+    {
+      "op": "update",
+      "code": "540521101000",
+      "name": "桑耶镇",
+      "status": "active",
+      "new_parent": "540521000000"
+    },
+    {
+      "op": "update",
+      "code": "540521200000",
+      "name": "扎其乡",
+      "status": "active",
+      "new_parent": "540521000000"
+    },
+    {
+      "op": "update",
+      "code": "540521201000",
+      "name": "阿扎乡",
+      "status": "active",
+      "new_parent": "540521000000"
+    },
+    {
+      "op": "update",
+      "code": "540521202000",
+      "name": "吉汝乡",
+      "status": "active",
+      "new_parent": "540521000000"
+    },
+    {
+      "op": "update",
+      "code": "540522000000",
+      "name": "贡嘎县",
+      "status": "active",
+      "new_parent": "540500000000"
+    },
+    {
+      "op": "update",
+      "code": "540522100000",
+      "name": "吉雄镇",
+      "status": "active",
+      "new_parent": "540522000000"
+    },
+    {
+      "op": "update",
+      "code": "540522101000",
+      "name": "甲竹林镇",
+      "status": "active",
+      "new_parent": "540522000000"
+    },
+    {
+      "op": "update",
+      "code": "540522102000",
+      "name": "杰德秀镇",
+      "status": "active",
+      "new_parent": "540522000000"
+    },
+    {
+      "op": "update",
+      "code": "540522103000",
+      "name": "岗堆镇",
+      "status": "active",
+      "new_parent": "540522000000"
+    },
+    {
+      "op": "update",
+      "code": "540522104000",
+      "name": "江塘镇",
+      "status": "active",
+      "new_parent": "540522000000"
+    },
+    {
+      "op": "add",
+      "code": "540522105000",
+      "name": "德康镇",
+      "level": 4,
+      "parent_code": "540522000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540522200000",
+      "name": "朗杰学乡",
+      "status": "active",
+      "new_parent": "540522000000"
+    },
+    {
+      "op": "update",
+      "code": "540522201000",
+      "name": "昌果乡",
+      "status": "active",
+      "new_parent": "540522000000"
+    },
+    {
+      "op": "update",
+      "code": "540522205000",
+      "name": "东拉乡",
+      "status": "active",
+      "new_parent": "540522000000"
+    },
+    {
+      "op": "update",
+      "code": "540522206000",
+      "name": "克西乡",
+      "status": "active",
+      "new_parent": "540522000000"
+    },
+    {
+      "op": "update",
+      "code": "540523000000",
+      "name": "桑日县",
+      "status": "active",
+      "new_parent": "540500000000"
+    },
+    {
+      "op": "update",
+      "code": "540523100000",
+      "name": "桑日镇",
+      "status": "active",
+      "new_parent": "540523000000"
+    },
+    {
+      "op": "update",
+      "code": "540523200000",
+      "name": "增期乡",
+      "status": "active",
+      "new_parent": "540523000000"
+    },
+    {
+      "op": "update",
+      "code": "540523201000",
+      "name": "白堆乡",
+      "status": "active",
+      "new_parent": "540523000000"
+    },
+    {
+      "op": "update",
+      "code": "540523202000",
+      "name": "绒乡",
+      "status": "active",
+      "new_parent": "540523000000"
+    },
+    {
+      "op": "update",
+      "code": "540524000000",
+      "name": "琼结县",
+      "status": "active",
+      "new_parent": "540500000000"
+    },
+    {
+      "op": "update",
+      "code": "540524100000",
+      "name": "琼结镇",
+      "status": "active",
+      "new_parent": "540524000000"
+    },
+    {
+      "op": "update",
+      "code": "540524200000",
+      "name": "加麻乡",
+      "status": "active",
+      "new_parent": "540524000000"
+    },
+    {
+      "op": "update",
+      "code": "540524201000",
+      "name": "下水乡",
+      "status": "active",
+      "new_parent": "540524000000"
+    },
+    {
+      "op": "update",
+      "code": "540524202000",
+      "name": "拉玉乡",
+      "status": "active",
+      "new_parent": "540524000000"
+    },
+    {
+      "op": "update",
+      "code": "540525000000",
+      "name": "曲松县",
+      "status": "active",
+      "new_parent": "540500000000"
+    },
+    {
+      "op": "update",
+      "code": "540525100000",
+      "name": "曲松镇",
+      "status": "active",
+      "new_parent": "540525000000"
+    },
+    {
+      "op": "update",
+      "code": "540525101000",
+      "name": "罗布沙镇",
+      "status": "active",
+      "new_parent": "540525000000"
+    },
+    {
+      "op": "update",
+      "code": "540525200000",
+      "name": "下江乡",
+      "status": "active",
+      "new_parent": "540525000000"
+    },
+    {
+      "op": "update",
+      "code": "540525201000",
+      "name": "邱多江乡",
+      "status": "active",
+      "new_parent": "540525000000"
+    },
+    {
+      "op": "update",
+      "code": "540525202000",
+      "name": "堆随乡",
+      "status": "active",
+      "new_parent": "540525000000"
+    },
+    {
+      "op": "update",
+      "code": "540526000000",
+      "name": "措美县",
+      "status": "active",
+      "new_parent": "540500000000"
+    },
+    {
+      "op": "update",
+      "code": "540526100000",
+      "name": "措美镇",
+      "status": "active",
+      "new_parent": "540526000000"
+    },
+    {
+      "op": "update",
+      "code": "540526101000",
+      "name": "哲古镇",
+      "status": "active",
+      "new_parent": "540526000000"
+    },
+    {
+      "op": "update",
+      "code": "540526200000",
+      "name": "乃西乡",
+      "status": "active",
+      "new_parent": "540526000000"
+    },
+    {
+      "op": "update",
+      "code": "540526201000",
+      "name": "古堆乡",
+      "status": "active",
+      "new_parent": "540526000000"
+    },
+    {
+      "op": "update",
+      "code": "540527000000",
+      "name": "洛扎县",
+      "status": "active",
+      "new_parent": "540500000000"
+    },
+    {
+      "op": "update",
+      "code": "540527100000",
+      "name": "洛扎镇",
+      "status": "active",
+      "new_parent": "540527000000"
+    },
+    {
+      "op": "update",
+      "code": "540527101000",
+      "name": "拉康镇",
+      "status": "active",
+      "new_parent": "540527000000"
+    },
+    {
+      "op": "add",
+      "code": "540527102000",
+      "name": "杰罗布镇",
+      "level": 4,
+      "parent_code": "540527000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540527103000",
+      "name": "色镇",
+      "level": 4,
+      "parent_code": "540527000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540527104000",
+      "name": "扎热镇",
+      "level": 4,
+      "parent_code": "540527000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540527203000",
+      "name": "生格乡",
+      "status": "active",
+      "new_parent": "540527000000"
+    },
+    {
+      "op": "update",
+      "code": "540527204000",
+      "name": "边巴乡",
+      "status": "active",
+      "new_parent": "540527000000"
+    },
+    {
+      "op": "update",
+      "code": "540527205000",
+      "name": "拉郊乡",
+      "status": "active",
+      "new_parent": "540527000000"
+    },
+    {
+      "op": "update",
+      "code": "540528000000",
+      "name": "加查县",
+      "status": "active",
+      "new_parent": "540500000000"
+    },
+    {
+      "op": "update",
+      "code": "540528100000",
+      "name": "加查镇",
+      "status": "active",
+      "new_parent": "540528000000"
+    },
+    {
+      "op": "update",
+      "code": "540528101000",
+      "name": "安绕镇",
+      "status": "active",
+      "new_parent": "540528000000"
+    },
+    {
+      "op": "update",
+      "code": "540528200000",
+      "name": "拉绥乡",
+      "status": "active",
+      "new_parent": "540528000000"
+    },
+    {
+      "op": "update",
+      "code": "540528201000",
+      "name": "崔久乡",
+      "status": "active",
+      "new_parent": "540528000000"
+    },
+    {
+      "op": "update",
+      "code": "540528202000",
+      "name": "坝乡",
+      "status": "active",
+      "new_parent": "540528000000"
+    },
+    {
+      "op": "update",
+      "code": "540528203000",
+      "name": "冷达乡",
+      "status": "active",
+      "new_parent": "540528000000"
+    },
+    {
+      "op": "update",
+      "code": "540528204000",
+      "name": "洛林乡",
+      "status": "active",
+      "new_parent": "540528000000"
+    },
+    {
+      "op": "update",
+      "code": "540529000000",
+      "name": "隆子县",
+      "status": "active",
+      "new_parent": "540500000000"
+    },
+    {
+      "op": "update",
+      "code": "540529100000",
+      "name": "隆子镇",
+      "status": "active",
+      "new_parent": "540529000000"
+    },
+    {
+      "op": "update",
+      "code": "540529101000",
+      "name": "日当镇",
+      "status": "active",
+      "new_parent": "540529000000"
+    },
+    {
+      "op": "add",
+      "code": "540529102000",
+      "name": "曲桑镇",
+      "level": 4,
+      "parent_code": "540529000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540529103000",
+      "name": "扎日镇",
+      "level": 4,
+      "parent_code": "540529000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540529104000",
+      "name": "加玉镇",
+      "level": 4,
+      "parent_code": "540529000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540529200000",
+      "name": "列麦乡",
+      "status": "active",
+      "new_parent": "540529000000"
+    },
+    {
+      "op": "update",
+      "code": "540529201000",
+      "name": "热荣乡",
+      "status": "active",
+      "new_parent": "540529000000"
+    },
+    {
+      "op": "update",
+      "code": "540529202000",
+      "name": "三安曲林乡",
+      "status": "active",
+      "new_parent": "540529000000"
+    },
+    {
+      "op": "update",
+      "code": "540529203000",
+      "name": "准巴乡",
+      "status": "active",
+      "new_parent": "540529000000"
+    },
+    {
+      "op": "update",
+      "code": "540529204000",
+      "name": "雪萨乡",
+      "status": "active",
+      "new_parent": "540529000000"
+    },
+    {
+      "op": "update",
+      "code": "540529206000",
+      "name": "玉麦乡",
+      "status": "active",
+      "new_parent": "540529000000"
+    },
+    {
+      "op": "update",
+      "code": "540529208000",
+      "name": "斗玉珞巴民族乡",
+      "status": "active",
+      "new_parent": "540529000000"
+    },
+    {
+      "op": "add",
+      "code": "540529209000",
+      "name": "珞瓦乡",
+      "level": 4,
+      "parent_code": "540529000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540529210000",
+      "name": "六联乡",
+      "level": 4,
+      "parent_code": "540529000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540531000000",
+      "name": "浪卡子县",
+      "status": "active",
+      "new_parent": "540500000000"
+    },
+    {
+      "op": "update",
+      "code": "540531100000",
+      "name": "浪卡子镇",
+      "status": "active",
+      "new_parent": "540531000000"
+    },
+    {
+      "op": "update",
+      "code": "540531101000",
+      "name": "打隆镇",
+      "status": "active",
+      "new_parent": "540531000000"
+    },
+    {
+      "op": "update",
+      "code": "540531200000",
+      "name": "张达乡",
+      "status": "active",
+      "new_parent": "540531000000"
+    },
+    {
+      "op": "update",
+      "code": "540531201000",
+      "name": "伦布雪乡",
+      "status": "active",
+      "new_parent": "540531000000"
+    },
+    {
+      "op": "update",
+      "code": "540531202000",
+      "name": "多却乡",
+      "status": "active",
+      "new_parent": "540531000000"
+    },
+    {
+      "op": "update",
+      "code": "540531203000",
+      "name": "普玛江塘乡",
+      "status": "active",
+      "new_parent": "540531000000"
+    },
+    {
+      "op": "update",
+      "code": "540531204000",
+      "name": "阿扎乡",
+      "status": "active",
+      "new_parent": "540531000000"
+    },
+    {
+      "op": "update",
+      "code": "540531205000",
+      "name": "卡龙乡",
+      "status": "active",
+      "new_parent": "540531000000"
+    },
+    {
+      "op": "update",
+      "code": "540531206000",
+      "name": "白地乡",
+      "status": "active",
+      "new_parent": "540531000000"
+    },
+    {
+      "op": "update",
+      "code": "540531207000",
+      "name": "卡热乡",
+      "status": "active",
+      "new_parent": "540531000000"
+    },
+    {
+      "op": "update",
+      "code": "540581000000",
+      "name": "错那市",
+      "status": "active",
+      "new_parent": "540500000000"
+    },
+    {
+      "op": "update",
+      "code": "540581100000",
+      "name": "错那镇",
+      "status": "active",
+      "new_parent": "540581000000"
+    },
+    {
+      "op": "add",
+      "code": "540581101000",
+      "name": "肖镇",
+      "level": 4,
+      "parent_code": "540581000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540581102000",
+      "name": "曲卓木镇",
+      "level": 4,
+      "parent_code": "540581000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540581103000",
+      "name": "觉拉镇",
+      "level": 4,
+      "parent_code": "540581000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540581200000",
+      "name": "卡达乡",
+      "status": "active",
+      "new_parent": "540581000000"
+    },
+    {
+      "op": "update",
+      "code": "540581202000",
+      "name": "浪坡乡",
+      "status": "active",
+      "new_parent": "540581000000"
+    },
+    {
+      "op": "update",
+      "code": "540581204000",
+      "name": "库局乡",
+      "status": "active",
+      "new_parent": "540581000000"
+    },
+    {
+      "op": "update",
+      "code": "540581205000",
+      "name": "麻麻门巴民族乡",
+      "status": "active",
+      "new_parent": "540581000000"
+    },
+    {
+      "op": "update",
+      "code": "540581206000",
+      "name": "贡日门巴民族乡",
+      "status": "active",
+      "new_parent": "540581000000"
+    },
+    {
+      "op": "update",
+      "code": "540581207000",
+      "name": "吉巴门巴民族乡",
+      "status": "active",
+      "new_parent": "540581000000"
+    },
+    {
+      "op": "update",
+      "code": "540581208000",
+      "name": "勒门巴民族乡",
+      "status": "active",
+      "new_parent": "540581000000"
+    },
+    {
+      "op": "update",
+      "code": "540600000000",
+      "name": "那曲市",
+      "status": "active",
+      "new_parent": "540000000000"
+    },
+    {
+      "op": "update",
+      "code": "540602000000",
+      "name": "色尼区",
+      "status": "active",
+      "new_parent": "540600000000"
+    },
+    {
+      "op": "add",
+      "code": "540602001000",
+      "name": "黑河街道",
+      "level": 4,
+      "parent_code": "540602000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540602002000",
+      "name": "团结街道",
+      "level": 4,
+      "parent_code": "540602000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540602003000",
+      "name": "幸福街道",
+      "level": 4,
+      "parent_code": "540602000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540602004000",
+      "name": "红旗街道",
+      "level": 4,
+      "parent_code": "540602000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "540602005000",
+      "name": "羌塘街道",
+      "level": 4,
+      "parent_code": "540602000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540602100000",
+      "name": "那曲镇",
+      "status": "active",
+      "new_parent": "540602000000"
+    },
+    {
+      "op": "update",
+      "code": "540602101000",
+      "name": "罗玛镇",
+      "status": "active",
+      "new_parent": "540602000000"
+    },
+    {
+      "op": "update",
+      "code": "540602102000",
+      "name": "古露镇",
+      "status": "active",
+      "new_parent": "540602000000"
+    },
+    {
+      "op": "update",
+      "code": "540602200000",
+      "name": "达萨乡",
+      "status": "active",
+      "new_parent": "540602000000"
+    },
+    {
+      "op": "update",
+      "code": "540602202000",
+      "name": "油恰乡",
+      "status": "active",
+      "new_parent": "540602000000"
+    },
+    {
+      "op": "update",
+      "code": "540602203000",
+      "name": "香茂乡",
+      "status": "active",
+      "new_parent": "540602000000"
+    },
+    {
+      "op": "update",
+      "code": "540602205000",
+      "name": "那玛切乡",
+      "status": "active",
+      "new_parent": "540602000000"
+    },
+    {
+      "op": "update",
+      "code": "540602209000",
+      "name": "达前乡",
+      "status": "active",
+      "new_parent": "540602000000"
+    },
+    {
+      "op": "update",
+      "code": "540602210000",
+      "name": "洛麦乡",
+      "status": "active",
+      "new_parent": "540602000000"
+    },
+    {
+      "op": "update",
+      "code": "540602211000",
+      "name": "孔玛乡",
+      "status": "active",
+      "new_parent": "540602000000"
+    },
+    {
+      "op": "update",
+      "code": "540602213000",
+      "name": "尼玛乡",
+      "status": "active",
+      "new_parent": "540602000000"
+    },
+    {
+      "op": "update",
+      "code": "540602217000",
+      "name": "色雄乡",
+      "status": "active",
+      "new_parent": "540602000000"
+    },
+    {
+      "op": "update",
+      "code": "540621000000",
+      "name": "嘉黎县",
+      "status": "active",
+      "new_parent": "540600000000"
+    },
+    {
+      "op": "update",
+      "code": "540621100000",
+      "name": "阿扎镇",
+      "status": "active",
+      "new_parent": "540621000000"
+    },
+    {
+      "op": "update",
+      "code": "540621101000",
+      "name": "嘉黎镇",
+      "status": "active",
+      "new_parent": "540621000000"
+    },
+    {
+      "op": "update",
+      "code": "540621201000",
+      "name": "尼屋乡",
+      "status": "active",
+      "new_parent": "540621000000"
+    },
+    {
+      "op": "update",
+      "code": "540621202000",
+      "name": "藏比乡",
+      "status": "active",
+      "new_parent": "540621000000"
+    },
+    {
+      "op": "update",
+      "code": "540621203000",
+      "name": "措多乡",
+      "status": "active",
+      "new_parent": "540621000000"
+    },
+    {
+      "op": "update",
+      "code": "540621204000",
+      "name": "夏玛乡",
+      "status": "active",
+      "new_parent": "540621000000"
+    },
+    {
+      "op": "update",
+      "code": "540621206000",
+      "name": "林堤乡",
+      "status": "active",
+      "new_parent": "540621000000"
+    },
+    {
+      "op": "update",
+      "code": "540621207000",
+      "name": "麦地卡乡",
+      "status": "active",
+      "new_parent": "540621000000"
+    },
+    {
+      "op": "update",
+      "code": "540621209000",
+      "name": "绒多乡",
+      "status": "active",
+      "new_parent": "540621000000"
+    },
+    {
+      "op": "update",
+      "code": "540621210000",
+      "name": "鸽群乡",
+      "status": "active",
+      "new_parent": "540621000000"
+    },
+    {
+      "op": "update",
+      "code": "540622000000",
+      "name": "比如县",
+      "status": "active",
+      "new_parent": "540600000000"
+    },
+    {
+      "op": "update",
+      "code": "540622100000",
+      "name": "比如镇",
+      "status": "active",
+      "new_parent": "540622000000"
+    },
+    {
+      "op": "update",
+      "code": "540622101000",
+      "name": "夏曲镇",
+      "status": "active",
+      "new_parent": "540622000000"
+    },
+    {
+      "op": "update",
+      "code": "540622201000",
+      "name": "白嘎乡",
+      "status": "active",
+      "new_parent": "540622000000"
+    },
+    {
+      "op": "update",
+      "code": "540622202000",
+      "name": "达塘乡",
+      "status": "active",
+      "new_parent": "540622000000"
+    },
+    {
+      "op": "update",
+      "code": "540622203000",
+      "name": "恰则乡",
+      "status": "active",
+      "new_parent": "540622000000"
+    },
+    {
+      "op": "update",
+      "code": "540622204000",
+      "name": "扎拉乡",
+      "status": "active",
+      "new_parent": "540622000000"
+    },
+    {
+      "op": "update",
+      "code": "540622207000",
+      "name": "羊秀乡",
+      "status": "active",
+      "new_parent": "540622000000"
+    },
+    {
+      "op": "update",
+      "code": "540622208000",
+      "name": "香曲乡",
+      "status": "active",
+      "new_parent": "540622000000"
+    },
+    {
+      "op": "update",
+      "code": "540622209000",
+      "name": "良曲乡",
+      "status": "active",
+      "new_parent": "540622000000"
+    },
+    {
+      "op": "update",
+      "code": "540622210000",
+      "name": "茶曲乡",
+      "status": "active",
+      "new_parent": "540622000000"
+    },
+    {
+      "op": "update",
+      "code": "540623000000",
+      "name": "聂荣县",
+      "status": "active",
+      "new_parent": "540600000000"
+    },
+    {
+      "op": "update",
+      "code": "540623100000",
+      "name": "聂荣镇",
+      "status": "active",
+      "new_parent": "540623000000"
+    },
+    {
+      "op": "update",
+      "code": "540623201000",
+      "name": "尼玛乡",
+      "status": "active",
+      "new_parent": "540623000000"
+    },
+    {
+      "op": "update",
+      "code": "540623203000",
+      "name": "色庆乡",
+      "status": "active",
+      "new_parent": "540623000000"
+    },
+    {
+      "op": "update",
+      "code": "540623205000",
+      "name": "桑荣乡",
+      "status": "active",
+      "new_parent": "540623000000"
+    },
+    {
+      "op": "update",
+      "code": "540623206000",
+      "name": "下曲乡",
+      "status": "active",
+      "new_parent": "540623000000"
+    },
+    {
+      "op": "update",
+      "code": "540623207000",
+      "name": "白雄乡",
+      "status": "active",
+      "new_parent": "540623000000"
+    },
+    {
+      "op": "update",
+      "code": "540623208000",
+      "name": "索雄乡",
+      "status": "active",
+      "new_parent": "540623000000"
+    },
+    {
+      "op": "update",
+      "code": "540623210000",
+      "name": "当木江乡",
+      "status": "active",
+      "new_parent": "540623000000"
+    },
+    {
+      "op": "update",
+      "code": "540623211000",
+      "name": "查当乡",
+      "status": "active",
+      "new_parent": "540623000000"
+    },
+    {
+      "op": "update",
+      "code": "540623212000",
+      "name": "永曲乡",
+      "status": "active",
+      "new_parent": "540623000000"
+    },
+    {
+      "op": "update",
+      "code": "540624000000",
+      "name": "安多县",
+      "status": "active",
+      "new_parent": "540600000000"
+    },
+    {
+      "op": "update",
+      "code": "540624100000",
+      "name": "帕那镇",
+      "status": "active",
+      "new_parent": "540624000000"
+    },
+    {
+      "op": "update",
+      "code": "540624101000",
+      "name": "强玛镇",
+      "status": "active",
+      "new_parent": "540624000000"
+    },
+    {
+      "op": "update",
+      "code": "540624102000",
+      "name": "扎仁镇",
+      "status": "active",
+      "new_parent": "540624000000"
+    },
+    {
+      "op": "update",
+      "code": "540624103000",
+      "name": "雁石坪镇",
+      "status": "active",
+      "new_parent": "540624000000"
+    },
+    {
+      "op": "update",
+      "code": "540624201000",
+      "name": "多玛乡",
+      "status": "active",
+      "new_parent": "540624000000"
+    },
+    {
+      "op": "update",
+      "code": "540624202000",
+      "name": "玛曲乡",
+      "status": "active",
+      "new_parent": "540624000000"
+    },
+    {
+      "op": "update",
+      "code": "540624205000",
+      "name": "滩堆乡",
+      "status": "active",
+      "new_parent": "540624000000"
+    },
+    {
+      "op": "update",
+      "code": "540624207000",
+      "name": "帮麦乡",
+      "status": "active",
+      "new_parent": "540624000000"
+    },
+    {
+      "op": "update",
+      "code": "540624209000",
+      "name": "玛荣乡",
+      "status": "active",
+      "new_parent": "540624000000"
+    },
+    {
+      "op": "update",
+      "code": "540624210000",
+      "name": "扎曲乡",
+      "status": "active",
+      "new_parent": "540624000000"
+    },
+    {
+      "op": "update",
+      "code": "540624211000",
+      "name": "色务乡",
+      "status": "active",
+      "new_parent": "540624000000"
+    },
+    {
+      "op": "update",
+      "code": "540624212000",
+      "name": "措玛乡",
+      "status": "active",
+      "new_parent": "540624000000"
+    },
+    {
+      "op": "update",
+      "code": "540624213000",
+      "name": "岗尼乡",
+      "status": "active",
+      "new_parent": "540624000000"
+    },
+    {
+      "op": "update",
+      "code": "540625000000",
+      "name": "申扎县",
+      "status": "active",
+      "new_parent": "540600000000"
+    },
+    {
+      "op": "update",
+      "code": "540625100000",
+      "name": "申扎镇",
+      "status": "active",
+      "new_parent": "540625000000"
+    },
+    {
+      "op": "update",
+      "code": "540625101000",
+      "name": "雄梅镇",
+      "status": "active",
+      "new_parent": "540625000000"
+    },
+    {
+      "op": "update",
+      "code": "540625201000",
+      "name": "下过乡",
+      "status": "active",
+      "new_parent": "540625000000"
+    },
+    {
+      "op": "update",
+      "code": "540625202000",
+      "name": "恰乡",
+      "status": "active",
+      "new_parent": "540625000000"
+    },
+    {
+      "op": "update",
+      "code": "540625203000",
+      "name": "巴扎乡",
+      "status": "active",
+      "new_parent": "540625000000"
+    },
+    {
+      "op": "update",
+      "code": "540625204000",
+      "name": "塔尔玛乡",
+      "status": "active",
+      "new_parent": "540625000000"
+    },
+    {
+      "op": "update",
+      "code": "540625206000",
+      "name": "买巴乡",
+      "status": "active",
+      "new_parent": "540625000000"
+    },
+    {
+      "op": "update",
+      "code": "540625207000",
+      "name": "马跃乡",
+      "status": "active",
+      "new_parent": "540625000000"
+    },
+    {
+      "op": "update",
+      "code": "540626000000",
+      "name": "索县",
+      "status": "active",
+      "new_parent": "540600000000"
+    },
+    {
+      "op": "update",
+      "code": "540626100000",
+      "name": "亚拉镇",
+      "status": "active",
+      "new_parent": "540626000000"
+    },
+    {
+      "op": "update",
+      "code": "540626101000",
+      "name": "荣布镇",
+      "status": "active",
+      "new_parent": "540626000000"
+    },
+    {
+      "op": "update",
+      "code": "540626201000",
+      "name": "若达乡",
+      "status": "active",
+      "new_parent": "540626000000"
+    },
+    {
+      "op": "update",
+      "code": "540626202000",
+      "name": "加勤乡",
+      "status": "active",
+      "new_parent": "540626000000"
+    },
+    {
+      "op": "update",
+      "code": "540626203000",
+      "name": "赤多乡",
+      "status": "active",
+      "new_parent": "540626000000"
+    },
+    {
+      "op": "update",
+      "code": "540626205000",
+      "name": "西昌乡",
+      "status": "active",
+      "new_parent": "540626000000"
+    },
+    {
+      "op": "update",
+      "code": "540626206000",
+      "name": "江达乡",
+      "status": "active",
+      "new_parent": "540626000000"
+    },
+    {
+      "op": "update",
+      "code": "540626208000",
+      "name": "热瓦乡",
+      "status": "active",
+      "new_parent": "540626000000"
+    },
+    {
+      "op": "update",
+      "code": "540626209000",
+      "name": "嘎美乡",
+      "status": "active",
+      "new_parent": "540626000000"
+    },
+    {
+      "op": "update",
+      "code": "540626210000",
+      "name": "嘎木乡",
+      "status": "active",
+      "new_parent": "540626000000"
+    },
+    {
+      "op": "update",
+      "code": "540627000000",
+      "name": "班戈县",
+      "status": "active",
+      "new_parent": "540600000000"
+    },
+    {
+      "op": "update",
+      "code": "540627100000",
+      "name": "普保镇",
+      "status": "active",
+      "new_parent": "540627000000"
+    },
+    {
+      "op": "update",
+      "code": "540627101000",
+      "name": "北拉镇",
+      "status": "active",
+      "new_parent": "540627000000"
+    },
+    {
+      "op": "update",
+      "code": "540627102000",
+      "name": "德庆镇",
+      "status": "active",
+      "new_parent": "540627000000"
+    },
+    {
+      "op": "update",
+      "code": "540627103000",
+      "name": "佳琼镇",
+      "status": "active",
+      "new_parent": "540627000000"
+    },
+    {
+      "op": "update",
+      "code": "540627205000",
+      "name": "尼玛乡",
+      "status": "active",
+      "new_parent": "540627000000"
+    },
+    {
+      "op": "update",
+      "code": "540627207000",
+      "name": "保吉乡",
+      "status": "active",
+      "new_parent": "540627000000"
+    },
+    {
+      "op": "update",
+      "code": "540627209000",
+      "name": "青龙乡",
+      "status": "active",
+      "new_parent": "540627000000"
+    },
+    {
+      "op": "update",
+      "code": "540627211000",
+      "name": "马前乡",
+      "status": "active",
+      "new_parent": "540627000000"
+    },
+    {
+      "op": "update",
+      "code": "540627215000",
+      "name": "门当乡",
+      "status": "active",
+      "new_parent": "540627000000"
+    },
+    {
+      "op": "update",
+      "code": "540627216000",
+      "name": "新吉乡",
+      "status": "active",
+      "new_parent": "540627000000"
+    },
+    {
+      "op": "update",
+      "code": "540628000000",
+      "name": "巴青县",
+      "status": "active",
+      "new_parent": "540600000000"
+    },
+    {
+      "op": "update",
+      "code": "540628100000",
+      "name": "拉西镇",
+      "status": "active",
+      "new_parent": "540628000000"
+    },
+    {
+      "op": "update",
+      "code": "540628101000",
+      "name": "杂色镇",
+      "status": "active",
+      "new_parent": "540628000000"
+    },
+    {
+      "op": "update",
+      "code": "540628102000",
+      "name": "雅安镇",
+      "status": "active",
+      "new_parent": "540628000000"
+    },
+    {
+      "op": "update",
+      "code": "540628201000",
+      "name": "江绵乡",
+      "status": "active",
+      "new_parent": "540628000000"
+    },
+    {
+      "op": "update",
+      "code": "540628202000",
+      "name": "玛如乡",
+      "status": "active",
+      "new_parent": "540628000000"
+    },
+    {
+      "op": "update",
+      "code": "540628204000",
+      "name": "阿秀乡",
+      "status": "active",
+      "new_parent": "540628000000"
+    },
+    {
+      "op": "update",
+      "code": "540628205000",
+      "name": "贡日乡",
+      "status": "active",
+      "new_parent": "540628000000"
+    },
+    {
+      "op": "update",
+      "code": "540628206000",
+      "name": "岗切乡",
+      "status": "active",
+      "new_parent": "540628000000"
+    },
+    {
+      "op": "update",
+      "code": "540628210000",
+      "name": "巴青乡",
+      "status": "active",
+      "new_parent": "540628000000"
+    },
+    {
+      "op": "update",
+      "code": "540628211000",
+      "name": "本塔乡",
+      "status": "active",
+      "new_parent": "540628000000"
+    },
+    {
+      "op": "update",
+      "code": "540629000000",
+      "name": "尼玛县",
+      "status": "active",
+      "new_parent": "540600000000"
+    },
+    {
+      "op": "update",
+      "code": "540629100000",
+      "name": "尼玛镇",
+      "status": "active",
+      "new_parent": "540629000000"
+    },
+    {
+      "op": "update",
+      "code": "540629201000",
+      "name": "卓尼乡",
+      "status": "active",
+      "new_parent": "540629000000"
+    },
+    {
+      "op": "update",
+      "code": "540629202000",
+      "name": "达果乡",
+      "status": "active",
+      "new_parent": "540629000000"
+    },
+    {
+      "op": "update",
+      "code": "540629203000",
+      "name": "阿索乡",
+      "status": "active",
+      "new_parent": "540629000000"
+    },
+    {
+      "op": "update",
+      "code": "540629204000",
+      "name": "荣玛乡",
+      "status": "active",
+      "new_parent": "540629000000"
+    },
+    {
+      "op": "update",
+      "code": "540629205000",
+      "name": "中仓乡",
+      "status": "active",
+      "new_parent": "540629000000"
+    },
+    {
+      "op": "update",
+      "code": "540629206000",
+      "name": "来多乡",
+      "status": "active",
+      "new_parent": "540629000000"
+    },
+    {
+      "op": "update",
+      "code": "540629207000",
+      "name": "申亚乡",
+      "status": "active",
+      "new_parent": "540629000000"
+    },
+    {
+      "op": "update",
+      "code": "540629208000",
+      "name": "卓瓦乡",
+      "status": "active",
+      "new_parent": "540629000000"
+    },
+    {
+      "op": "update",
+      "code": "540629209000",
+      "name": "俄久乡",
+      "status": "active",
+      "new_parent": "540629000000"
+    },
+    {
+      "op": "update",
+      "code": "540629210000",
+      "name": "文部乡",
+      "status": "active",
+      "new_parent": "540629000000"
+    },
+    {
+      "op": "update",
+      "code": "540629211000",
+      "name": "甲谷乡",
+      "status": "active",
+      "new_parent": "540629000000"
+    },
+    {
+      "op": "update",
+      "code": "540629212000",
+      "name": "军仓乡",
+      "status": "active",
+      "new_parent": "540629000000"
+    },
+    {
+      "op": "add",
+      "code": "540629213000",
+      "name": "吉瓦乡",
+      "level": 4,
+      "parent_code": "540629000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "540630000000",
+      "name": "双湖县",
+      "status": "active",
+      "new_parent": "540600000000"
+    },
+    {
+      "op": "update",
+      "code": "540630101000",
+      "name": "措折罗玛镇",
+      "status": "active",
+      "new_parent": "540630000000"
+    },
+    {
+      "op": "update",
+      "code": "540630200000",
+      "name": "协德乡",
+      "status": "active",
+      "new_parent": "540630000000"
+    },
+    {
+      "op": "update",
+      "code": "540630201000",
+      "name": "雅曲乡",
+      "status": "active",
+      "new_parent": "540630000000"
+    },
+    {
+      "op": "update",
+      "code": "540630202000",
+      "name": "嘎措乡",
+      "status": "active",
+      "new_parent": "540630000000"
+    },
+    {
+      "op": "update",
+      "code": "540630203000",
+      "name": "措折强玛乡",
+      "status": "active",
+      "new_parent": "540630000000"
+    },
+    {
+      "op": "update",
+      "code": "540630204000",
+      "name": "多玛乡",
+      "status": "active",
+      "new_parent": "540630000000"
+    },
+    {
+      "op": "update",
+      "code": "540630205000",
+      "name": "巴岭乡",
+      "status": "active",
+      "new_parent": "540630000000"
+    },
+    {
+      "op": "update",
+      "code": "542500000000",
+      "name": "阿里地区",
+      "status": "active",
+      "new_parent": "540000000000"
+    },
+    {
+      "op": "update",
+      "code": "542521000000",
+      "name": "普兰县",
+      "status": "active",
+      "new_parent": "542500000000"
+    },
+    {
+      "op": "update",
+      "code": "542521100000",
+      "name": "普兰镇",
+      "status": "active",
+      "new_parent": "542521000000"
+    },
+    {
+      "op": "add",
+      "code": "542521101000",
+      "name": "巴嘎镇",
+      "level": 4,
+      "parent_code": "542521000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "542521102000",
+      "name": "霍尔镇",
+      "level": 4,
+      "parent_code": "542521000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "542522000000",
+      "name": "札达县",
+      "status": "active",
+      "new_parent": "542500000000"
+    },
+    {
+      "op": "update",
+      "code": "542522100000",
+      "name": "托林镇",
+      "status": "active",
+      "new_parent": "542522000000"
+    },
+    {
+      "op": "add",
+      "code": "542522101000",
+      "name": "香孜镇",
+      "level": 4,
+      "parent_code": "542522000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "542522102000",
+      "name": "达巴镇",
+      "level": 4,
+      "parent_code": "542522000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "542522103000",
+      "name": "底雅镇",
+      "level": 4,
+      "parent_code": "542522000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "542522200000",
+      "name": "萨让乡",
+      "status": "active",
+      "new_parent": "542522000000"
+    },
+    {
+      "op": "update",
+      "code": "542522204000",
+      "name": "曲松乡",
+      "status": "active",
+      "new_parent": "542522000000"
+    },
+    {
+      "op": "update",
+      "code": "542522205000",
+      "name": "楚鲁松杰乡",
+      "status": "active",
+      "new_parent": "542522000000"
+    },
+    {
+      "op": "add",
+      "code": "542522206000",
+      "name": "玛朗乡",
+      "level": 4,
+      "parent_code": "542522000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "542522207000",
+      "name": "札布让乡",
+      "level": 4,
+      "parent_code": "542522000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "542522208000",
+      "name": "加德乡",
+      "level": 4,
+      "parent_code": "542522000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "542522209000",
+      "name": "支普齐乡",
+      "level": 4,
+      "parent_code": "542522000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "542523000000",
+      "name": "噶尔县",
+      "status": "active",
+      "new_parent": "542500000000"
+    },
+    {
+      "op": "update",
+      "code": "542523100000",
+      "name": "狮泉河镇",
+      "status": "active",
+      "new_parent": "542523000000"
+    },
+    {
+      "op": "add",
+      "code": "542523101000",
+      "name": "扎西岗镇",
+      "level": 4,
+      "parent_code": "542523000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "542523200000",
+      "name": "昆莎乡",
+      "status": "active",
+      "new_parent": "542523000000"
+    },
+    {
+      "op": "update",
+      "code": "542523201000",
+      "name": "左左乡",
+      "status": "active",
+      "new_parent": "542523000000"
+    },
+    {
+      "op": "update",
+      "code": "542523202000",
+      "name": "门士乡",
+      "status": "active",
+      "new_parent": "542523000000"
+    },
+    {
+      "op": "update",
+      "code": "542524000000",
+      "name": "日土县",
+      "status": "active",
+      "new_parent": "542500000000"
+    },
+    {
+      "op": "update",
+      "code": "542524100000",
+      "name": "日土镇",
+      "status": "active",
+      "new_parent": "542524000000"
+    },
+    {
+      "op": "update",
+      "code": "542524200000",
+      "name": "多玛乡",
+      "status": "active",
+      "new_parent": "542524000000"
+    },
+    {
+      "op": "update",
+      "code": "542524201000",
+      "name": "东汝乡",
+      "status": "active",
+      "new_parent": "542524000000"
+    },
+    {
+      "op": "update",
+      "code": "542524202000",
+      "name": "热帮乡",
+      "status": "active",
+      "new_parent": "542524000000"
+    },
+    {
+      "op": "update",
+      "code": "542524203000",
+      "name": "日松乡",
+      "status": "active",
+      "new_parent": "542524000000"
+    },
+    {
+      "op": "update",
+      "code": "542525000000",
+      "name": "革吉县",
+      "status": "active",
+      "new_parent": "542500000000"
+    },
+    {
+      "op": "update",
+      "code": "542525100000",
+      "name": "革吉镇",
+      "status": "active",
+      "new_parent": "542525000000"
+    },
+    {
+      "op": "update",
+      "code": "542525200000",
+      "name": "雄巴乡",
+      "status": "active",
+      "new_parent": "542525000000"
+    },
+    {
+      "op": "update",
+      "code": "542525201000",
+      "name": "亚热乡",
+      "status": "active",
+      "new_parent": "542525000000"
+    },
+    {
+      "op": "update",
+      "code": "542525202000",
+      "name": "擦咔乡",
+      "status": "active",
+      "new_parent": "542525000000"
+    },
+    {
+      "op": "update",
+      "code": "542525203000",
+      "name": "文布当桑乡",
+      "status": "active",
+      "new_parent": "542525000000"
+    },
+    {
+      "op": "update",
+      "code": "542526000000",
+      "name": "改则县",
+      "status": "active",
+      "new_parent": "542500000000"
+    },
+    {
+      "op": "update",
+      "code": "542526100000",
+      "name": "改则镇",
+      "status": "active",
+      "new_parent": "542526000000"
+    },
+    {
+      "op": "update",
+      "code": "542526200000",
+      "name": "物玛乡",
+      "status": "active",
+      "new_parent": "542526000000"
+    },
+    {
+      "op": "update",
+      "code": "542526201000",
+      "name": "先遣乡",
+      "status": "active",
+      "new_parent": "542526000000"
+    },
+    {
+      "op": "update",
+      "code": "542526202000",
+      "name": "麻米乡",
+      "status": "active",
+      "new_parent": "542526000000"
+    },
+    {
+      "op": "update",
+      "code": "542526203000",
+      "name": "洞措乡",
+      "status": "active",
+      "new_parent": "542526000000"
+    },
+    {
+      "op": "update",
+      "code": "542526204000",
+      "name": "古姆乡",
+      "status": "active",
+      "new_parent": "542526000000"
+    },
+    {
+      "op": "update",
+      "code": "542526205000",
+      "name": "察布乡",
+      "status": "active",
+      "new_parent": "542526000000"
+    },
+    {
+      "op": "update",
+      "code": "542527000000",
+      "name": "措勤县",
+      "status": "active",
+      "new_parent": "542500000000"
+    },
+    {
+      "op": "update",
+      "code": "542527100000",
+      "name": "措勤镇",
+      "status": "active",
+      "new_parent": "542527000000"
+    },
+    {
+      "op": "update",
+      "code": "542527200000",
+      "name": "磁石乡",
+      "status": "active",
+      "new_parent": "542527000000"
+    },
+    {
+      "op": "update",
+      "code": "542527201000",
+      "name": "曲洛乡",
+      "status": "active",
+      "new_parent": "542527000000"
+    },
+    {
+      "op": "update",
+      "code": "542527202000",
+      "name": "江让乡",
+      "status": "active",
+      "new_parent": "542527000000"
+    },
+    {
+      "op": "update",
+      "code": "542527203000",
+      "name": "达雄乡",
+      "status": "active",
+      "new_parent": "542527000000"
+    },
+    {
+      "op": "update",
+      "code": "540121202000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540121203000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540121207000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540122205000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540124201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540124203000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540127201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540171000000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540171400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540172000000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540172400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540173000000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540173400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540174000000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540174400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540223200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540223201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540223202000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540223207000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540232210000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540481202000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540481204000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540527201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540527202000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540529205000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540529207000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540581201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540581203000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "540629219000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "542521200000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "542521201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "542522201000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "542522202000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "542522203000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "542523203000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    }
+  ]
+}
