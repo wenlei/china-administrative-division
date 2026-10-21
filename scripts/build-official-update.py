@@ -27,6 +27,19 @@ def name_only(value):
     return clean(value).rstrip('*＊')
 
 def read_rows(path, kind):
+    if kind == 'reviewed-images':
+        review = json.loads(path.read_text())
+        towns = review['townships']
+        if [r['serial'] for r in towns] != list(range(1, review['township_count']+1)):
+            raise ValueError('Image table serial coverage incomplete')
+        if len({r['code'] for r in towns}) != len(towns):
+            raise ValueError('Duplicate image table code')
+        if {r['page'] for r in towns} != set(range(1, review['pages']+1)):
+            raise ValueError('Image table page coverage incomplete')
+        allowed = {'ocr-api-exact', 'tesseract-api-exact', 'original-image-review'}
+        if any(r.get('check') not in allowed for r in towns+review['parents']):
+            raise ValueError('Unreviewed image table row')
+        return [[r['name'],r['code']] for r in review['parents']+towns]
     if kind == 'rows-json':
         return json.loads(path.read_text())
     if kind == 'html':
@@ -57,6 +70,51 @@ def read_rows(path, kind):
                 rows.append([re.sub(r'^\d+\s+', '', m[1]), m[2]])
         return rows
     raise ValueError(f'Unsupported parser: {kind}')
+
+def verify_source_files(source, raw_root):
+    for filename, digest in [(source.get('original_file',source['file']),source['sha256']),
+                             (source['file'],source['parsed_sha256'])]:
+        if hashlib.sha256((raw_root/filename).read_bytes()).hexdigest() != digest:
+            raise ValueError(f"{source['province']}: source checksum mismatch: {filename}")
+    repo_root=Path(__file__).resolve().parent.parent
+    for field,digest_field in [('review_file','parsed_sha256'),('image_index','image_manifest_sha256')]:
+        if source.get(field) and hashlib.sha256((repo_root/source[field]).read_bytes()).hexdigest() != source[digest_field]:
+            raise ValueError(f'Committed image evidence checksum mismatch: {field}')
+    if source.get('image_manifest'):
+        path = raw_root/source['image_manifest']
+        if hashlib.sha256(path.read_bytes()).hexdigest() != source['image_manifest_sha256']:
+            raise ValueError('Image manifest checksum mismatch')
+        images = json.loads(path.read_text())['images']
+        review = json.loads((raw_root/source['file']).read_text())
+        if [im['page'] for im in images] != list(range(1,review['pages']+1)):
+            raise ValueError('Image archive page coverage incomplete')
+        for im in images:
+            if hashlib.sha256((raw_root/im['file']).read_bytes()).hexdigest() != im['sha256']:
+                raise ValueError(f"Image checksum mismatch: {im['file']}")
+    for rule in source.get('name_restorations', {}).values():
+        if hashlib.sha256((raw_root/rule['reference_file']).read_bytes()).hexdigest() != rule['reference_sha256']:
+            raise ValueError('Name restoration reference checksum mismatch')
+    for supplement in source.get('supplements', []):
+        if supplement.get('file') and hashlib.sha256((raw_root/supplement['file']).read_bytes()).hexdigest() != supplement['sha256']:
+            raise ValueError('Supplement source checksum mismatch')
+
+
+def parse_source(source, raw_root):
+    verify_source_files(source,raw_root)
+    raw=raw_root/source['file']
+    if source['parser']=='mca-snapshot':
+        entries=parse_mca_snapshot(json.loads(raw.read_text()),source['province'],source['expected_towns'],source.get('name_resolutions'))
+    else:
+        entries=parse_table(read_rows(raw,source['parser']),source['province'],source['name'],source['expected_towns'])
+    return restore_source_names(entries,source.get('name_restorations',{}))
+
+
+def restore_source_names(entries, rules):
+    for code,rule in rules.items():
+        if code not in entries or entries[code]['name'] not in {rule['extracted_name'],rule['name']}:
+            raise ValueError(f'Unreviewed source name restoration: {code}')
+        entries[code]['name']=rule['name']
+    return entries
 
 def parse_mca_snapshot(snapshot, province, expected_towns, resolutions=None):
     """Use the published parent tree; never infer a direct-administered parent."""
@@ -210,15 +268,7 @@ def main():
     outputs=[]
     for s in manifest['provinces']:
         if s['status']!='included':continue
-        raw=a.raw/s['file'];original=a.raw/s.get('original_file',s['file'])
-        actual=hashlib.sha256(original.read_bytes()).hexdigest()
-        if actual!=s['sha256']:raise ValueError(f"{s['province']}: original SHA-256 mismatch")
-        if hashlib.sha256(raw.read_bytes()).hexdigest()!=s['parsed_sha256']:
-            raise ValueError(f"{s['province']}: parsed input SHA-256 mismatch")
-        if s['parser'] == 'mca-snapshot':
-            entries=parse_mca_snapshot(json.loads(raw.read_text()),s['province'],s['expected_towns'],s.get('name_resolutions'))
-        else:
-            entries=parse_table(read_rows(raw,s['parser']),s['province'],s['name'],s['expected_towns'])
+        entries=parse_source(s,a.raw)
         patch=build_patch(s,entries,baseline)
         output=a.output/s['patch'].split('/')[-1]
         if patch['operations']:outputs.append((output,patch))

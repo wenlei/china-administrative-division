@@ -1,12 +1,12 @@
 {
   "meta": {
     "author": "wenlei-official-2026-10",
-    "source_url": "https://mzt.gansu.gov.cn/mzt/c107824/202601/174274276.shtml",
+    "source_url": "https://mzt.gansu.gov.cn/mzt/c107824/202607/174359734.shtml",
     "evidence_confidence": "high",
     "apply_after": "2023-baseline",
     "source_pipeline": "community",
     "created_at": "2026-10-21T00:00:00.000Z",
-    "notes": "2026年10月整理；官方数据截止2025-12-31；原件SHA-256=65a9653dbbc09106472ecfe98c25dda5861aecbf301da86acd6aa6cbeaeba0b3；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1356条。官方完整附件已取得；代码、名称和乡级总数核验。来源截至2025年底，不认定2026年中现势。"
+    "notes": "2026年10月整理；官方数据截止2026-06-30；原件SHA-256=659baa6341117b56f6582d0e9cb93aee9d943eb8924ba8e8290273def42b1a56；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1356条。已取得并核验2026年上半年省厅完整代码名录；保留来源真实时点。"
   },
   "operations": [
     {
@@ -1692,11 +1692,13 @@
       "new_parent": "620423000000"
     },
     {
-      "op": "update",
-      "code": "620423203000",
-      "name": "寺滩乡",
-      "status": "active",
-      "new_parent": "620423000000"
+      "op": "add",
+      "code": "620423108000",
+      "name": "寺滩镇",
+      "level": 4,
+      "parent_code": "620423000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
     },
     {
       "op": "update",
@@ -3220,8 +3222,8 @@
     },
     {
       "op": "add",
-      "code": "620622210000",
-      "name": "新堡乡",
+      "code": "620622115000",
+      "name": "新堡镇",
       "level": 4,
       "parent_code": "620622000000",
       "source_type": "mca_decree",
@@ -3229,8 +3231,8 @@
     },
     {
       "op": "add",
-      "code": "620622211000",
-      "name": "干城乡",
+      "code": "620622116000",
+      "name": "干城镇",
       "level": 4,
       "parent_code": "620622000000",
       "source_type": "mca_decree",
@@ -3238,8 +3240,8 @@
     },
     {
       "op": "add",
-      "code": "620622212000",
-      "name": "横梁乡",
+      "code": "620622117000",
+      "name": "横梁镇",
       "level": 4,
       "parent_code": "620622000000",
       "source_type": "mca_decree",
@@ -3614,6 +3616,15 @@
       "new_parent": "620721000000"
     },
     {
+      "op": "add",
+      "code": "620721103000",
+      "name": "明花镇",
+      "level": 4,
+      "parent_code": "620721000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
       "op": "update",
       "code": "620721200000",
       "name": "马蹄藏族乡",
@@ -3631,13 +3642,6 @@
       "op": "update",
       "code": "620721203000",
       "name": "大河乡",
-      "status": "active",
-      "new_parent": "620721000000"
-    },
-    {
-      "op": "update",
-      "code": "620721204000",
-      "name": "明花乡",
       "status": "active",
       "new_parent": "620721000000"
     },
@@ -10733,6 +10737,12 @@
     },
     {
       "op": "update",
+      "code": "620423203000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
       "code": "620503400000",
       "status": "deprecated",
       "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
@@ -10908,6 +10918,12 @@
     {
       "op": "update",
       "code": "620702402000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "620721204000",
       "status": "deprecated",
       "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
     },

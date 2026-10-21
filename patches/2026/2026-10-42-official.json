@@ -1,12 +1,12 @@
 {
   "meta": {
     "author": "wenlei-official-2026-10",
-    "source_url": "https://mzt.hubei.gov.cn/ywzc/ywzc/qhc/202601/t20260105_5848413.shtml",
+    "source_url": "https://mzt.hubei.gov.cn/fbjd/zcwj/zcfg/202607/t20260715_5976683.shtml",
     "evidence_confidence": "high",
     "apply_after": "2023-baseline",
     "source_pipeline": "community",
     "created_at": "2026-10-21T00:00:00.000Z",
-    "notes": "2026年10月整理；官方数据截止2025-12-31；原件SHA-256=84abda454508280ce14262673b1547acede071c1f68f5f4c394a409ecaf40403；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1260条。官方完整附件已取得；代码、名称和乡级总数核验。来源截至2025年底，不认定2026年中现势。"
+    "notes": "2026年10月整理；官方数据截止2026-06-30；原件SHA-256=4aac71e7de7fb6cceb681296f8f4868988405323c6bead9be1a379c43b6b0a68；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1260条。已取得并核验2026年上半年省厅完整代码名录；保留来源真实时点。"
   },
   "operations": [
     {

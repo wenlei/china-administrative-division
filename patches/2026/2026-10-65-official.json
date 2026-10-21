@@ -1,12 +1,12 @@
 {
   "meta": {
     "author": "wenlei-official-2026-10",
-    "source_url": "https://dmfw.mca.gov.cn/9095/xzqh/getList?code=650000&maxLevel=2",
+    "source_url": "https://mzt.xinjiang.gov.cn/xjmzt/c112990/202607/d4e25e9ed58e4371a1798d6e623ffc3d.shtml",
     "evidence_confidence": "high",
     "apply_after": "2023-baseline",
     "source_pipeline": "community",
     "created_at": "2026-10-21T00:00:00.000Z",
-    "notes": "2026年10月整理；官方数据截止未注明，不能认定2026现势；原件SHA-256=148dd2ceceb4d6958b626577dd3a084e09751be8c93ceb47bcd4ae1a4bfa21a2；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1280条。省厅原件取得/识别受限，改用民政部国家地名信息库公开接口完整父树；逐市（含省直辖县级市）采集，排除名称明确标注“撤销”的节点。接口未声明版本截止日期，year参数不能证明版本，不认定2026现势。含省直辖县级市乡级节点；1280条范围大于省厅67张图的1170条，不把两者混称同一全量口径。接口同码北泉镇的三种名称经显式规则归一；不把别名计作多个乡镇。省直辖县级市使用库原有659000中间分组以满足原协议结构校验；该分组不是新增行政实体。"
+    "notes": "2026年10月整理；官方数据截止2026-06-30；原件SHA-256=52e22953b7073a9ec2769772a1d73f9b90530241104f9b95bfb5a93f2934c7dc；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级1205条。已取得并核验2026年上半年省厅完整代码名录；保留来源真实时点。原图连续序号、代码唯一性和逐页覆盖核验，机器不一致处逐图复核；接口仅交叉校对，不补入原表外节点。67页原表共1205条（含省直辖县级市）；纠正此前把OCR成功条数1170当作表总数的错误；旧接口1280条另有口径/状态差异，已改按原表。"
   },
   "operations": [
     {
@@ -7351,6 +7351,24 @@
       "new_parent": "654025000000"
     },
     {
+      "op": "add",
+      "code": "654025109000",
+      "name": "玉丰镇",
+      "level": 4,
+      "parent_code": "654025000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "add",
+      "code": "654025110000",
+      "name": "兴钢镇",
+      "level": 4,
+      "parent_code": "654025000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
       "op": "update",
       "code": "654025204000",
       "name": "吐尔根乡",
@@ -8745,123 +8763,6 @@
       "new_parent": "659001000000"
     },
     {
-      "op": "add",
-      "code": "659001400000",
-      "name": "一二一团",
-      "level": 4,
-      "parent_code": "659001000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659001401000",
-      "name": "一三三团",
-      "level": 4,
-      "parent_code": "659001000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659001402000",
-      "name": "一三四团",
-      "level": 4,
-      "parent_code": "659001000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659001403000",
-      "name": "一三六团",
-      "level": 4,
-      "parent_code": "659001000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659001404000",
-      "name": "一四一团",
-      "level": 4,
-      "parent_code": "659001000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659001405000",
-      "name": "一四二团",
-      "level": 4,
-      "parent_code": "659001000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659001406000",
-      "name": "一四三团",
-      "level": 4,
-      "parent_code": "659001000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659001407000",
-      "name": "一四四团",
-      "level": 4,
-      "parent_code": "659001000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659001408000",
-      "name": "一四七团",
-      "level": 4,
-      "parent_code": "659001000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659001409000",
-      "name": "一四八团",
-      "level": 4,
-      "parent_code": "659001000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659001410000",
-      "name": "一四九团",
-      "level": 4,
-      "parent_code": "659001000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659001411000",
-      "name": "一五〇团",
-      "level": 4,
-      "parent_code": "659001000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659001412000",
-      "name": "一五二团",
-      "level": 4,
-      "parent_code": "659001000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
       "op": "update",
       "code": "659002000000",
       "name": "阿拉尔市",
@@ -9160,105 +9061,6 @@
       "new_parent": "659004000000"
     },
     {
-      "op": "add",
-      "code": "659004400000",
-      "name": "一〇五团",
-      "level": 4,
-      "parent_code": "659004000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659004401000",
-      "name": "一〇六团",
-      "level": 4,
-      "parent_code": "659004000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659004402000",
-      "name": "北塔山牧场",
-      "level": 4,
-      "parent_code": "659004000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659004403000",
-      "name": "新湖农场",
-      "level": 4,
-      "parent_code": "659004000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659004404000",
-      "name": "六运湖农场",
-      "level": 4,
-      "parent_code": "659004000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659004405000",
-      "name": "芳草湖农场",
-      "level": 4,
-      "parent_code": "659004000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659004406000",
-      "name": "奇台农场",
-      "level": 4,
-      "parent_code": "659004000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659004407000",
-      "name": "红旗农场",
-      "level": 4,
-      "parent_code": "659004000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659004408000",
-      "name": "土墩子农场",
-      "level": 4,
-      "parent_code": "659004000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659004409000",
-      "name": "军户农场",
-      "level": 4,
-      "parent_code": "659004000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659004410000",
-      "name": "共青团农场",
-      "level": 4,
-      "parent_code": "659004000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
       "op": "update",
       "code": "659005000000",
       "name": "北屯市",
@@ -9309,44 +9111,8 @@
     },
     {
       "op": "add",
-      "code": "659005400000",
-      "name": "一八一团",
-      "level": 4,
-      "parent_code": "659005000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659005401000",
-      "name": "一八二团",
-      "level": 4,
-      "parent_code": "659005000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659005402000",
-      "name": "一八四团",
-      "level": 4,
-      "parent_code": "659005000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659005403000",
-      "name": "一八五团",
-      "level": 4,
-      "parent_code": "659005000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659005404000",
-      "name": "一八六团",
+      "code": "659005103000",
+      "name": "得仁镇",
       "level": 4,
       "parent_code": "659005000000",
       "source_type": "mca_decree",
@@ -9475,51 +9241,6 @@
       "confidence_score": 100
     },
     {
-      "op": "add",
-      "code": "659006400000",
-      "name": "二十一团",
-      "level": 4,
-      "parent_code": "659006000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659006401000",
-      "name": "二十五团",
-      "level": 4,
-      "parent_code": "659006000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659006402000",
-      "name": "三十一团",
-      "level": 4,
-      "parent_code": "659006000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659006403000",
-      "name": "三十三团",
-      "level": 4,
-      "parent_code": "659006000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659006404000",
-      "name": "三十四团",
-      "level": 4,
-      "parent_code": "659006000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
       "op": "update",
       "code": "659007000000",
       "name": "双河市",
@@ -9567,42 +9288,6 @@
       "name": "友谊镇",
       "status": "active",
       "new_parent": "659007000000"
-    },
-    {
-      "op": "add",
-      "code": "659007400000",
-      "name": "八十三团",
-      "level": 4,
-      "parent_code": "659007000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659007401000",
-      "name": "八十七团",
-      "level": 4,
-      "parent_code": "659007000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659007402000",
-      "name": "八十八团",
-      "level": 4,
-      "parent_code": "659007000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659007403000",
-      "name": "九十一团",
-      "level": 4,
-      "parent_code": "659007000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
     },
     {
       "op": "update",
@@ -9659,123 +9344,6 @@
       "name": "金屯镇",
       "status": "active",
       "new_parent": "659008000000"
-    },
-    {
-      "op": "add",
-      "code": "659008400000",
-      "name": "六十一团",
-      "level": 4,
-      "parent_code": "659008000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659008401000",
-      "name": "六十二团",
-      "level": 4,
-      "parent_code": "659008000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659008402000",
-      "name": "六十九团",
-      "level": 4,
-      "parent_code": "659008000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659008403000",
-      "name": "七十团",
-      "level": 4,
-      "parent_code": "659008000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659008404000",
-      "name": "七十一团",
-      "level": 4,
-      "parent_code": "659008000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659008405000",
-      "name": "七十二团",
-      "level": 4,
-      "parent_code": "659008000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659008406000",
-      "name": "七十三团",
-      "level": 4,
-      "parent_code": "659008000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659008407000",
-      "name": "七十四团",
-      "level": 4,
-      "parent_code": "659008000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659008408000",
-      "name": "七十五团",
-      "level": 4,
-      "parent_code": "659008000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659008409000",
-      "name": "七十六团",
-      "level": 4,
-      "parent_code": "659008000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659008410000",
-      "name": "七十七团",
-      "level": 4,
-      "parent_code": "659008000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659008411000",
-      "name": "七十八团",
-      "level": 4,
-      "parent_code": "659008000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659008412000",
-      "name": "七十九团",
-      "level": 4,
-      "parent_code": "659008000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
     },
     {
       "op": "update",
@@ -9848,96 +9416,6 @@
       "new_parent": "659010000000"
     },
     {
-      "op": "add",
-      "code": "659010400000",
-      "name": "一二三团",
-      "level": 4,
-      "parent_code": "659010000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659010401000",
-      "name": "一二四团",
-      "level": 4,
-      "parent_code": "659010000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659010402000",
-      "name": "一二五团",
-      "level": 4,
-      "parent_code": "659010000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659010403000",
-      "name": "一二六团",
-      "level": 4,
-      "parent_code": "659010000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659010404000",
-      "name": "一二七团",
-      "level": 4,
-      "parent_code": "659010000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659010405000",
-      "name": "一二八团",
-      "level": 4,
-      "parent_code": "659010000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659010406000",
-      "name": "一二九团",
-      "level": 4,
-      "parent_code": "659010000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659010407000",
-      "name": "一三一团",
-      "level": 4,
-      "parent_code": "659010000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659010408000",
-      "name": "一三七团",
-      "level": 4,
-      "parent_code": "659010000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659010409000",
-      "name": "奎东农场",
-      "level": 4,
-      "parent_code": "659010000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
       "op": "update",
       "code": "659011000000",
       "name": "新星市",
@@ -9973,71 +9451,10 @@
     },
     {
       "op": "update",
-      "code": "659011400000",
-      "name": "红星二场",
-      "status": "active",
-      "new_parent": "659011000000"
-    },
-    {
-      "op": "add",
-      "code": "659011401000",
-      "name": "红山农场",
-      "level": 4,
-      "parent_code": "659011000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659011402000",
-      "name": "淖毛湖农场",
-      "level": 4,
-      "parent_code": "659011000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659011403000",
-      "name": "火箭农场",
-      "level": 4,
-      "parent_code": "659011000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659011404000",
-      "name": "柳树泉农场",
-      "level": 4,
-      "parent_code": "659011000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "update",
       "code": "659012000000",
       "name": "白杨市",
       "status": "active",
       "new_parent": "659000000000"
-    },
-    {
-      "op": "add",
-      "code": "659012001000",
-      "name": "朝阳街道",
-      "level": 4,
-      "parent_code": "659012000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659012002000",
-      "name": "光明街道",
-      "level": 4,
-      "parent_code": "659012000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
     },
     {
       "op": "add",
@@ -10070,94 +9487,6 @@
       "op": "add",
       "code": "659012103000",
       "name": "锦绣镇",
-      "level": 4,
-      "parent_code": "659012000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659012104000",
-      "name": "柳泉镇",
-      "level": 4,
-      "parent_code": "659012000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659012105000",
-      "name": "星光镇",
-      "level": 4,
-      "parent_code": "659012000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659012106000",
-      "name": "裕安镇",
-      "level": 4,
-      "parent_code": "659012000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659012107000",
-      "name": "和宁镇",
-      "level": 4,
-      "parent_code": "659012000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659012108000",
-      "name": "金沙镇",
-      "level": 4,
-      "parent_code": "659012000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659012109000",
-      "name": "水丰镇",
-      "level": 4,
-      "parent_code": "659012000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "update",
-      "code": "659012400000",
-      "name": "一六一团",
-      "status": "active",
-      "new_parent": "659012000000"
-    },
-    {
-      "op": "add",
-      "code": "659012402000",
-      "name": "一六三团",
-      "level": 4,
-      "parent_code": "659012000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659012403000",
-      "name": "一六四团",
-      "level": 4,
-      "parent_code": "659012000000",
-      "source_type": "mca_decree",
-      "confidence_score": 100
-    },
-    {
-      "op": "add",
-      "code": "659012404000",
-      "name": "一六五团",
       "level": 4,
       "parent_code": "659012000000",
       "source_type": "mca_decree",
@@ -12148,6 +11477,12 @@
     },
     {
       "op": "update",
+      "code": "659011400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
       "code": "659011500000",
       "status": "deprecated",
       "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
@@ -12161,6 +11496,12 @@
     {
       "op": "update",
       "code": "659011502000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "659012400000",
       "status": "deprecated",
       "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
     },

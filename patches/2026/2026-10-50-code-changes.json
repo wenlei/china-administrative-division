@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "author": "wenlei-official-2026-10",
+    "source_url": "https://mzj.cq.gov.cn/zwgk_218/zfxxgkml/tzgg/202609/t20260901_16015666.html",
+    "evidence_confidence": "high",
+    "apply_after": "2023-baseline",
+    "source_pipeline": "community",
+    "created_at": "2026-10-21T00:00:00.000Z",
+    "notes": "2026年10月整理；4组编制/废止代码，原公告SHA-256=8622db4c935da3fea91b07c46d4f4bf235c15e945a99d830fb1020ab3d5c1907"
+  },
+  "operations": [
+    {
+      "op": "add",
+      "code": "500230003000",
+      "name": "双路街道",
+      "level": 4,
+      "parent_code": "500230000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "500230111000",
+      "status": "deprecated",
+      "note": "按2026-09-01重庆市民政局公告废止旧代码；旧年度保留。"
+    },
+    {
+      "op": "add",
+      "code": "500237112000",
+      "name": "笃坪镇",
+      "level": 4,
+      "parent_code": "500237000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "500237229000",
+      "status": "deprecated",
+      "note": "按2026-09-01重庆市民政局公告废止旧代码；旧年度保留。"
+    },
+    {
+      "op": "add",
+      "code": "500243119000",
+      "name": "走马镇",
+      "level": 4,
+      "parent_code": "500243000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "500243210000",
+      "status": "deprecated",
+      "note": "按2026-09-01重庆市民政局公告废止旧代码；旧年度保留。"
+    },
+    {
+      "op": "add",
+      "code": "500243120000",
+      "name": "鹿鸣镇",
+      "level": 4,
+      "parent_code": "500243000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
+      "op": "update",
+      "code": "500243202000",
+      "status": "deprecated",
+      "note": "按2026-09-01重庆市民政局公告废止旧代码；旧年度保留。"
+    }
+  ]
+}

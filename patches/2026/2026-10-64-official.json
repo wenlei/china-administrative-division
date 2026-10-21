@@ -1,12 +1,12 @@
 {
   "meta": {
     "author": "wenlei-official-2026-10",
-    "source_url": "https://mca.nx.gov.cn/xwzx/tzgg/202601/t20260120_5139316.html",
+    "source_url": "https://mca.nx.gov.cn/xwzx/tzgg/202607/t20260706_5282444.html",
     "evidence_confidence": "high",
     "apply_after": "2023-baseline",
     "source_pipeline": "community",
-    "created_at": "2026-10-20T00:00:00.000Z",
-    "notes": "2026年10月整理；官方数据截止2025-12-31；原件SHA-256=2b20c318951d2b021ad571a80c9e21a33b99a0e7f46717b181d79c052b42ab59；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级243条。本批取得2025年底官方全量表；尚未取得2026年中更新，不能标为2026年中现势。"
+    "created_at": "2026-10-21T00:00:00.000Z",
+    "notes": "2026年10月整理；官方数据截止2026-06-30；原件SHA-256=2f2882ed2d832854338485c0bd5d35fc382d54cc414ffccee160ef53dc5aa065；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级243条。已取得并核验2026年上半年省厅完整代码名录；保留来源真实时点。"
   },
   "operations": [
     {
@@ -1003,11 +1003,13 @@
       "new_parent": "640324000000"
     },
     {
-      "op": "update",
-      "code": "640324201000",
-      "name": "田老庄乡",
-      "status": "active",
-      "new_parent": "640324000000"
+      "op": "add",
+      "code": "640324107000",
+      "name": "田老庄镇",
+      "level": 4,
+      "parent_code": "640324000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
     },
     {
       "op": "update",
@@ -1956,6 +1958,12 @@
     {
       "op": "update",
       "code": "640303400000",
+      "status": "deprecated",
+      "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
+    },
+    {
+      "op": "update",
+      "code": "640324201000",
       "status": "deprecated",
       "note": "不在本期民政全量名录，退出2026四级视图；不等同于统计单位实体撤销，旧年度记录保留。"
     },

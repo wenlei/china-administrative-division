@@ -2,12 +2,72 @@
 import importlib.util
 from pathlib import Path
 import unittest
+import json
+import hashlib
+import tempfile
 
 spec=importlib.util.spec_from_file_location('official_update',Path(__file__).with_name('build-official-update.py'))
 module=importlib.util.module_from_spec(spec)
 spec.loader.exec_module(module)
 
 class OfficialUpdateTests(unittest.TestCase):
+    def test_image_review_requires_contiguous_serials_unique_codes_and_all_pages(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'review.json'
+            review=dict(pages=2,township_count=2,parents=[],townships=[
+                dict(serial=1,page=1,code='650102001',name='甲街道',check='original-image-review'),
+                dict(serial=2,page=2,code='650102002',name='乙街道',check='ocr-api-exact')])
+            path.write_text(json.dumps(review))
+            self.assertEqual(len(module.read_rows(path,'reviewed-images')),2)
+            review['townships'][1]['serial']=3
+            path.write_text(json.dumps(review))
+            with self.assertRaisesRegex(ValueError,'serial coverage'):
+                module.read_rows(path,'reviewed-images')
+            review['townships'][1]['serial']=2
+            review['townships'][1]['page']=1
+            path.write_text(json.dumps(review))
+            with self.assertRaisesRegex(ValueError,'page coverage'):
+                module.read_rows(path,'reviewed-images')
+            review['townships'][1]['page']=2
+            review['townships'][1]['code']='650102001'
+            path.write_text(json.dumps(review))
+            with self.assertRaisesRegex(ValueError,'Duplicate'):
+                module.read_rows(path,'reviewed-images')
+
+    def test_source_image_bytes_are_verified_not_only_html_and_review(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            (root/'page.html').write_text('official page')
+            (root/'review.json').write_text(json.dumps(dict(pages=1)))
+            (root/'001.png').write_bytes(b'archived image bytes')
+            sha=lambda file:hashlib.sha256((root/file).read_bytes()).hexdigest()
+            (root/'images.json').write_text(json.dumps(dict(images=[dict(page=1,file='001.png',sha256=sha('001.png'))])))
+            source=dict(province='65',file='review.json',original_file='page.html',sha256=sha('page.html'),
+                        parsed_sha256=sha('review.json'),image_manifest='images.json',image_manifest_sha256=sha('images.json'))
+            module.verify_source_files(source,root)
+            (root/'001.png').write_bytes(b'changed image')
+            with self.assertRaisesRegex(ValueError,'Image checksum mismatch'):
+                module.verify_source_files(source,root)
+
+    def test_missing_glyph_restoration_is_explicit_and_rejects_new_spelling(self):
+        entries={'140781201':dict(name='宋乡')}
+        rules={'140781201':dict(extracted_name='宋乡',name='宋𦙶乡')}
+        self.assertEqual(module.restore_source_names(entries,rules)['140781201']['name'],'宋𦙶乡')
+        with self.assertRaisesRegex(ValueError,'Unreviewed source name'):
+            module.restore_source_names({'140781201':dict(name='另一个名称')},rules)
+
+    def test_code_replacement_supplement_removes_only_target_projection(self):
+        spec=importlib.util.spec_from_file_location('verify_update',Path(__file__).with_name('verify-official-update.py'))
+        verifier=importlib.util.module_from_spec(spec);spec.loader.exec_module(verifier)
+        original={'500230111000':dict(name='双路镇',level=4,parent_code='500230000000')}
+        ops=[dict(op='add',code='500230003000',name='双路街道',level=4,parent_code='500230000000'),
+             dict(op='update',code='500230111000',status='deprecated')]
+        projected=verifier.project_supplements(original,ops,'50')
+        self.assertEqual(set(projected),{'500230003000'})
+        self.assertIn('500230111000',original)
+        with self.assertRaisesRegex(ValueError,'withdraws missing'):
+            verifier.project_supplements({},ops,'50')
+
     def test_merged_upper_cells_and_reordered_codes(self):
         rows=[['江苏省 320000（1市）','南京市 320100','秦淮区 320104','中华门街道',320104006.0],
               ['','','','五老村街道',320104009.0]]

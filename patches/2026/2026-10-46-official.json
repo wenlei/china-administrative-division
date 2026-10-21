@@ -1,12 +1,12 @@
 {
   "meta": {
     "author": "wenlei-official-2026-10",
-    "source_url": "https://mz.hainan.gov.cn/smzt/0400/202601/a1452ed0822745babf246f405371277b.shtml",
+    "source_url": "https://mz.hainan.gov.cn/smzt/0400/202607/be92e00817b64a26bd250988056f4434.shtml",
     "evidence_confidence": "high",
     "apply_after": "2023-baseline",
     "source_pipeline": "community",
-    "created_at": "2026-10-20T00:00:00.000Z",
-    "notes": "2026年10月整理；官方数据截止未注明，不能认定2026现势；原件SHA-256=44b0844bfa62854cfc007bd4d2996c8793054c4e0e54b18289b84faaaa1617b2；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级218条。2025年版，未另注明截止日。224行中6行为仅县区、无乡级码，实为218个乡级，数量已核验；不认定2026现势。"
+    "created_at": "2026-10-21T00:00:00.000Z",
+    "notes": "2026年10月整理；官方数据截止2026-06-30；原件SHA-256=d6b6532128d0ed3a9cbfc55f19b8e02d0f5b6024b367c7eac5e5170934c296a2；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级218条。已取得并核验2026年上半年省厅完整代码名录；保留来源真实时点。"
   },
   "operations": [
     {

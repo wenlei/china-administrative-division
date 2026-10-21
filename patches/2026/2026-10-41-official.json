@@ -1,12 +1,12 @@
 {
   "meta": {
     "author": "wenlei-official-2026-10",
-    "source_url": "https://mzt.henan.gov.cn/2026/01-27/3314289.html",
+    "source_url": "https://mzt.henan.gov.cn/2026/07-27/3379457.html",
     "evidence_confidence": "high",
     "apply_after": "2023-baseline",
     "source_pipeline": "community",
-    "created_at": "2026-10-20T00:00:00.000Z",
-    "notes": "2026年10月整理；官方数据截止2025-12-31；原件SHA-256=698771af7d0282bf2b012a5145617eb7192e57eef7217a8b7451dedf584c6b0f；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级2471条。本批取得2025年底官方全量表；尚未取得2026年中更新，不能标为2026年中现势。"
+    "created_at": "2026-10-21T00:00:00.000Z",
+    "notes": "2026年10月整理；官方数据截止2026-06-30；原件SHA-256=6e138e0bbc8e301a1c8ab5e542f6642e534a1dfeb3088f76f930b1674968e243；仅校准省至乡四级，村级仍为冻结历史基线，不得据此视为现势村级；NBS与民政存在同码异名/异码同名，变更只作用于目标2026分区；本表乡级2474条。已取得并核验2026年上半年省厅完整代码名录；保留来源真实时点。"
   },
   "operations": [
     {
@@ -6128,6 +6128,15 @@
       "confidence_score": 100
     },
     {
+      "op": "add",
+      "code": "410611009000",
+      "name": "天山路街道",
+      "level": 4,
+      "parent_code": "410611000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
       "op": "update",
       "code": "410611100000",
       "name": "大赉店镇",
@@ -9898,6 +9907,15 @@
       "new_parent": "411102000000"
     },
     {
+      "op": "add",
+      "code": "411102005000",
+      "name": "沙澧街道",
+      "level": 4,
+      "parent_code": "411102000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
+    },
+    {
       "op": "update",
       "code": "411102101000",
       "name": "大刘镇",
@@ -12903,6 +12921,15 @@
       "name": "陇海街道",
       "status": "active",
       "new_parent": "411402000000"
+    },
+    {
+      "op": "add",
+      "code": "411402013000",
+      "name": "君台街道",
+      "level": 4,
+      "parent_code": "411402000000",
+      "source_type": "mca_decree",
+      "confidence_score": 100
     },
     {
       "op": "update",
