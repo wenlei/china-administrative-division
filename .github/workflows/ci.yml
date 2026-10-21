@@ -55,6 +55,9 @@ jobs:
       - name: Test
         run: pnpm test
 
+      - name: Test regionCheck API
+        run: python3 -m unittest discover -s apps/region-check -p 'test_*.py' -v
+
       - name: Test official update parser
         run: python3 -m unittest discover -s scripts -p 'test_official_update.py'
 

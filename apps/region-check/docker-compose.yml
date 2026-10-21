@@ -1,0 +1,29 @@
+services:
+  region-check:
+    image: region-check:0.1.0
+    build: .
+    container_name: regionCheck
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:6130:8000"
+    volumes:
+      - ./data:/data:ro
+    read_only: true
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    mem_limit: 512m
+    cpus: 1.0
+    pids_limit: 64
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "2"
+    networks:
+      - eplant
+networks:
+  eplant:
+    external: true
+    name: eplant_default
