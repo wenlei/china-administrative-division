@@ -8,7 +8,7 @@ import threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlsplit
-from region_check import RegionIndex, VERSION
+from region_check import RegionIndex, CurrentTreeUnavailable, VERSION
 
 MAX_BODY = 256 * 1024
 MAX_BATCH = 100
@@ -16,6 +16,21 @@ MAX_BATCH = 100
 
 def openapi():
     address = {'type': 'string', 'minLength': 2, 'maxLength': 1000}
+    names = {'type': 'array', 'items': {'type': 'string'}, 'uniqueItems': True}
+    current_tree = {
+        'type': 'object', 'required': ['data', 'edition', 'target_year', 'data_sha256', 'current_only',
+                                     'excluded_incomplete_paths'],
+        'properties': {
+            'data': {'type': 'array', 'items': {
+                'type': 'object', 'required': ['province', 'cities'], 'properties': {
+                    'province': {'type': 'string'}, 'cities': {'type': 'array', 'items': {
+                        'type': 'object', 'required': ['city', 'districts', 'towns', 'direct_towns'], 'properties': {
+                            'city': {'type': 'string'}, 'districts': names,
+                            'towns': {'type': 'object', 'additionalProperties': names},
+                            'direct_towns': names}}}}}},
+            'edition': {'type': 'string'}, 'target_year': {'type': 'integer'},
+            'data_sha256': {'type': 'string', 'pattern': '^[0-9a-f]{64}$'},
+            'current_only': {'const': True}, 'excluded_incomplete_paths': {'type': 'integer', 'minimum': 0}}}
     def response(description):
         return {'description': description, 'content': {'application/json': {
             'schema': {'type': 'object', 'additionalProperties': True}}}}
@@ -27,12 +42,24 @@ def openapi():
                 '200': response('Query result'), '400': response('Invalid input'),
                 '413': response('Request too large'), '415': response('JSON required')}}
     return {'openapi': '3.1.0', 'info': {'title': 'regionCheck', 'version': VERSION,
-            'description': 'Read-only levels 1–4 matching. Provincial source dates differ. '
+            'description': 'Read-only levels 1–4 matching plus independently sourced managed-area scopes. '
+                           'A managed result uses managed_areas.matches[].scope_paths; administrative '
+                           'candidates retain real parent chains. mapping_required is a system coverage '
+                           'gap, not a user address error. Provincial source dates differ. '
                            'Historical events are incomplete. No external address services.'},
             'paths': {
                 '/health': {'get': {'summary': 'Readiness', 'responses': {'200': response('Ready')}}},
                 '/api/coverage': {'get': {'summary': 'Data coverage and provincial sources',
                                         'responses': {'200': response('Coverage')}}},
+                '/api/divisions/tree': {'get': {
+                    'summary': 'Complete current levels 1–4 directory, without historical aliases',
+                    'description': 'Target-year active nodes in code order. No search limit or pagination. '
+                                   'Names are unique within their parent; invalid parent chains fail closed. '
+                                   'Prefecture-direct level-4 towns are in city.direct_towns, not districts.',
+                    'responses': {'200': {'description': 'Current administrative directory and edition',
+                        'content': {'application/json': {'schema': current_tree}}},
+                        '400': response('Query parameters are not supported'),
+                        '503': response('Current directory unavailable')}}},
                 '/api/divisions/search': {'get': {'summary': 'Search current and historical names',
                     'parameters': [query('q', {'type': 'string', 'minLength': 2, 'maxLength': 100}, True),
                                    query('limit', {'type': 'integer', 'minimum': 1, 'maximum': 50})],
@@ -145,6 +172,10 @@ class Handler(BaseHTTPRequestHandler):
                                         'data_sha256': index.digest})
             if url.path == '/api/coverage':
                 return self.reply(200, index.summary())
+            if url.path == '/api/divisions/tree':
+                if q:
+                    raise ValueError('This directory endpoint does not accept query parameters')
+                return self.reply(200, index.division_tree())
             if url.path == '/api/divisions/search':
                 if set(q) - {'q', 'limit'} or any(len(v) != 1 for v in q.values()):
                     raise ValueError('Unknown or repeated query parameter')
@@ -176,6 +207,8 @@ class Handler(BaseHTTPRequestHandler):
             self.route()
         except APIError as error:
             self.reply(error.status, {'error': error.message})
+        except CurrentTreeUnavailable:
+            self.reply(503, {'error': 'Current administrative directory unavailable'})
         except (ValueError, TypeError, RecursionError):
             self.reply(400, {'error': 'Invalid input; see /openapi.json for field requirements'})
         except KeyError:

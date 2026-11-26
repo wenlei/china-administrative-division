@@ -1,0 +1,94 @@
+{
+  "edition": "2026-10-26",
+  "areas": [
+    {
+      "id": "jiangsu-gaoyou-economic-development-area",
+      "name": "高邮经济开发区",
+      "aliases": ["江苏省高邮经济开发区", "经济开发区", "经济开发区（马棚街道）", "高邮开发区"],
+      "parent_code": "321084000000",
+      "scope_codes": ["321084002000"],
+      "verified": true,
+      "relation": "coextensive_management",
+      "legacy_codes": ["321084406000"],
+      "sources": [
+        {"url": "https://gykf.jszwfw.gov.cn/", "title": "高邮开发区官方政务目录：14村6社区", "as_of": null},
+        {"url": "https://jsggzy.jszwfw.gov.cn/jyxx/003001/003001010/20250530/7ad77568-ea49-493c-9480-be56f54f7e80.html", "title": "高邮市项目范围明确使用开发区（马棚街道）", "as_of": "2025-05-30"}
+      ],
+      "note": "业务名称和现行马棚街道对应，保留业务原名，不把管理区伪造为县级行政单位。"
+    },
+    {
+      "id": "guizhou-zunyi-xinpu-new-area",
+      "name": "新蒲新区",
+      "aliases": ["遵义市新蒲新区", "遵义新蒲新区"],
+      "parent_code": "520300000000",
+      "scope_codes": ["520302013000", "520302014000", "520302015000", "520302109000", "520302110000", "520302111000", "520302112000", "520302113000"],
+      "verified": true,
+      "relation": "managed_union",
+      "legacy_codes": [],
+      "sources": [
+        {"url": "https://www.gzszx.gov.cn/gzzxb/web/doc/detail/d_1550487404937248", "title": "贵州省政协：新蒲新区托管5镇3办", "as_of": "2023-06-06"},
+        {"url": "https://nynct.guizhou.gov.cn/zwgk/xxgkml/snwwj/qt/201709/W020170920388487172264.pdf", "title": "贵州省农业部门公布新蒲、新中及五镇归属", "as_of": "2017-09"},
+        {"url": "https://nynct.guizhou.gov.cn/xwzx/tzgg/201904/W020190430454695251435.pdf", "title": "贵州省农业农村厅公布新蒲新区礼仪街道等归属", "as_of": "2019-04"}
+      ],
+      "note": "按5镇3街道的完整并集核验；各镇街真实行政父链仍在红花岗区，不扩为红花岗全区。"
+    },
+    {
+      "id": "fujian-quanzhou-taiwan-investment-area",
+      "name": "泉州台商投资区",
+      "aliases": ["台商投资区", "泉州市台商投资区"],
+      "parent_code": "350500000000",
+      "scope_codes": ["350521104000", "350521105000", "350521106000", "350521200000"],
+      "verified": true,
+      "relation": "managed_union",
+      "legacy_codes": [],
+      "sources": [
+        {"url": "https://www.quanzhou.gov.cn/zfb/xxgk/zfxxgkzl/zfxxgkml/srmzfxxgkml/cxjsgl/202603/t20260313_3274084.htm", "title": "泉州市政府批复：台商区全域为洛阳、东园、张坂、百崎四乡镇", "as_of": "2026-03-13"},
+        {"url": "https://www.qzts.gov.cn/zjtstzq/", "title": "泉州台商投资区管理委员会辖区介绍", "as_of": null}
+      ],
+      "note": "真实行政父链保留惠安县，只展开已核定的四乡镇，不扩为惠安县全县。"
+    },
+    {
+      "id": "fujian-zhangzhou-taiwan-investment-area",
+      "name": "漳州台商投资区",
+      "aliases": ["台商投资区"],
+      "parent_code": "350600000000",
+      "scope_codes": [],
+      "verified": false,
+      "relation": "mapping_required",
+      "legacy_codes": [],
+      "sources": [{"url": "https://swt.fujian.gov.cn/xxgk/jgzn/jgcs/kfqglc/kfqdt/202406/t20240627_6475193.htm", "title": "福建省商务厅：漳州台商区下辖角美镇", "as_of": "2024-06-27"}],
+      "note": "2026目录已使用角美街道；需核实街道调整与台商区现行边界，不能只按同名或旧镇推定完全等价。"
+    },
+    {
+      "id": "anhui-lujiang-taiwan-farmers-startup-area",
+      "name": "庐江台湾农民创业园",
+      "aliases": ["台创园", "安徽省庐江台湾农民创业园", "台创园管委会"],
+      "parent_code": "340124000000",
+      "scope_codes": [],
+      "verified": false,
+      "relation": "mapping_required",
+      "legacy_codes": ["340124404000"],
+      "sources": [
+        {"url": "https://www.luan.gov.cn/group1/M00/10/6C/wKgSGWcu18qAaCj6ABAVZ3_NfaE970.pdf?attachDownload=1", "title": "安徽省生态环境督察公开材料：庐江县台创园管委会及古圩村", "as_of": "2024-10-30"},
+        {"url": "https://www.hfxf.gov.cn/jcdj/ncdj/18911537.html", "title": "合肥先锋网庐江分站：台创园10个村（社区）党组织", "as_of": "2026-01-06"},
+        {"url": "https://www.crnews.net/zt/wztcyzxn/wdyq/975839_20251224021534.html", "title": "中国农村网：行政托管10个村（社区），区分托管范围、规划范围与辐射区", "as_of": "2025-12-24"}
+      ],
+      "note": "园区管理范围，不是法定乡镇区划。2026-01-06官方资料确认托管10个村（社区）；2025-12-24资料明确区分起步规划52平方公里、拓展规划126.6平方公里和县域辐射区。规划或辐射范围不能直接作为责任范围。2023统计管理代码340124404000只作同一园区的历史检索依据。当前四级目录不能精确表达村级托管边界，不能扩大成郭河镇、同大镇全域；精确范围仍待核定，不视为人员填错。"
+    },
+    {
+      "id": "henan-pingdingshan-high-tech-area",
+      "name": "平顶山高新技术产业开发区",
+      "aliases": ["高新区", "平顶山高新区"],
+      "parent_code": "410400000000",
+      "scope_codes": ["410403009000", "410422104000"],
+      "verified": true,
+      "relation": "managed_union",
+      "legacy_codes": ["410471000000"],
+      "sources": [
+        {"url": "https://www.pdsgxq.gov.cn/upload/files/2026/3/平顶山高新区遵化店镇、皇台街道乡镇级国土空间总体规划（2021-2035 年）_compressed.pdf", "title": "高新区官方国土空间总体规划：辖区全域为遵化店镇、皇台街道，27个行政村", "as_of": "2026-03"},
+        {"url": "https://tjj.pds.gov.cn/upload/files/2025/4/平顶山年鉴（2024）.pdf", "title": "平顶山统计年鉴：皇台街道行政隶属卫东区、遵化店镇行政隶属叶县", "as_of": "2024"}
+      ],
+      "note": "高新区全域映射为卫东区皇台街道和叶县遵化店镇的并集。保留两条真实父链，不扩为卫东区或叶县全域；不把规划建设边界当成其他镇街。高新区简称须带平顶山市上级限定。"
+    }
+  ]
+}

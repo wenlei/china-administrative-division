@@ -5,8 +5,13 @@ import re
 import unicodedata
 from collections import defaultdict
 from pathlib import Path
+from managed_areas import ManagedAreas
 
-VERSION = '0.1.1'
+VERSION = '0.1.3'
+
+
+class CurrentTreeUnavailable(Exception):
+    """The current catalog cannot provide a complete, valid parent chain."""
 
 
 def normalize(value):
@@ -37,6 +42,12 @@ class RegionIndex:
         for row in self.data['records']:
             self.snapshots[row['code']].append(row)
         self.paths = {code: self._path(row) for code, row in self.current.items()}
+        self.exact_current_paths = defaultdict(list)
+        for code, path in self.paths.items():
+            levels = [node['level'] for node in path]
+            if (levels in ([1, 2, 3, 4], [1, 2, 4]) and not path[0]['parent_code']
+                    and path[0]['code'][:2] == code[:2]):
+                self.exact_current_paths[''.join(node['name'] for node in path)].append(code)
         self.names = defaultdict(set)
         for row in self.current.values():
             if len(row['name']) >= 2:
@@ -59,6 +70,8 @@ class RegionIndex:
                     self.historical_names[row['name']].append(row)
         self.all_names = set(self.names) | set(self.alias_events) | set(self.historical_names)
         self.lengths = sorted({len(n) for n in self.all_names})
+        self.managed_areas = ManagedAreas(self, self.data.get('managed_areas',
+            {'version': 1, 'edition': self.data['edition'], 'areas': []}))
 
     def _path(self, row):
         path, seen = [], set()
@@ -74,9 +87,61 @@ class RegionIndex:
         return {'service': 'regionCheck', 'version': VERSION, 'edition': self.data['edition'],
                 'target_year': self.year, 'snapshot_years': self.data['snapshot_years'],
                 'current_count': len(self.current), 'event_count': len(self.data['events']),
+                'managed_catalog_edition': self.managed_areas.edition,
+                'managed_catalog_loaded': 'managed_areas' in self.data,
+                'managed_area_count': len(self.managed_areas.areas),
+                'managed_verified_count': sum(a['verified'] for a in self.managed_areas.areas),
                 'data_sha256': self.digest, 'provinces': self.data['provinces'],
                 'supplements': self.data.get('supplements', []),
                 'limitations': self.data['limitations']}
+
+    def division_tree(self):
+        """Return the complete current directory, never historical aliases.
+
+        Code order determines stable output order. Names are unique within their
+        parent in this name-only contract; children of duplicate names are merged.
+        A broken current parent chain fails the whole request. Prefecture-direct
+        towns use their own list and retain level 4, without inventing a county.
+        """
+        provinces = {}
+        for code, row in sorted(self.current.items()):
+            level = row.get('level')
+            if type(level) is not int or not 1 <= level <= 4:
+                continue
+            path = self.paths[code]
+            levels = [node.get('level') for node in path]
+            direct_town = levels == [1, 2, 4]
+            if ((levels != list(range(1, level + 1)) and not direct_town)
+                    or path[0]['code'][:2] != code[:2]):
+                raise CurrentTreeUnavailable('Invalid current administrative parent chain')
+            for depth, node in enumerate(path, 1):
+                parent = path[depth - 2]['code'] if depth > 1 else None
+                if (node.get('parent_code') != parent
+                        or node.get('year') != self.year or node.get('status') != 'active'
+                        or self.current.get(node['code']) is not node
+                        or not isinstance(node.get('name'), str) or not node['name'].strip()):
+                    raise CurrentTreeUnavailable('Invalid current administrative parent chain')
+            province = provinces.setdefault(path[0]['name'], {'cities': {}})
+            if level == 1:
+                continue
+            city = province['cities'].setdefault(path[1]['name'], {'districts': {}, 'direct_towns': {}})
+            if level == 2:
+                continue
+            if direct_town:
+                city['direct_towns'].setdefault(path[2]['name'], None)
+                continue
+            towns = city['districts'].setdefault(path[2]['name'], {})
+            if level == 4:
+                towns.setdefault(path[3]['name'], None)
+        data = [{'province': province, 'cities': [
+            {'city': city, 'districts': list(values['districts']),
+             'towns': {district: list(towns) for district, towns in values['districts'].items()},
+             'direct_towns': list(values['direct_towns'])}
+            for city, values in item['cities'].items()]}
+            for province, item in provinces.items()]
+        return {'data': data, 'edition': self.data['edition'], 'target_year': self.year,
+                'data_sha256': self.digest, 'current_only': True,
+                'excluded_incomplete_paths': 0}
 
     def related_events(self, path):
         # Attach changes to the matched unit AND its ancestors, even when the
@@ -174,6 +239,7 @@ class RegionIndex:
                 if row['year'] != self.year and (q in row['name'] or code.startswith(q)):
                     snapshot_matches.append({**row, 'conversion_verified': False})
         return {'query': query, 'current': results[:limit], 'current_total': len(results),
+                'managed_areas': self.managed_areas.search(query, limit),
                 'historical': historical[:limit], 'historical_total': len(historical),
                 'snapshot_matches': snapshot_matches[:limit],
                 'snapshot_total': len(snapshot_matches)}
@@ -203,6 +269,45 @@ class RegionIndex:
                           'No event found does not prove the division never changed.']}
 
     def match(self, address, limit=5):
+        result = self._match_administrative(address, limit)
+        result['managed_catalog_loaded'] = bool(self.managed_areas.areas)
+        result['managed_catalog_edition'] = self.managed_areas.edition
+        areas = self.managed_areas.match(address)
+        if areas:
+            result['managed_areas'] = areas
+            # Administrative candidates retain their actual codes and parent chains.
+            # The business scope may be a union, and is never a fictional county.
+            if areas['status'] == 'verified':
+                result['status'] = 'managed'
+            message = {'verified': '已识别管理区域；请使用managed_areas中的核定范围。',
+                       'partial': '管理区域已识别，余下具体地址尚未完全识别，请保留原文核查。',
+                       'ambiguous': '存在多个同名管理区域，请补充上级地区。',
+                       'mapping_required': '管理区域名称已识别，系统管辖范围映射尚待核实；不代表人员填写错误。'}
+            result['warnings'] = list(result.get('warnings', [])) + [message[areas['status']]]
+        return result
+
+    def _match_administrative(self, address, limit=5):
+        if not isinstance(address, str) or not 2 <= len(address.strip()) <= 1000:
+            raise ValueError('address must contain 2 to 1000 characters')
+        text = normalize(address)
+        exact = self.exact_current_paths.get(text, [])
+        if len(exact) == 1:
+            # A unique whole current path is stronger than a county-name fragment
+            # spanning two valid names, e.g. 中山市 + 南区街道 contains 市南区.
+            # No prefix/suffix, shorthand, historical name or incomplete path is
+            # accepted here; all other input keeps the normal conflict checks.
+            code = exact[0]
+            path = self.paths[code]
+            candidate = {**self.describe(code), 'status': 'matched', 'matched_level': 4,
+                         'match_method': 'current_name', 'evidence': [],
+                         'unmatched_prefix': '', 'unparsed_suffix': '', 'matched_text': text,
+                         'suggested_address': ''.join(node['name'] for node in path if node['name'] not in
+                             ('市辖区', '省直辖县级行政区划', '自治区直辖县级行政区划')),
+                         'automatic_conversion': False}
+            return {'input': address, 'normalized_input': text, 'status': 'matched',
+                    'candidate_total': 1, 'candidates': [candidate], 'warnings': [],
+                    'edition': self.data['edition'], 'historical_unresolved': [], 'unresolved_events': [],
+                    'history_complete': False, 'village_verified': False}
         direct = self._match(address, limit, include_history=False)
         if direct['status'] == 'matched':
             return direct

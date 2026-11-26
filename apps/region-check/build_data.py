@@ -5,8 +5,77 @@ import json
 import re
 import sqlite3
 from pathlib import Path
+from managed_areas import build_catalog
 
 ROOT = Path(__file__).resolve().parents[2]
+
+
+def add_management_catalog(payload, repository=ROOT):
+    curated = json.loads((Path(repository) / 'apps/region-check/managed_areas.json').read_text())
+    payload['managed_areas'] = build_catalog(payload['records'], payload['target_year'], curated)
+    return payload
+
+
+def extract_events(records, repository=ROOT):
+    """Build explicit official succession edges from patches/*/xzqh.json."""
+    # Only explicit official event patches produce conversion edges. Snapshot
+    # code differences and name-stem guesses never produce administrative events.
+    events = []
+    for path in sorted((Path(repository) / 'patches').glob('*/xzqh.json')):
+        patch = json.loads(path.read_text())
+        if patch['meta'].get('source_pipeline') != 'xzqh':
+            continue
+        operations = patch['operations']
+        for op in operations:
+            if op['op'] != 'remove' or not op.get('reason'):
+                continue
+            reason = op['reason']
+            successors = [a for a in operations if a['op'] == 'add' and a['name'] in reason
+                          and a['code'][:4] == op['code'][:4]]
+            names = re.split(r'[、，,]', re.split(r'[，,]?设立', reason)[0]
+                             .removeprefix('撤销').removeprefix('县级'))
+            names = [n.removeprefix('县级') for n in names if n]
+            # A shared remove reason (N -> M) or partial boundary transfer needs parcel/boundary evidence.
+            group_size = sum(a['op'] == 'remove' and a.get('reason') == reason
+                             for a in operations)
+            old_names = {r['name'] for r in records if r['code'] == op['code']
+                         and r['year'] <= int(path.parent.name)}
+            old_name = next((n for n in names if n in old_names), None)
+            if old_name is None and len(names) == 1:
+                old_name = names[0]
+            events.append({
+                'year': int(path.parent.name), 'old_code': op['code'],
+                'old_name': old_name, 'old_name_candidates': names,
+                'successors': [{'code': a['code'], 'name': a['name'],
+                                'level': a['level'], 'parent_code': a['parent_code']}
+                               for a in successors],
+                'reason': reason, 'source_url': patch['meta'].get('source_url'),
+                'patch_file': str(path.relative_to(repository)),
+                'safe_conversion': group_size == 1 and len(successors) == 1
+                                   and old_name is not None,
+                'effective_date': None,
+            })
+    return events
+
+
+def augment_release(base, output, repository=ROOT):
+    """Add management relations without changing any administrative records."""
+    from region_check import RegionIndex
+    base, output = Path(base), Path(output)
+    if output.exists():
+        raise ValueError('Output already exists; build into a new release directory')
+    RegionIndex(base)  # Check the exact source release before using any of its records.
+    payload = add_management_catalog(json.loads((base / 'regions.json').read_text()), repository)
+    data = json.dumps(payload, ensure_ascii=False, separators=(',', ':')).encode()
+    manifest = json.loads((base / 'manifest.json').read_text())
+    manifest.update(sha256=hashlib.sha256(data).hexdigest(),
+                    managed_catalog_edition=payload['managed_areas']['edition'],
+                    managed_area_count=len(payload['managed_areas']['areas']))
+    output.mkdir(parents=True)
+    (output / 'regions.json').write_bytes(data)
+    (output / 'manifest.json').write_text(json.dumps(manifest, indent=2))
+    RegionIndex(output)  # Fail before publication if a source, member or parent is invalid.
+    return manifest['sha256']
 
 
 def build(database, output, repository=ROOT):
@@ -28,43 +97,7 @@ def build(database, output, repository=ROOT):
     for row in current.values():
         if row['parent_code'] and row['parent_code'] not in current:
             raise ValueError('Active parent missing: ' + row['code'])
-    # Only explicit official event patches produce conversion edges. Snapshot
-    # code differences and name-stem guesses never produce administrative events.
-    events = []
-    for path in sorted((repository / 'patches').glob('*/xzqh.json')):
-        patch = json.loads(path.read_text())
-        if patch['meta'].get('source_pipeline') != 'xzqh':
-            continue
-        operations = patch['operations']
-        for op in operations:
-            if op['op'] != 'remove' or not op.get('reason'):
-                continue
-            reason = op['reason']
-            successors = [a for a in operations if a['op'] == 'add' and a['name'] in reason
-                          and a['code'][:4] == op['code'][:4]]
-            names = re.split(r'[、，,]', re.split(r'[，,]?设立', reason)[0]
-                             .removeprefix('撤销').removeprefix('县级'))
-            names = [n.removeprefix('县级') for n in names if n]
-            # A shared remove reason (N -> M) needs parcel/boundary evidence.
-            group_size = sum(a['op'] == 'remove' and a.get('reason') == reason
-                             for a in operations)
-            old_names = {r['name'] for r in records if r['code'] == op['code']
-                         and r['year'] <= int(path.parent.name)}
-            old_name = next((n for n in names if n in old_names), None)
-            if old_name is None and len(names) == 1:
-                old_name = names[0]
-            events.append({
-                'year': int(path.parent.name), 'old_code': op['code'],
-                'old_name': old_name, 'old_name_candidates': names,
-                'successors': [{'code': a['code'], 'name': a['name'],
-                                'level': a['level'], 'parent_code': a['parent_code']}
-                               for a in successors],
-                'reason': reason, 'source_url': patch['meta'].get('source_url'),
-                'patch_file': str(path.relative_to(repository)),
-                'safe_conversion': group_size == 1 and len(successors) == 1
-                                   and old_name is not None,
-                'effective_date': None,
-            })
+    events = extract_events(records, repository)
     supplements = []
     record_sources = {}
     for file in [p['patch'] for p in manifest['provinces']] + manifest['extra_patches']:
@@ -93,6 +126,7 @@ def build(database, output, repository=ROOT):
                                'Only levels 1-4 are matched; village and street text is preserved.',
                                'Event year is not an exact approval or effective date.',
                                'Historical patches are incomplete; no event does not mean no change.']}
+    add_management_catalog(payload, repository)
     output.mkdir(parents=True)
     data = json.dumps(payload, ensure_ascii=False, separators=(',', ':')).encode()
     (output / 'regions.json').write_bytes(data)
@@ -105,7 +139,10 @@ def build(database, output, repository=ROOT):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--database', required=True)
+    source = parser.add_mutually_exclusive_group(required=True)
+    source.add_argument('--database')
+    source.add_argument('--base-release')
     parser.add_argument('--output', required=True)
     args = parser.parse_args()
-    print(build(args.database, args.output))
+    print(augment_release(args.base_release, args.output)
+          if args.base_release else build(args.database, args.output))
