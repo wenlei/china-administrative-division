@@ -3,13 +3,18 @@
   {"input":"贵州省遵义市新蒲新区","expected":"verified"},
   {"input":"安徽省合肥市庐江县台创园","expected":"mapping_required"},
   {"input":"福建省泉州市台商投资区","expected":"verified"},
-  {"input":"福建省漳州市漳州台商投资区","expected":"mapping_required"},
+  {"input":"福建省漳州市漳州台商投资区","expected":"verified"},
   {"input":"江苏省扬州市扬州经济技术开发区","expected":"mapping_required"},
   {"input":"河南省郑州市郑州经济技术开发区","expected":"mapping_required"},
   {"input":"河南省郑州市郑州航空港经济综合实验区","expected":"mapping_required"},
-  {"input":"河南省鹤壁市鹤壁经济技术开发区","expected":"mapping_required"},
+  {"input":"河南省郑州市郑州航空港经济综合实验区冯堂办事处","expected":"verified"},
+  {"input":"河南省鹤壁市鹤壁经济技术开发区","expected":"verified"},
+  {"input":"河南省鹤壁市鹤壁经济技术开发区龙岗街道","expected":"verified"},
+  {"input":"河南省鹤壁市鹤壁经济技术开发区渤海路办事处","expected":"verified"},
+  {"input":"江苏省淮安市淮安经济技术开发区高铁新区办事处","expected":"verified"},
+  {"input":"安徽省芜湖市安徽芜湖三山经济开发区","expected":"verified"},
   {"input":"安徽省合肥市合肥新站高新技术产业开发区","expected":"mapping_required"},
   {"input":"安徽省合肥市合肥经济技术开发区","expected":"mapping_required"},
   {"input":"河南省濮阳市濮阳经济技术开发区","expected":"mapping_required"},
-  {"input":"河南省平顶山市高新区","expected":"mapping_required"}
+  {"input":"河南省平顶山市高新区","expected":"verified"}
 ]

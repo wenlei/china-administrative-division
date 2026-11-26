@@ -42,7 +42,12 @@ POST使用`Content-Type: application/json`，请求体上限256 KiB；每个地�
 
 完整现行父链名称串（含 2/3/4 级及地级直属乡镇 `[1,2,4]`）能够唯一精确匹配时，匹配器优先采用该路径，避免将“中山市南区街道”中的跨词片段“市南区”或“天津市市辖区”中的“津市市”误当成冲突县名。这个优先规则不处理简称、历史名称、额外前后缀或不完整路径；其他输入继续执行原有冲突与历史证据校验。响应路径中直属乡镇的层级序列为`[1,2,4]`、`matched_level=4`，消费端应按`level`映射省市区县乡镇，不能按数组下标猜层级。
 
-2026-11-26 增补 2014–2020 县级撤设补丁（`v0.1.4`，部分划转/合并事件标记 `safe_conversion=false` 不自动转换）及云南 `533325000000`「兰坪白族普米族自治县」法定名称订正补丁（`v0.1.5`）；`build_data.py --base-release` 新增 `--refresh-events` 与 `--apply-extra-patches` 支持在不重跑全库的前提下增量刷新事件与订正补丁。
+2026-11-26 增补 2014–2020 县级撤设补丁（`v0.1.4` / `v0.1.6`，累计 43 条事件，部分划转/合并事件标记 `safe_conversion=false` 不自动转换）及云南 `533325000000`「兰坪白族普米族自治县」法定名称订正补丁（`v0.1.5`）；`build_data.py --base-release` 新增 `--refresh-events` 与 `--apply-extra-patches` 支持在不重跑全库的前提下增量刷新事件与订正补丁。
+
+2026-11-27 升级三层地址标定增强库（`v0.1.7`）：
+- **三层标定体系**：① **法定国标层**（GB/T 2260 县以上 + GB/T 10114 乡级，按 2025 年民政部令第 79 号《行政区划代码管理办法》第十六条：全国各级每年 1 月、省级乡级每年 1 月与 7 月跟进更新）；② **统计代码层**（2023 国家统计局 12 位含统计虚码基线，作为 `legacy_codes` 历史/虚码索引）；③ **自建增强映射层**（`managed_areas.json`），为不在法定层的地方挂牌功能区与自设办事处补充 `area_type`、`effective_from`/`effective_to`/`verified_at` 时间标注、`administered_within` 法定区县归属关系及 `standard_bridge` 三层桥接元信息。
+- **新增核验映射**：鹤壁经济技术开发区（含龙岗街道、渤海路街道 → 淇滨区）、淮安经济技术开发区高铁新区办事处（→ 淮安区）、郑州航空港经济综合实验区冯堂办事处（→ 中牟县）、安徽芜湖三山经济开发区（→ 弋江区）、漳州台商投资区（→ 龙海区）。
+- **整区合并标记**：`extract_events()` 对核验的整区 N→1 合并（如芜湖三山区→弋江区）输出 `point_safe_merge=true`，供点位/实体定位消费；`safe_conversion` 仍保持 `false`，不自动扩大人员权限范围。
 
 匹配响应的`candidates`包含现行`code`、`path`、`source`、`matched_level`、`match_method`、`evidence`、`unmatched_prefix`、`unparsed_suffix`和`suggested_address`。`related_events`返回匹配单位及其上级关联的明确历史事件，即使输入已是现名也会返回；例如现名“偃师区大口镇”仍能看到偃师市撤市设区记录。`evidence`只存本次名称转换采用的明确事件，包含事件年份、原码、承接码、原始理由和来源；未取得准确生效日时`effective_date=null`，不把补丁整理时间当作生效日。`history_complete=false`与`village_verified=false`在首版始终返回。
 
