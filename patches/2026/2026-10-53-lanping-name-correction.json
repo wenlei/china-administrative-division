@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "author": "wenlei-official-2026-10",
+    "source_url": "https://ynmz.yn.gov.cn/bmfw/xzqh/qhdm/",
+    "evidence_confidence": "high",
+    "apply_after": "2023-baseline",
+    "source_pipeline": "community",
+    "created_at": "2026-11-26T14:43:00.000Z",
+    "notes": "2026-11-26 订正：云南省民政厅 2026-08-31 网页原表（53.html，SHA-256=d9fbd92ede6c4d344aa1a6fcbfc069f03be692c2ced30f11624e35e0ede89909）将 533325000000 误写为「兰坪普米族白族自治县」（民族语序颠倒）。核对 1987-11-27 国务院批复、NBS 2023 基线及民政部标准行政区划名称，该县法定正式名称始终为「兰坪白族普米族自治县」（白族在前、普米族在后），从未批准更名。保留 2026-10-53-official.json 原件投影不动，通过本独立订正补丁恢复法定名称并完整留痕。"
+  },
+  "operations": [
+    {
+      "op": "update",
+      "code": "533325000000",
+      "name": "兰坪白族普米族自治县",
+      "status": "active",
+      "new_parent": "533300000000",
+      "note": "订正云南省民政厅 2026-08-31 原表民族语序笔误（原表误作「兰坪普米族白族自治县」），恢复法定名称「兰坪白族普米族自治县」。"
+    }
+  ]
+}

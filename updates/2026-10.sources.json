@@ -472,7 +472,7 @@
       "url": "https://ynmz.yn.gov.cn/bmfw/xzqh/qhdm/",
       "checked_at": "2026-10-20",
       "status": "included",
-      "reason": "",
+      "reason": "已纳入省厅2026-08-31全表。原表533325误作「兰坪普米族白族自治县」（民族语序颠倒），已通过独立订正补丁恢复法定名称「兰坪白族普米族自治县」，未当作真实更名。",
       "as_of": "2026-08-31",
       "expected_towns": 1429,
       "file": "53.html",
@@ -480,7 +480,25 @@
       "original_file": "53.html",
       "sha256": "d9fbd92ede6c4d344aa1a6fcbfc069f03be692c2ced30f11624e35e0ede89909",
       "patch": "patches/2026/2026-10-53-official.json",
-      "parsed_sha256": "d9fbd92ede6c4d344aa1a6fcbfc069f03be692c2ced30f11624e35e0ede89909"
+      "parsed_sha256": "d9fbd92ede6c4d344aa1a6fcbfc069f03be692c2ced30f11624e35e0ede89909",
+      "name_restorations": {
+        "533325": {
+          "extracted_name": "兰坪普米族白族自治县",
+          "name": "兰坪白族普米族自治县",
+          "reference_url": "https://www.mca.gov.cn/",
+          "reference_as_of": "2023-12-31",
+          "patch": "patches/2026/2026-10-53-lanping-name-correction.json",
+          "reason": "云南省民政厅2026-08-31网页原表将533325民族语序颠倒误写为「兰坪普米族白族自治县」；按1987年国务院批复及NBS 2023基线恢复法定名称「兰坪白族普米族自治县」。"
+        }
+      },
+      "supplements": [
+        {
+          "published_at": "2026-11-26",
+          "patch": "patches/2026/2026-10-53-lanping-name-correction.json",
+          "operations": 1,
+          "reason": "订正原表533325民族语序笔误，恢复法定名称「兰坪白族普米族自治县」。"
+        }
+      ]
     },
     {
       "province": "54",
@@ -595,6 +613,7 @@
   ],
   "extra_patches": [
     "patches/2026/2026-10-43-street-codes.json",
-    "patches/2026/2026-10-50-code-changes.json"
+    "patches/2026/2026-10-50-code-changes.json",
+    "patches/2026/2026-10-53-lanping-name-correction.json"
   ]
 }

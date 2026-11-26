@@ -208,6 +208,41 @@ class HistoricalEventPatchTests(unittest.TestCase):
             idx = RegionIndex(out)
             self.assertEqual(idx.match('广西壮族自治区桂林市荔浦县')['candidates'][0]['name'], '荔浦市')
 
+    def test_extra_patch_restores_lanping_official_county_name(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            base = tmp_path / 'base'
+            out = tmp_path / 'out'
+            repo = tmp_path / 'repo'
+            base.mkdir()
+            (repo / 'apps' / 'region-check').mkdir(parents=True)
+            (repo / 'apps' / 'region-check' / 'managed_areas.json').write_text(
+                json.dumps({'version': 1, 'edition': '2026-10-26', 'areas': []}))
+            (repo / 'patches').symlink_to(ROOT / 'patches')
+            (repo / 'updates').symlink_to(ROOT / 'updates')
+
+            records = list(self.payload['records']) + [
+                dict(code='533325000000', name='兰坪白族普米族自治县', level=3,
+                     parent_code='533300000000', year=2023, status='active'),
+                dict(code='533325000000', name='兰坪普米族白族自治县', level=3,
+                     parent_code='533300000000', year=2026, status='active'),
+                dict(code='533325101000', name='金顶镇', level=4,
+                     parent_code='533325000000', year=2026, status='active'),
+            ]
+            payload = dict(self.payload, records=records)
+            write_data(base, payload)
+            # Before correction, official name hits historical snapshot mismatch
+            before_idx = RegionIndex(base)
+            self.assertEqual(before_idx.match('云南省怒江傈僳族自治州兰坪白族普米族自治县金顶镇')['status'], 'needs_review')
+            augment_release(base, out, repository=repo, refresh_events=True, apply_extra_patches=True)
+            after_idx = RegionIndex(out)
+            res = after_idx.match('云南省怒江傈僳族自治州兰坪白族普米族自治县金顶镇')
+            self.assertEqual(res['status'], 'matched')
+            self.assertEqual(
+                [n['name'] for n in res['candidates'][0]['path']],
+                ['云南省', '怒江傈僳族自治州', '兰坪白族普米族自治县', '金顶镇'],
+            )
+
 
 if __name__ == '__main__':
     unittest.main()

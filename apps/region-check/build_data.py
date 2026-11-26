@@ -59,14 +59,61 @@ def extract_events(records, repository=ROOT):
     return events
 
 
-def augment_release(base, output, repository=ROOT, *, refresh_events=False):
-    """Add management relations (and optionally refresh official events) without changing administrative records."""
+def apply_extra_patch_updates(payload, repository=ROOT):
+    """Apply explicit update operations from updates/2026-10.sources.json extra_patches to target_year records."""
+    repo = Path(repository)
+    manifest_path = repo / 'updates/2026-10.sources.json'
+    if not manifest_path.exists():
+        return payload
+    manifest = json.loads(manifest_path.read_text())
+    target = payload['target_year']
+    by_code = {r['code']: r for r in payload['records'] if r['year'] == target}
+    supplements = list(payload.get('supplements', []))
+    known_supplements = {s.get('patch_file') for s in supplements if isinstance(s, dict)}
+    for rel_file in manifest.get('extra_patches', []):
+        patch_path = repo / rel_file
+        if not patch_path.exists():
+            continue
+        patch = json.loads(patch_path.read_text())
+        meta = patch['meta']
+        attribution = {'source_url': meta.get('source_url'), 'notes': meta.get('notes'),
+                       'patch_file': rel_file}
+        applied = False
+        for op in patch.get('operations', []):
+            if op.get('op') != 'update':
+                continue
+            row = by_code.get(op['code'])
+            if not row:
+                continue
+            if op.get('name') and row.get('name') != op['name']:
+                row['name'] = op['name']
+                applied = True
+            if op.get('status') and row.get('status') != op['status']:
+                row['status'] = op['status']
+                applied = True
+            if op.get('new_parent') and row.get('parent_code') != op['new_parent']:
+                row['parent_code'] = op['new_parent']
+                applied = True
+            if applied:
+                row['record_source'] = attribution
+        if applied and rel_file not in known_supplements:
+            supplements.append(attribution)
+            known_supplements.add(rel_file)
+    payload['supplements'] = supplements
+    return payload
+
+
+def augment_release(base, output, repository=ROOT, *, refresh_events=False, apply_extra_patches=False):
+    """Add management relations (and optionally refresh official events / extra patch updates)."""
     from region_check import RegionIndex
     base, output = Path(base), Path(output)
     if output.exists():
         raise ValueError('Output already exists; build into a new release directory')
     RegionIndex(base)  # Check the exact source release before using any of its records.
-    payload = add_management_catalog(json.loads((base / 'regions.json').read_text()), repository)
+    payload = json.loads((base / 'regions.json').read_text())
+    if apply_extra_patches:
+        payload = apply_extra_patch_updates(payload, repository)
+    payload = add_management_catalog(payload, repository)
     if refresh_events:
         payload['events'] = extract_events(payload['records'], repository)
     data = json.dumps(payload, ensure_ascii=False, separators=(',', ':')).encode()
@@ -148,6 +195,9 @@ if __name__ == '__main__':
     source.add_argument('--base-release')
     parser.add_argument('--output', required=True)
     parser.add_argument('--refresh-events', action='store_true')
+    parser.add_argument('--apply-extra-patches', action='store_true')
     args = parser.parse_args()
-    print(augment_release(args.base_release, args.output, refresh_events=args.refresh_events)
+    print(augment_release(args.base_release, args.output,
+                          refresh_events=args.refresh_events,
+                          apply_extra_patches=args.apply_extra_patches)
           if args.base_release else build(args.database, args.output))
