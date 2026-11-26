@@ -201,6 +201,68 @@ class ManagedAreaTests(unittest.TestCase):
             Path(self.temp.name,'regions.json').write_text('{}')
             with self.assertRaises(ValueError):augment_release(self.temp.name,Path(output_parent,'bad'),repo)
 
+    def test_managed_subdistrict_administered_within_and_three_tier_bridge(self):
+        payload = copy.deepcopy(self.payload)
+        for code, name, level, parent, year in [
+            ('320800000000', '淮安市', 2, '320000000000', 2026),
+            ('320803000000', '淮安区', 3, '320800000000', 2026),
+            ('320871000000', '淮安经济技术开发区', 3, '320800000000', 2023),
+            ('320871412000', '高铁商务区办', 4, '320871000000', 2023),
+            ('410600000000', '鹤壁市', 2, '410000000000', 2026),
+            ('410611000000', '淇滨区', 3, '410600000000', 2026),
+        ]:
+            payload['records'].append(dict(code=code, name=name, level=level,
+                                           parent_code=parent, year=year, status='active'))
+        curated = json.loads(CATALOG.read_text())
+        selected = [a for a in curated['areas'] if a['id'] in {
+            'jiangsu-huaian-edz-gaotie-subdistrict',
+            'henan-hebi-economic-development-area',
+            'henan-hebi-edz-longgang-subdistrict',
+            'henan-hebi-edz-bohailu-subdistrict',
+        }]
+        payload['managed_areas'] = build_catalog(payload['records'], 2026,
+                                                 {'edition': curated['edition'], 'areas': selected})
+        with tempfile.TemporaryDirectory() as directory:
+            write_data(directory, payload)
+            index = RegionIndex(directory)
+            res = index.match('江苏省淮安市淮安经济技术开发区高铁新区办事处')
+            self.assertEqual(res['status'], 'managed')
+            m = res['managed_areas']['matches'][0]
+            self.assertEqual(m['id'], 'jiangsu-huaian-edz-gaotie-subdistrict')
+            self.assertEqual(m['area_type'], 'managed_subdistrict')
+            self.assertEqual(m['relation'], 'administered_within')
+            self.assertEqual(m['scope_semantics'], 'legal_container_only')
+            self.assertEqual(m['effective_from'], '2019')
+            self.assertIsNone(m['effective_to'])
+            self.assertEqual(m['verified_at'], '2026-11-27')
+            self.assertEqual(m['legacy_codes'], ['320871412000'])
+            self.assertEqual(m['standard_bridge']['legal_target_levels'], [3])
+            self.assertEqual([n['name'] for n in m['scope_paths'][0]], ['江苏省', '淮安市', '淮安区'])
+            # Longest match beats parent dev zone for Hebi subdistricts
+            for addr, expected_id in [
+                ('河南省鹤壁市鹤壁经济技术开发区龙岗街道', 'henan-hebi-edz-longgang-subdistrict'),
+                ('河南省鹤壁市鹤壁经济技术开发区渤海路办事处', 'henan-hebi-edz-bohailu-subdistrict'),
+                ('河南省鹤壁市鹤壁经济技术开发区', 'henan-hebi-economic-development-area'),
+            ]:
+                r2 = index.match(addr)
+                self.assertEqual(r2['status'], 'managed')
+                self.assertEqual(r2['managed_areas']['matches'][0]['id'], expected_id)
+                self.assertEqual([n['name'] for n in r2['managed_areas']['matches'][0]['scope_paths'][0]],
+                                 ['河南省', '鹤壁市', '淇滨区'])
+
+    def test_invalid_area_type_or_temporal_fields_fail_closed(self):
+        for key, value in [
+            ('area_type', 'unknown_kind'),
+            ('effective_from', '2026/11/27'),
+            ('verified_at', 'not-a-date'),
+            ('legacy_codes', ['12345']),
+        ]:
+            payload = copy.deepcopy(self.payload)
+            payload['managed_areas']['areas'][0][key] = value
+            write_data(self.temp.name, payload)
+            with self.assertRaises(ValueError):
+                RegionIndex(self.temp.name)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -7,7 +7,7 @@ from collections import defaultdict
 from pathlib import Path
 from managed_areas import ManagedAreas
 
-VERSION = '0.1.3'
+VERSION = '0.1.7'
 
 
 class CurrentTreeUnavailable(Exception):

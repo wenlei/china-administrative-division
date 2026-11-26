@@ -16,6 +16,20 @@ def add_management_catalog(payload, repository=ROOT):
     return payload
 
 
+# Verified whole-territory N->1 county mergers where every physical location in
+# old_code moved 100% into the single successor (still safe_conversion=False so
+# permission scopes are never silently widened, but point_safe_merge=True for
+# station/location alignment). Never include partial-transfer reorganizations.
+WHOLE_TERRITORY_MERGED_CODES = frozenset({
+    '340208000000',  # 芜湖市三山区 -> 新弋江区 (2020)
+    '340203000000',  # 原芜湖市弋江区 -> 新弋江区 (2020)
+    '350402000000',  # 三明市梅列区 -> 新三元区 (2021)
+    '350403000000',  # 原三明市三元区 -> 新三元区 (2021)
+    '410306000000',  # 洛阳市吉利区 -> 孟津区 (2021)
+    '410322000000',  # 孟津县 -> 孟津区 (2021)
+})
+
+
 def extract_events(records, repository=ROOT):
     """Build explicit official succession edges from patches/*/xzqh.json."""
     # Only explicit official event patches produce conversion edges. Snapshot
@@ -54,6 +68,8 @@ def extract_events(records, repository=ROOT):
                 'patch_file': str(path.relative_to(repository)),
                 'safe_conversion': group_size == 1 and len(successors) == 1
                                    and old_name is not None and not partial_transfer,
+                'point_safe_merge': (op['code'] in WHOLE_TERRITORY_MERGED_CODES
+                                     and len(successors) == 1 and not partial_transfer),
                 'effective_date': None,
             })
     return events

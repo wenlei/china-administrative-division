@@ -184,6 +184,12 @@ class HistoricalEventPatchTests(unittest.TestCase):
                 self.assertEqual(res['status'], 'needs_review')
                 self.assertFalse(res['candidates'][0]['automatic_conversion'])
                 self.assertTrue(any(ev['safe_conversion'] is False for ev in res['candidates'][0]['evidence']))
+        # Whole-territory N->1 merge (Sanshan -> Yijiang) is flagged point_safe_merge=True,
+        # while partial-transfer Shuicheng stays point_safe_merge=False.
+        sanshan = self.index.match('安徽省芜湖市三山区')['candidates'][0]['evidence']
+        self.assertTrue(any(ev.get('point_safe_merge') is True for ev in sanshan))
+        shuicheng = self.index.match('贵州省六盘水市水城县')['candidates'][0]['evidence']
+        self.assertTrue(all(ev.get('point_safe_merge') is False for ev in shuicheng))
 
     def test_exact_municipality_level2_and_level3_paths_beat_cross_boundary_fragments(self):
         cases = [

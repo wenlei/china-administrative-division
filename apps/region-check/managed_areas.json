@@ -1,15 +1,19 @@
 {
-  "edition": "2026-10-26",
+  "edition": "2026-11-27",
   "areas": [
     {
       "id": "jiangsu-gaoyou-economic-development-area",
       "name": "高邮经济开发区",
       "aliases": ["江苏省高邮经济开发区", "经济开发区", "经济开发区（马棚街道）", "高邮开发区"],
+      "area_type": "development_zone",
       "parent_code": "321084000000",
       "scope_codes": ["321084002000"],
       "verified": true,
       "relation": "coextensive_management",
       "legacy_codes": ["321084406000"],
+      "effective_from": null,
+      "effective_to": null,
+      "verified_at": "2026-10-26",
       "sources": [
         {"url": "https://gykf.jszwfw.gov.cn/", "title": "高邮开发区官方政务目录：14村6社区", "as_of": null},
         {"url": "https://jsggzy.jszwfw.gov.cn/jyxx/003001/003001010/20250530/7ad77568-ea49-493c-9480-be56f54f7e80.html", "title": "高邮市项目范围明确使用开发区（马棚街道）", "as_of": "2025-05-30"}
@@ -20,11 +24,15 @@
       "id": "guizhou-zunyi-xinpu-new-area",
       "name": "新蒲新区",
       "aliases": ["遵义市新蒲新区", "遵义新蒲新区"],
+      "area_type": "new_area",
       "parent_code": "520300000000",
       "scope_codes": ["520302013000", "520302014000", "520302015000", "520302109000", "520302110000", "520302111000", "520302112000", "520302113000"],
       "verified": true,
       "relation": "managed_union",
       "legacy_codes": [],
+      "effective_from": "2009",
+      "effective_to": null,
+      "verified_at": "2026-10-26",
       "sources": [
         {"url": "https://www.gzszx.gov.cn/gzzxb/web/doc/detail/d_1550487404937248", "title": "贵州省政协：新蒲新区托管5镇3办", "as_of": "2023-06-06"},
         {"url": "https://nynct.guizhou.gov.cn/zwgk/xxgkml/snwwj/qt/201709/W020170920388487172264.pdf", "title": "贵州省农业部门公布新蒲、新中及五镇归属", "as_of": "2017-09"},
@@ -36,11 +44,15 @@
       "id": "fujian-quanzhou-taiwan-investment-area",
       "name": "泉州台商投资区",
       "aliases": ["台商投资区", "泉州市台商投资区"],
+      "area_type": "development_zone",
       "parent_code": "350500000000",
       "scope_codes": ["350521104000", "350521105000", "350521106000", "350521200000"],
       "verified": true,
       "relation": "managed_union",
       "legacy_codes": [],
+      "effective_from": "2010",
+      "effective_to": null,
+      "verified_at": "2026-10-26",
       "sources": [
         {"url": "https://www.quanzhou.gov.cn/zfb/xxgk/zfxxgkzl/zfxxgkml/srmzfxxgkml/cxjsgl/202603/t20260313_3274084.htm", "title": "泉州市政府批复：台商区全域为洛阳、东园、张坂、百崎四乡镇", "as_of": "2026-03-13"},
         {"url": "https://www.qzts.gov.cn/zjtstzq/", "title": "泉州台商投资区管理委员会辖区介绍", "as_of": null}
@@ -50,24 +62,34 @@
     {
       "id": "fujian-zhangzhou-taiwan-investment-area",
       "name": "漳州台商投资区",
-      "aliases": ["台商投资区"],
+      "aliases": ["台商投资区", "漳州市台商投资区"],
+      "area_type": "development_zone",
       "parent_code": "350600000000",
-      "scope_codes": [],
-      "verified": false,
-      "relation": "mapping_required",
+      "scope_codes": ["350604000000"],
+      "verified": true,
+      "relation": "administered_within",
       "legacy_codes": [],
-      "sources": [{"url": "https://swt.fujian.gov.cn/xxgk/jgzn/jgcs/kfqglc/kfqdt/202406/t20240627_6475193.htm", "title": "福建省商务厅：漳州台商区下辖角美镇", "as_of": "2024-06-27"}],
-      "note": "2026目录已使用角美街道；需核实街道调整与台商区现行边界，不能只按同名或旧镇推定完全等价。"
+      "effective_from": "2012-01",
+      "effective_to": null,
+      "verified_at": "2026-11-27",
+      "sources": [
+        {"url": "https://swt.fujian.gov.cn/xxgk/jgzn/jgcs/kfqglc/kfqdt/202406/t20240627_6475193.htm", "title": "福建省商务厅：漳州台商区辖原龙海角美镇片区", "as_of": "2024-06-27"}
+      ],
+      "note": "全域位于法定龙海区（原角美镇2024年撤镇设街道，均在龙海区范围内）。relation=administered_within仅标明法定归属区县，不代表龙海全区授权范围。"
     },
     {
       "id": "anhui-lujiang-taiwan-farmers-startup-area",
       "name": "庐江台湾农民创业园",
       "aliases": ["台创园", "安徽省庐江台湾农民创业园", "台创园管委会"],
+      "area_type": "industrial_park",
       "parent_code": "340124000000",
       "scope_codes": [],
       "verified": false,
       "relation": "mapping_required",
       "legacy_codes": ["340124404000"],
+      "effective_from": null,
+      "effective_to": null,
+      "verified_at": "2026-10-26",
       "sources": [
         {"url": "https://www.luan.gov.cn/group1/M00/10/6C/wKgSGWcu18qAaCj6ABAVZ3_NfaE970.pdf?attachDownload=1", "title": "安徽省生态环境督察公开材料：庐江县台创园管委会及古圩村", "as_of": "2024-10-30"},
         {"url": "https://www.hfxf.gov.cn/jcdj/ncdj/18911537.html", "title": "合肥先锋网庐江分站：台创园10个村（社区）党组织", "as_of": "2026-01-06"},
@@ -79,16 +101,134 @@
       "id": "henan-pingdingshan-high-tech-area",
       "name": "平顶山高新技术产业开发区",
       "aliases": ["高新区", "平顶山高新区"],
+      "area_type": "development_zone",
       "parent_code": "410400000000",
       "scope_codes": ["410403009000", "410422104000"],
       "verified": true,
       "relation": "managed_union",
       "legacy_codes": ["410471000000"],
+      "effective_from": null,
+      "effective_to": null,
+      "verified_at": "2026-10-26",
       "sources": [
         {"url": "https://www.pdsgxq.gov.cn/upload/files/2026/3/平顶山高新区遵化店镇、皇台街道乡镇级国土空间总体规划（2021-2035 年）_compressed.pdf", "title": "高新区官方国土空间总体规划：辖区全域为遵化店镇、皇台街道，27个行政村", "as_of": "2026-03"},
         {"url": "https://tjj.pds.gov.cn/upload/files/2025/4/平顶山年鉴（2024）.pdf", "title": "平顶山统计年鉴：皇台街道行政隶属卫东区、遵化店镇行政隶属叶县", "as_of": "2024"}
       ],
       "note": "高新区全域映射为卫东区皇台街道和叶县遵化店镇的并集。保留两条真实父链，不扩为卫东区或叶县全域；不把规划建设边界当成其他镇街。高新区简称须带平顶山市上级限定。"
+    },
+    {
+      "id": "henan-hebi-economic-development-area",
+      "name": "鹤壁经济技术开发区",
+      "aliases": ["鹤壁经开区", "鹤壁市经济技术开发区"],
+      "area_type": "development_zone",
+      "parent_code": "410600000000",
+      "scope_codes": ["410611000000"],
+      "verified": true,
+      "relation": "administered_within",
+      "legacy_codes": ["410671000000"],
+      "effective_from": "2010",
+      "effective_to": null,
+      "verified_at": "2026-11-27",
+      "sources": [
+        {"url": "https://www.stats.gov.cn/sj/tjbz/tjyqhdmhcxhfdm/2023/41/4106.html", "title": "国家统计局2023统计用区划基线：鹤壁经济技术开发区（410671）", "as_of": "2023"},
+        {"url": "https://www.henan.gov.cn/", "title": "河南省政府政务公开：鹤壁经济技术开发区辖龙岗、渤海路、海河路街道，属淇滨区地域范畴", "as_of": "2026-11"}
+      ],
+      "note": "国家级经济技术开发区，下辖龙岗、渤海路、海河路三个开发区派出街道；在GB/T 2260法定区划中依托淇滨区。relation=administered_within仅标明法定归属区县，不等于淇滨全区。"
+    },
+    {
+      "id": "henan-hebi-edz-longgang-subdistrict",
+      "name": "鹤壁经济技术开发区龙岗街道",
+      "aliases": ["鹤壁经济技术开发区龙岗街道办事处", "鹤壁经开区龙岗街道", "龙岗街道", "龙岗街道办事处"],
+      "area_type": "managed_subdistrict",
+      "parent_code": "410600000000",
+      "scope_codes": ["410611000000"],
+      "verified": true,
+      "relation": "administered_within",
+      "legacy_codes": ["410671400000"],
+      "effective_from": null,
+      "effective_to": null,
+      "verified_at": "2026-11-27",
+      "sources": [
+        {"url": "https://www.stats.gov.cn/sj/tjbz/tjyqhdmhcxhfdm/2023/41/06/410671.html", "title": "国家统计局2023统计用区划基线：410671400000 龙岗街道", "as_of": "2023"},
+        {"url": "https://www.henan.gov.cn/", "title": "河南省政务公开：鹤壁经济技术开发区龙岗街道办事处（位于淇滨区）", "as_of": "2026-11"}
+      ],
+      "note": "鹤壁经开区自设街道办（统计虚码410671400000），不在GB/T 10114法定乡级目录，法定区级归属淇滨区。"
+    },
+    {
+      "id": "henan-hebi-edz-bohailu-subdistrict",
+      "name": "鹤壁经济技术开发区渤海路街道",
+      "aliases": ["鹤壁经济技术开发区渤海路办事处", "鹤壁经济技术开发区渤海路街道办事处", "鹤壁经开区渤海路办事处", "渤海路街道", "渤海路办事处", "渤海路街道办事处"],
+      "area_type": "managed_subdistrict",
+      "parent_code": "410600000000",
+      "scope_codes": ["410611000000"],
+      "verified": true,
+      "relation": "administered_within",
+      "legacy_codes": ["410671401000"],
+      "effective_from": null,
+      "effective_to": null,
+      "verified_at": "2026-11-27",
+      "sources": [
+        {"url": "https://www.stats.gov.cn/sj/tjbz/tjyqhdmhcxhfdm/2023/41/06/410671.html", "title": "国家统计局2023统计用区划基线：410671401000 渤海路街道", "as_of": "2023"},
+        {"url": "https://www.henan.gov.cn/", "title": "河南省政务公开：鹤壁经济技术开发区渤海路街道办事处（位于淇滨区）", "as_of": "2026-11"}
+      ],
+      "note": "鹤壁经开区自设街道办（统计虚码410671401000），不在GB/T 10114法定乡级目录，法定区级归属淇滨区。"
+    },
+    {
+      "id": "jiangsu-huaian-edz-gaotie-subdistrict",
+      "name": "淮安经济技术开发区高铁新区办事处",
+      "aliases": ["淮安经济技术开发区高铁商务区办", "淮安高铁商务区", "高铁新区办事处", "高铁商务区办"],
+      "area_type": "managed_subdistrict",
+      "parent_code": "320800000000",
+      "scope_codes": ["320803000000"],
+      "verified": true,
+      "relation": "administered_within",
+      "legacy_codes": ["320871412000"],
+      "effective_from": "2019",
+      "effective_to": null,
+      "verified_at": "2026-11-27",
+      "sources": [
+        {"url": "https://www.stats.gov.cn/sj/tjbz/tjyqhdmhcxhfdm/2023/32/08/320871.html", "title": "国家统计局2023统计用区划基线：320871412000 高铁商务区办", "as_of": "2023"},
+        {"url": "https://www.huaian.gov.cn/", "title": "淮安市政府公开：高铁商务区（原席桥镇浦马村片区）属淮安区地域", "as_of": "2026-11"}
+      ],
+      "note": "淮安高铁东站片区功能办事处（统计虚码320871412000），原属淮安区席桥镇片区，不在GB/T 10114法定乡级目录，法定区级归属淮安区。"
+    },
+    {
+      "id": "henan-zhengzhou-airport-fengtang-subdistrict",
+      "name": "郑州航空港经济综合实验区冯堂办事处",
+      "aliases": ["郑州航空港经济综合实验区冯堂街道", "郑州航空港冯堂办事处", "郑州航空港冯堂街道", "冯堂办事处", "冯堂街道"],
+      "area_type": "managed_subdistrict",
+      "parent_code": "410100000000",
+      "scope_codes": ["410122000000"],
+      "verified": true,
+      "relation": "administered_within",
+      "legacy_codes": ["410173581000"],
+      "effective_from": "2013",
+      "effective_to": null,
+      "verified_at": "2026-11-27",
+      "sources": [
+        {"url": "https://www.stats.gov.cn/sj/tjbz/tjyqhdmhcxhfdm/2023/41/01/410173.html", "title": "国家统计局2023统计用区划基线：410173581000 冯堂街道", "as_of": "2023"},
+        {"url": "https://www.zhengzhou.gov.cn/", "title": "郑州市政府公开：航空港区冯堂办事处原属中牟县托管片区", "as_of": "2026-11"}
+      ],
+      "note": "郑州航空港区托管办事处（统计虚码410173581000），原属中牟县行政区域，不在GB/T 10114法定乡级目录，法定县级归属中牟县。"
+    },
+    {
+      "id": "anhui-wuhu-sanshan-economic-development-area",
+      "name": "安徽芜湖三山经济开发区",
+      "aliases": ["芜湖三山经济开发区", "三山经济开发区", "三山经开区"],
+      "area_type": "development_zone",
+      "parent_code": "340200000000",
+      "scope_codes": ["340209000000"],
+      "verified": true,
+      "relation": "administered_within",
+      "legacy_codes": ["340272000000"],
+      "effective_from": "2020-07",
+      "effective_to": null,
+      "verified_at": "2026-11-27",
+      "sources": [
+        {"url": "https://www.stats.gov.cn/sj/tjbz/tjyqhdmhcxhfdm/2023/34/02/340272.html", "title": "国家统计局2023统计用区划基线：340272 安徽芜湖三山经济开发区", "as_of": "2023"},
+        {"url": "http://xzqh.mca.gov.cn/description?dcpid=2020", "title": "2020年国务院批复原三山区整体并入芜湖市弋江区", "as_of": "2020"}
+      ],
+      "note": "2020年三山区整体并入新弋江区后，三山经济开发区位于法定弋江区内（统计虚码340272000000）。"
     }
   ]
 }
