@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "author": "xzqh-verified",
+    "source_url": "http://xzqh.mca.gov.cn/description?dcpid=2016",
+    "evidence_confidence": "high",
+    "apply_after": "2015-baseline",
+    "source_pipeline": "xzqh",
+    "created_at": "2026-11-26T12:50:00.000Z",
+    "notes": "xzqh 2016 县级以上行政区划变更（按民政部公告补录业务实测历史旧名）"
+  },
+  "operations": [
+    {
+      "op": "remove",
+      "code": "411023000000",
+      "reason": "撤销许昌县，设立许昌市建安区"
+    },
+    {
+      "op": "add",
+      "code": "411003000000",
+      "name": "建安区",
+      "level": 3,
+      "parent_code": "411000000000"
+    },
+    {
+      "op": "remove",
+      "code": "530122000000",
+      "reason": "撤销晋宁县，设立昆明市晋宁区"
+    },
+    {
+      "op": "add",
+      "code": "530115000000",
+      "name": "晋宁区",
+      "level": 3,
+      "parent_code": "530100000000"
+    },
+    {
+      "op": "remove",
+      "code": "533321000000",
+      "reason": "撤销泸水县，设立县级泸水市"
+    },
+    {
+      "op": "add",
+      "code": "533301000000",
+      "name": "泸水市",
+      "level": 3,
+      "parent_code": "533300000000"
+    }
+  ]
+}

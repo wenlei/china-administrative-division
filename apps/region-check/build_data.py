@@ -38,6 +38,7 @@ def extract_events(records, repository=ROOT):
             # A shared remove reason (N -> M) or partial boundary transfer needs parcel/boundary evidence.
             group_size = sum(a['op'] == 'remove' and a.get('reason') == reason
                              for a in operations)
+            partial_transfer = any(token in reason for token in ('划归', '部分', '分别'))
             old_names = {r['name'] for r in records if r['code'] == op['code']
                          and r['year'] <= int(path.parent.name)}
             old_name = next((n for n in names if n in old_names), None)
@@ -52,23 +53,26 @@ def extract_events(records, repository=ROOT):
                 'reason': reason, 'source_url': patch['meta'].get('source_url'),
                 'patch_file': str(path.relative_to(repository)),
                 'safe_conversion': group_size == 1 and len(successors) == 1
-                                   and old_name is not None,
+                                   and old_name is not None and not partial_transfer,
                 'effective_date': None,
             })
     return events
 
 
-def augment_release(base, output, repository=ROOT):
-    """Add management relations without changing any administrative records."""
+def augment_release(base, output, repository=ROOT, *, refresh_events=False):
+    """Add management relations (and optionally refresh official events) without changing administrative records."""
     from region_check import RegionIndex
     base, output = Path(base), Path(output)
     if output.exists():
         raise ValueError('Output already exists; build into a new release directory')
     RegionIndex(base)  # Check the exact source release before using any of its records.
     payload = add_management_catalog(json.loads((base / 'regions.json').read_text()), repository)
+    if refresh_events:
+        payload['events'] = extract_events(payload['records'], repository)
     data = json.dumps(payload, ensure_ascii=False, separators=(',', ':')).encode()
     manifest = json.loads((base / 'manifest.json').read_text())
     manifest.update(sha256=hashlib.sha256(data).hexdigest(),
+                    event_count=len(payload['events']),
                     managed_catalog_edition=payload['managed_areas']['edition'],
                     managed_area_count=len(payload['managed_areas']['areas']))
     output.mkdir(parents=True)
@@ -143,6 +147,7 @@ if __name__ == '__main__':
     source.add_argument('--database')
     source.add_argument('--base-release')
     parser.add_argument('--output', required=True)
+    parser.add_argument('--refresh-events', action='store_true')
     args = parser.parse_args()
-    print(augment_release(args.base_release, args.output)
+    print(augment_release(args.base_release, args.output, refresh_events=args.refresh_events)
           if args.base_release else build(args.database, args.output))
