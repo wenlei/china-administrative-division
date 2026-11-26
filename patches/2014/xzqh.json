@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "author": "xzqh-verified",
+    "source_url": "http://xzqh.mca.gov.cn/description?dcpid=2014",
+    "evidence_confidence": "high",
+    "apply_after": "2013-baseline",
+    "source_pipeline": "xzqh",
+    "created_at": "2026-11-26T12:50:00.000Z",
+    "notes": "xzqh 2014 县级以上行政区划变更（按民政部公告补录业务实测历史旧名）"
+  },
+  "operations": [
+    {
+      "op": "remove",
+      "code": "350784000000",
+      "reason": "撤销县级建阳市，设立南平市建阳区"
+    },
+    {
+      "op": "add",
+      "code": "350703000000",
+      "name": "建阳区",
+      "level": 3,
+      "parent_code": "350700000000"
+    }
+  ]
+}

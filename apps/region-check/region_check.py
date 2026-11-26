@@ -45,7 +45,7 @@ class RegionIndex:
         self.exact_current_paths = defaultdict(list)
         for code, path in self.paths.items():
             levels = [node['level'] for node in path]
-            if (levels in ([1, 2, 3, 4], [1, 2, 4]) and not path[0]['parent_code']
+            if (levels in ([1, 2], [1, 2, 3], [1, 2, 4], [1, 2, 3, 4]) and not path[0]['parent_code']
                     and path[0]['code'][:2] == code[:2]):
                 self.exact_current_paths[''.join(node['name'] for node in path)].append(code)
         self.names = defaultdict(set)
@@ -293,19 +293,26 @@ class RegionIndex:
         exact = self.exact_current_paths.get(text, [])
         if len(exact) == 1:
             # A unique whole current path is stronger than a county-name fragment
-            # spanning two valid names, e.g. 中山市 + 南区街道 contains 市南区.
+            # spanning two valid names, e.g. 中山市 + 南区街道 contains 市南区,
+            # or 天津市 + 市辖区 contains 津市市.
             # No prefix/suffix, shorthand, historical name or incomplete path is
             # accepted here; all other input keeps the normal conflict checks.
             code = exact[0]
             path = self.paths[code]
-            candidate = {**self.describe(code), 'status': 'matched', 'matched_level': 4,
+            level = self.current[code]['level']
+            status = 'matched' if level == 4 else 'partial'
+            suggested = (''.join(node['name'] for node in path if node['name'] not in
+                         ('市辖区', '县', '省直辖县级行政区划', '自治区直辖县级行政区划'))
+                         if level == 4 else None)
+            warnings = (['Only part of the administrative path was resolved; original address must be retained.']
+                        if level < 4 else [])
+            candidate = {**self.describe(code), 'status': status, 'matched_level': level,
                          'match_method': 'current_name', 'evidence': [],
                          'unmatched_prefix': '', 'unparsed_suffix': '', 'matched_text': text,
-                         'suggested_address': ''.join(node['name'] for node in path if node['name'] not in
-                             ('市辖区', '省直辖县级行政区划', '自治区直辖县级行政区划')),
+                         'suggested_address': suggested,
                          'automatic_conversion': False}
-            return {'input': address, 'normalized_input': text, 'status': 'matched',
-                    'candidate_total': 1, 'candidates': [candidate], 'warnings': [],
+            return {'input': address, 'normalized_input': text, 'status': status,
+                    'candidate_total': 1, 'candidates': [candidate], 'warnings': warnings,
                     'edition': self.data['edition'], 'historical_unresolved': [], 'unresolved_events': [],
                     'history_complete': False, 'village_verified': False}
         direct = self._match(address, limit, include_history=False)
@@ -386,7 +393,7 @@ class RegionIndex:
             if status in ('matched', 'historical'):
                 # Synthetic municipality grouping nodes are omitted in addresses.
                 parts = [r['name'] for r in self.paths[code]
-                         if r['name'] not in ('市辖区', '省直辖县级行政区划', '自治区直辖县级行政区划')]
+                         if r['name'] not in ('市辖区', '县', '省直辖县级行政区划', '自治区直辖县级行政区划')]
                 item['suggested_address'] = ''.join(parts) + residual
             results.append(item)
         status = 'unmatched' if not results else ('ambiguous' if len(leaves) > 1 else results[0]['status'])

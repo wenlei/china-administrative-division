@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "author": "xzqh-verified",
+    "source_url": "http://xzqh.mca.gov.cn/description?dcpid=2020",
+    "evidence_confidence": "high",
+    "apply_after": "2019-baseline",
+    "source_pipeline": "xzqh",
+    "created_at": "2026-11-26T12:50:00.000Z",
+    "notes": "xzqh 2020 县级以上行政区划变更（按民政部公告补录业务实测历史旧名；弋江/三山合并与水城部分划归钟山区保持待核）"
+  },
+  "operations": [
+    {
+      "op": "remove",
+      "code": "340221000000",
+      "reason": "撤销芜湖县，设立芜湖市湾沚区"
+    },
+    {
+      "op": "add",
+      "code": "340210000000",
+      "name": "湾沚区",
+      "level": 3,
+      "parent_code": "340200000000"
+    },
+    {
+      "op": "remove",
+      "code": "340222000000",
+      "reason": "撤销繁昌县，设立芜湖市繁昌区"
+    },
+    {
+      "op": "add",
+      "code": "340212000000",
+      "name": "繁昌区",
+      "level": 3,
+      "parent_code": "340200000000"
+    },
+    {
+      "op": "remove",
+      "code": "340203000000",
+      "reason": "撤销芜湖市弋江区、三山区，设立新的芜湖市弋江区"
+    },
+    {
+      "op": "remove",
+      "code": "340208000000",
+      "reason": "撤销芜湖市弋江区、三山区，设立新的芜湖市弋江区"
+    },
+    {
+      "op": "add",
+      "code": "340209000000",
+      "name": "弋江区",
+      "level": 3,
+      "parent_code": "340200000000"
+    },
+    {
+      "op": "remove",
+      "code": "520221000000",
+      "reason": "撤销水城县，设立六盘水市水城区，将原水城县部分乡镇街道划归钟山区管辖"
+    },
+    {
+      "op": "add",
+      "code": "520204000000",
+      "name": "水城区",
+      "level": 3,
+      "parent_code": "520200000000"
+    }
+  ]
+}

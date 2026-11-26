@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "author": "xzqh-verified",
+    "source_url": "http://xzqh.mca.gov.cn/description?dcpid=2017",
+    "evidence_confidence": "high",
+    "apply_after": "2016-baseline",
+    "source_pipeline": "xzqh",
+    "created_at": "2026-11-26T12:50:00.000Z",
+    "notes": "xzqh 2017 县级以上行政区划变更（按民政部公告补录业务实测历史旧名）"
+  },
+  "operations": [
+    {
+      "op": "remove",
+      "code": "520222000000",
+      "reason": "撤销盘县，设立县级盘州市"
+    },
+    {
+      "op": "add",
+      "code": "520281000000",
+      "name": "盘州市",
+      "level": 3,
+      "parent_code": "520200000000"
+    }
+  ]
+}
