@@ -3,6 +3,7 @@
 <style>body{font:16px/1.65 system-ui,sans-serif;max-width:960px;margin:40px auto;padding:0 20px;color:#172c36;background:#f7fafb}input,select,button{font:inherit;padding:10px;border:1px solid #b9cbd2;border-radius:6px}input{width:min(100%,620px);box-sizing:border-box}button{background:#145563;color:white;cursor:pointer}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;border:1px solid #d9e5e8;padding:16px;border-radius:8px}a{color:#145563}label{display:block;margin:14px 0 6px}</style>
 <h1>regionCheck 区划查询</h1><p>按现行地名匹配地址，也可通过明确的历史变更记录查找现行区划。原始地址不会被保存。</p>
 <p>覆盖省、市、县、乡四级；村、道路、门牌保留原文。各省来源时点不同。历史记录尚不完整，未查到不表示从未变更。拆分、合并和无法唯一确定的地址需要人工确认。</p>
+<p>新区、开发区等管理区域按独立核定的管辖范围识别。<code>managed</code> 表示管理范围已核定，具体范围见 <code>managed_areas</code>；<code>mapping_required</code> 表示系统尚需补充范围对应，不代表人员填写错误。管理区域不会作为虚构区县写入行政目录。</p>
 <form id="query"><label for="mode">查询方式</label><select id="mode"><option value="match">地址匹配</option><option value="search">现名／历史地名搜索</option><option value="history">区划代码历史查询</option></select>
 <label for="value">地址、地名或区划代码</label><input id="value" required maxlength="1000" placeholder="例如：河南省洛阳市偃师市大口镇董村"><button type="submit">查询</button></form>
 <p><a href="/openapi.json">OpenAPI 接口定义</a> · <a href="/api/coverage">来源与覆盖范围</a> · <a href="/health">服务状态</a></p>

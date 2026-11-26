@@ -1,0 +1,4 @@
+upstream region_active {
+    server regionCheck-blue:8000;
+    keepalive 16;
+}

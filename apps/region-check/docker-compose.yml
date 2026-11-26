@@ -1,28 +1,56 @@
+x-logging: &limited-logging
+  driver: json-file
+  options: {max-size: "5m", max-file: "2"}
 services:
   region-check:
-    image: region-check:0.1.1
-    build: .
+    image: ${REGION_ROUTER_IMAGE:?pin the installed nginx image ID}
     container_name: regionCheck
+    entrypoint: ["nginx"]
+    command: ["-c", "/etc/nginx/region-check/nginx.conf", "-g", "daemon off;"]
+    user: "101:101"
     restart: unless-stopped
-    ports:
-      - "127.0.0.1:6130:8000"
-    volumes:
-      - ./data:/data:ro
+    ports: ["127.0.0.1:6130:8000"]
+    volumes: ["${REGION_ROUTER_CONFIG:?absolute router config directory}:/etc/nginx/region-check:ro"]
+    tmpfs: ["/tmp:rw,noexec,nosuid,size=16m,uid=101,gid=101"]
     read_only: true
-    cap_drop:
-      - ALL
-    security_opt:
-      - no-new-privileges:true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    mem_limit: 64m
+    cpus: 0.25
+    pids_limit: 32
+    logging: *limited-logging
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:8000/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    networks: [eplant]
+  blue:
+    image: ${REGION_BLUE_IMAGE:?pin the blue image ID}
+    container_name: regionCheck-blue
+    restart: unless-stopped
+    volumes: ["${REGION_BLUE_DATA:?absolute immutable data directory}:/data:ro"]
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
     mem_limit: 512m
     cpus: 1.0
     pids_limit: 64
-    logging:
-      driver: json-file
-      options:
-        max-size: "5m"
-        max-file: "2"
-    networks:
-      - eplant
+    logging: *limited-logging
+    networks: [eplant]
+  green:
+    image: ${REGION_GREEN_IMAGE:?pin the green image ID}
+    container_name: regionCheck-green
+    restart: unless-stopped
+    volumes: ["${REGION_GREEN_DATA:?absolute immutable data directory}:/data:ro"]
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    mem_limit: 512m
+    cpus: 1.0
+    pids_limit: 64
+    logging: *limited-logging
+    networks: [eplant]
 networks:
   eplant:
     external: true

@@ -7,8 +7,14 @@ import tempfile
 import threading
 import unittest
 from pathlib import Path
-from region_check import RegionIndex
+from region_check import RegionIndex, CurrentTreeUnavailable
 from server import BoundedServer
+
+
+def write_data(directory, payload):
+    data = json.dumps(payload, ensure_ascii=False).encode()
+    Path(directory, 'regions.json').write_bytes(data)
+    Path(directory, 'manifest.json').write_text(json.dumps({'sha256': hashlib.sha256(data).hexdigest()}))
 
 
 def make_data(directory):
@@ -44,9 +50,7 @@ def make_data(directory):
     payload = {'edition': '2026-10', 'target_year': 2026, 'snapshot_years': [2023, 2026],
                'provinces': [{'province': n, 'name': n, 'as_of': None} for n in ['41','11','22','50']],
                'records': records, 'events': [event, merge], 'limitations': ['Historical coverage incomplete']}
-    data = json.dumps(payload, ensure_ascii=False).encode()
-    Path(directory, 'regions.json').write_bytes(data)
-    Path(directory, 'manifest.json').write_text(json.dumps({'sha256': hashlib.sha256(data).hexdigest()}))
+    write_data(directory, payload)
 
 
 class MatchingTests(unittest.TestCase):
@@ -143,6 +147,121 @@ class MatchingTests(unittest.TestCase):
             with self.assertRaises(ValueError): RegionIndex(directory)
 
 
+class DirectoryTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        make_data(self.temp.name)
+        self.payload = json.loads(Path(self.temp.name, 'regions.json').read_text())
+
+    def index(self):
+        write_data(self.temp.name, self.payload)
+        return RegionIndex(self.temp.name)
+
+    def test_only_target_year_active_names_in_code_order(self):
+        self.payload['records'].extend([
+            dict(code='410381000000', name='偃师市', level=3, parent_code='410300000000', year=2023, status='active'),
+            dict(code='410399000000', name='已撤销县', level=3, parent_code='410300000000', year=2026, status='inactive'),
+            dict(code='410307110001', name='村级不进入目录', level=5, parent_code='410307110000', year=2026, status='active')])
+        self.payload['records'].reverse()
+        index = self.index()
+        result = index.division_tree()
+        self.assertEqual([p['province'] for p in result['data']], ['北京市', '吉林省', '河南省', '重庆市'])
+        luoyang = result['data'][2]['cities'][0]
+        self.assertEqual(luoyang, {'city': '洛阳市', 'districts': ['偃师区'],
+                                   'towns': {'偃师区': ['大口镇']}, 'direct_towns': []})
+        rendered = json.dumps(result, ensure_ascii=False)
+        for old_name in ('偃师市', '另一个镇', '江北区', '已撤销县', '村级不进入目录'):
+            self.assertNotIn(old_name, rendered)
+        self.assertEqual(result['edition'], '2026-10')
+        self.assertEqual(result['target_year'], 2026)
+        self.assertEqual(result['data_sha256'], index.digest)
+        self.assertIs(result['current_only'], True)
+        self.assertEqual(result['excluded_incomplete_paths'], 0)
+
+    def test_prefecture_direct_town_does_not_invent_a_county(self):
+        self.payload['records'].append(dict(code='410300110000', name='直属镇', level=4,
+            parent_code='410300000000', year=2026, status='active'))
+        result = self.index().division_tree()
+        self.assertEqual(result['excluded_incomplete_paths'], 0)
+        luoyang = next(p for p in result['data'] if p['province'] == '河南省')['cities'][0]
+        self.assertEqual(luoyang['districts'], ['偃师区'])
+        self.assertEqual(luoyang['direct_towns'], ['直属镇'])
+        self.assertNotIn('直属镇', luoyang['towns'])
+
+    def test_municipal_group_with_a_real_county_keeps_the_county_level(self):
+        self.payload['records'].append(dict(code='110105001000', name='建外街道', level=4,
+            parent_code='110105000000', year=2026, status='active'))
+        index = self.index()
+        city = next(p for p in index.division_tree()['data'] if p['province'] == '北京市')['cities'][0]
+        self.assertEqual(city['city'], '市辖区')
+        self.assertEqual(city['districts'], ['朝阳区'])
+        self.assertEqual(city['towns'], {'朝阳区': ['建外街道']})
+        self.assertEqual(city['direct_towns'], [])
+        self.assertEqual([node['level'] for node in index.paths['110105001000']], [1, 2, 3, 4])
+
+    def test_exact_current_path_beats_cross_boundary_name_fragment(self):
+        for code, name, level, parent in [
+                ('440000000000', '广东省', 1, None), ('442000000000', '中山市', 2, '440000000000'),
+                ('442000005000', '南区街道', 4, '442000000000'),
+                ('370000000000', '山东省', 1, None), ('370200000000', '青岛市', 2, '370000000000'),
+                ('370202000000', '市南区', 3, '370200000000')]:
+            self.payload['records'].append(dict(code=code, name=name, level=level,
+                parent_code=parent, year=2026, status='active'))
+        self.payload['provinces'].extend([{'province': '44'}, {'province': '37'}])
+        index = self.index()
+        address = '广东省中山市南区街道'
+        self.assertIn((5, 8, '市南区'), index.occurrences(address, False))
+        result = index.match(address)
+        self.assertEqual(result['status'], 'matched')
+        self.assertEqual(result['candidate_total'], 1)
+        candidate = result['candidates'][0]
+        self.assertEqual(candidate['code'], '442000005000')
+        self.assertEqual([node['level'] for node in candidate['path']], [1, 2, 4])
+        self.assertEqual(candidate['matched_level'], 4)
+        self.assertFalse(candidate['automatic_conversion'])
+        for conflict in ('山东省中山市南区街道', '广东省中山市不存在区南区街道'):
+            self.assertNotIn(index.match(conflict)['status'], ('matched', 'historical'))
+
+    def test_exact_path_must_still_be_unique(self):
+        for code in ('410300110000', '410300111000'):
+            self.payload['records'].append(dict(code=code, name='直属镇', level=4,
+                parent_code='410300000000', year=2026, status='active'))
+        result = self.index().match('河南省洛阳市直属镇')
+        self.assertEqual(result['status'], 'ambiguous')
+        self.assertEqual(result['candidate_total'], 2)
+
+    def test_direct_town_and_county_with_same_name_keep_distinct_kinds(self):
+        for code in ('410300110000', '410300111000'):
+            self.payload['records'].append(dict(code=code, name='偃师区', level=4,
+                parent_code='410300000000', year=2026, status='active'))
+        tree = self.index().division_tree()['data']
+        luoyang = next(p for p in tree if p['province'] == '河南省')['cities'][0]
+        self.assertEqual(luoyang['districts'], ['偃师区'])
+        self.assertEqual(luoyang['direct_towns'], ['偃师区'])
+        self.assertEqual(luoyang['towns'], {'偃师区': ['大口镇']})
+
+    def test_duplicate_names_merge_only_within_the_same_parent(self):
+        self.payload['records'].extend([
+            dict(code='410308000000', name='偃师区', level=3, parent_code='410300000000', year=2026, status='active'),
+            dict(code='410308110000', name='大口镇', level=4, parent_code='410308000000', year=2026, status='active'),
+            dict(code='410308111000', name='新镇', level=4, parent_code='410308000000', year=2026, status='active'),
+            dict(code='410400000000', name='洛阳市', level=2, parent_code='410000000000', year=2026, status='active')])
+        data = self.index().division_tree()['data']
+        henan = next(p for p in data if p['province'] == '河南省')
+        self.assertEqual(henan['cities'], [{'city': '洛阳市', 'districts': ['偃师区'],
+                                          'towns': {'偃师区': ['大口镇', '新镇']}, 'direct_towns': []}])
+        self.assertEqual(sum(city['districts'].count('朝阳区') for p in data for city in p['cities']), 2)
+
+    def test_incomplete_or_wrong_level_parent_chain_is_rejected(self):
+        for parent in ('419900000000', '410000000000', '220100000000'):
+            with self.subTest(parent=parent):
+                self.payload['records'][-1] = dict(code='410399000000', name='坏父链县', level=3,
+                    parent_code=parent, year=2026, status='active')
+                with self.assertRaises(CurrentTreeUnavailable):
+                    self.index().division_tree()
+
+
 class HTTPTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -171,6 +290,54 @@ class HTTPTests(unittest.TestCase):
     def test_health_docs_and_schema(self):
         for path in ['/health', '/docs', '/openapi.json', '/api/coverage']:
             self.assertEqual(self.request('GET', path)[0], 200)
+
+    def test_current_directory_and_openapi_contract(self):
+        status, body = self.request('GET', '/api/divisions/tree')
+        self.assertEqual(status, 200)
+        self.assertEqual(json.loads(body), self.server.index.division_tree())
+        schema = json.loads(self.request('GET', '/openapi.json')[1])
+        endpoint = schema['paths']['/api/divisions/tree']['get']
+        self.assertIn('503', endpoint['responses'])
+        result_schema = endpoint['responses']['200']['content']['application/json']['schema']
+        self.assertEqual(result_schema['properties']['current_only'], {'const': True})
+        cities = result_schema['properties']['data']['items']['properties']['cities']['items']
+        self.assertIn('direct_towns', cities['properties'])
+        self.assertEqual(self.request('GET', '/api/divisions/tree?limit=50')[0], 400)
+        self.assertEqual(self.request('GET', '/api/divisions/tree?year=2023')[0], 400)
+
+    def test_broken_directory_returns_unavailable_without_fallback(self):
+        original = self.server.index.paths['410307000000']
+        try:
+            self.server.index.paths['410307000000'] = original[1:]
+            status, body = self.request('GET', '/api/divisions/tree')
+            self.assertEqual(status, 503)
+            self.assertEqual(json.loads(body), {'error': 'Current administrative directory unavailable'})
+        finally:
+            self.server.index.paths['410307000000'] = original
+
+    def test_direct_town_http_keeps_level_four_and_distinct_directory_list(self):
+        original = self.server.index
+        try:
+            with tempfile.TemporaryDirectory() as directory:
+                make_data(directory)
+                payload = json.loads(Path(directory, 'regions.json').read_text())
+                payload['records'].append(dict(code='410300110000', name='直属镇', level=4,
+                    parent_code='410300000000', year=2026, status='active'))
+                write_data(directory, payload)
+                self.server.index = RegionIndex(directory)
+                status, body = self.request('GET', '/api/divisions/tree')
+                self.assertEqual(status, 200)
+                city = next(p for p in json.loads(body)['data'] if p['province'] == '河南省')['cities'][0]
+                self.assertEqual(city['direct_towns'], ['直属镇'])
+                self.assertNotIn('直属镇', city['districts'])
+                status, body = self.request('POST', '/api/addresses/match',
+                    json.dumps({'address': '河南省洛阳市直属镇'}), {'Content-Type': 'application/json'})
+                self.assertEqual(status, 200)
+                candidate = json.loads(body)['candidates'][0]
+                self.assertEqual(candidate['matched_level'], 4)
+                self.assertEqual([node['level'] for node in candidate['path']], [1, 2, 4])
+        finally:
+            self.server.index = original
 
     def test_batch_preserves_input_order(self):
         values = ['朝阳区', '河南省洛阳市偃师市大口镇董村', '不存在省不存在县']
@@ -204,6 +371,64 @@ class HTTPTests(unittest.TestCase):
 
 @unittest.skipUnless(os.getenv('REGION_TEST_DATA'), 'Set REGION_TEST_DATA for release-data tests')
 class ReleaseTests(unittest.TestCase):
+    def test_complete_current_tree_and_fuzhou_counties(self):
+        index = RegionIndex(os.environ['REGION_TEST_DATA'])
+        result = index.division_tree()
+        self.assertEqual(len(result['data']), 31)
+        self.assertEqual(result['edition'], index.data['edition'])
+        self.assertEqual(result['target_year'], index.year)
+        self.assertEqual(result['data_sha256'], index.digest)
+        self.assertIs(result['current_only'], True)
+        actual = set()
+        for province in result['data']:
+            actual.add((province['province'],))
+            for city in province['cities']:
+                parent = (province['province'], city['city'])
+                actual.add(parent)
+                self.assertEqual(set(city['districts']), set(city['towns']))
+                for district in city['districts']:
+                    actual.add((*parent, district))
+                    for town in city['towns'][district]:
+                        actual.add((*parent, district, town))
+                for town in city['direct_towns']:
+                    actual.add((*parent, '', town))
+        expected = set()
+        for code, row in index.current.items():
+            slots = [''] * row['level']
+            for node in index.paths[code]:
+                slots[node['level'] - 1] = node['name']
+            expected.add(tuple(slots))
+        self.assertEqual(actual, expected)
+        self.assertEqual(len(actual), 41989)
+        direct_towns = [code for code in index.current
+                        if [n['level'] for n in index.paths[code]] == [1, 2, 4]]
+        self.assertEqual(result['excluded_incomplete_paths'], 0)
+        self.assertEqual(len(direct_towns), 102)
+        self.assertEqual(sum(len(c['direct_towns']) for p in result['data'] for c in p['cities']), 102)
+        fujian = next(p for p in result['data'] if p['province'] == '福建省')
+        fuzhou = next(c for c in fujian['cities'] if c['city'] == '福州市')
+        catalog = [r['name'] for code, r in sorted(index.current.items())
+                   if r['level'] == 3 and r['parent_code'] == '350100000000']
+        self.assertEqual(fuzhou['districts'], list(dict.fromkeys(catalog)))
+        self.assertEqual(len(fuzhou['districts']), 13)
+        self.assertIn('长乐区', fuzhou['districts'])
+        self.assertNotIn('长乐市', fuzhou['districts'])
+
+    def test_all_prefecture_direct_towns_match_at_their_real_level(self):
+        index = RegionIndex(os.environ['REGION_TEST_DATA'])
+        direct = {code: path for code, path in index.paths.items()
+                  if [node['level'] for node in path] == [1, 2, 4]}
+        self.assertEqual(len(direct), 102)
+        for code, path in direct.items():
+            with self.subTest(code=code):
+                result = index.match(''.join(node['name'] for node in path))
+                self.assertEqual(result['status'], 'matched')
+                self.assertEqual(result['candidate_total'], 1)
+                candidate = result['candidates'][0]
+                self.assertEqual(candidate['code'], code)
+                self.assertEqual(candidate['matched_level'], 4)
+                self.assertEqual([node['level'] for node in candidate['path']], [1, 2, 4])
+
     def test_real_station_samples_and_old_address(self):
         index = RegionIndex(os.environ['REGION_TEST_DATA'])
         self.assertEqual(len(index.current),41989)
